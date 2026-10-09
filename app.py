@@ -1,6 +1,6 @@
 """
 FutureCandle - Indian Stock Market Decision Maker
-Main Flask Application
+Main Flask Application with Auto-Refresh + All Indices
 """
 import json
 import os
@@ -14,6 +14,8 @@ from engine.candlestick_patterns import CandlestickPatternEngine
 from engine.technical_analysis import TechnicalAnalysisEngine
 from engine.sentiment_analysis import SentimentAnalysisEngine
 from engine.investment_engine import InvestmentEngine
+from engine.indices import INDIAN_INDICES, CATEGORIES, SECTORS
+from engine.data_cache import get_cache
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
@@ -23,10 +25,10 @@ candle_engine = CandlestickPatternEngine()
 tech_engine = TechnicalAnalysisEngine()
 sentiment_engine = SentimentAnalysisEngine()
 invest_engine = InvestmentEngine()
+cache = get_cache()
 
 # Indian stock symbols with sector info
 INDIAN_STOCKS = {
-    # Nifty 50 stocks
     'RELIANCE.NS': {'name': 'Reliance Industries', 'sector': 'Energy', 'cap': 1700000},
     'TCS.NS': {'name': 'Tata Consultancy Services', 'sector': 'IT', 'cap': 1200000},
     'HDFCBANK.NS': {'name': 'HDFC Bank', 'sector': 'Banking', 'cap': 1100000},
@@ -56,9 +58,9 @@ INDIAN_STOCKS = {
     'COALINDIA.NS': {'name': 'Coal India', 'sector': 'Energy', 'cap': 150000},
     'BAJFINANCE.NS': {'name': 'Bajaj Finance', 'sector': 'Banking', 'cap': 400000},
     'BAJAJFINSV.NS': {'name': 'Bajaj Finserv', 'sector': 'Banking', 'cap': 250000},
-    'DRREDDY.NS': {'name': 'Dr. Reddy\'s Laboratories', 'sector': 'Pharma', 'cap': 100000},
+    'DRREDDY.NS': {'name': "Dr. Reddy's Laboratories", 'sector': 'Pharma', 'cap': 100000},
     'CIPLA.NS': {'name': 'Cipla Limited', 'sector': 'Pharma', 'cap': 100000},
-    'DIVISLAB.NS': {'name': 'Divi\'s Laboratories', 'sector': 'Pharma', 'cap': 120000},
+    'DIVISLAB.NS': {'name': "Divi's Laboratories", 'sector': 'Pharma', 'cap': 120000},
     'EICHERMOT.NS': {'name': 'Eicher Motors', 'sector': 'Auto', 'cap': 100000},
     'HEROMOTOCO.NS': {'name': 'Hero MotoCorp', 'sector': 'Auto', 'cap': 80000},
     'BRITANNIA.NS': {'name': 'Britannia Industries', 'sector': 'FMCG', 'cap': 120000},
@@ -78,7 +80,6 @@ INDIAN_STOCKS = {
     'TRENT.NS': {'name': 'Trent Limited', 'sector': 'FMCG', 'cap': 180000},
     'HAL.NS': {'name': 'Hindustan Aeronautics', 'sector': 'Defense', 'cap': 250000},
     'BEL.NS': {'name': 'Bharat Electronics', 'sector': 'Defense', 'cap': 180000},
-    # Popular mid/small caps
     'DABUR.NS': {'name': 'Dabur India', 'sector': 'FMCG', 'cap': 80000},
     'PIDILITIND.NS': {'name': 'Pidilite Industries', 'sector': 'FMCG', 'cap': 120000},
     'HAVELLS.NS': {'name': 'Havells India', 'sector': 'Energy', 'cap': 80000},
@@ -97,58 +98,38 @@ INDIAN_STOCKS = {
 }
 
 
+def convert(obj):
+    """Convert numpy types for JSON serialization."""
+    if isinstance(obj, (np.integer,)):
+        return int(obj)
+    if isinstance(obj, (np.floating,)):
+        return float(obj)
+    if isinstance(obj, (np.bool_,)):
+        return bool(obj)
+    if isinstance(obj, np.ndarray):
+        return obj.tolist()
+    if isinstance(obj, dict):
+        return {str(k): convert(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [convert(v) for v in obj]
+    if isinstance(obj, float) and (obj != obj):
+        return None
+    if isinstance(obj, float) and abs(obj) == float('inf'):
+        return None
+    return obj
+
+
 def get_stock_data(symbol: str, period: str = '2y') -> pd.DataFrame:
-    """Fetch stock data from yfinance."""
-    import yfinance as yf
-    ticker = yf.Ticker(symbol)
-    df = ticker.history(period=period)
+    """Get data from cache (auto-refreshes every 5 hours)."""
+    df = cache.get(symbol, period)
+    if df is None or df.empty:
+        raise ValueError(f"No data for {symbol}")
     return df
 
 
-def generate_mock_data(symbol: str, days: int = 500) -> pd.DataFrame:
-    """Generate realistic mock data for demonstration when yfinance is unavailable."""
-    np.random.seed(hash(symbol) % 2**31)
-
-    stock_info = INDIAN_STOCKS.get(symbol, {'name': symbol, 'sector': 'General', 'cap': 100000})
-
-    # Base price based on stock
-    base_prices = {
-        'RELIANCE.NS': 2500, 'TCS.NS': 3800, 'HDFCBANK.NS': 1600, 'INFY.NS': 1500,
-        'ICICIBANK.NS': 1100, 'HINDUNILVR.NS': 2400, 'ITC.NS': 450, 'SBIN.NS': 780,
-        'BHARTIARTL.NS': 1200, 'LT.NS': 3500, 'WIPRO.NS': 450, 'HCLTECH.NS': 1600,
-        'ASIANPAINT.NS': 2800, 'MARUTI.NS': 10500, 'SUNPHARMA.NS': 1200,
-        'TATAMOTORS.NS': 750, 'TITAN.NS': 3200, 'NTPC.NS': 350, 'ONGC.NS': 250,
-        'M&M.NS': 2700, 'TATASTEEL.NS': 140, 'JSWSTEEL.NS': 850, 'BAJFINANCE.NS': 7000,
-        'DRREDDY.NS': 5500, 'CIPLA.NS': 1400, 'HAL.NS': 4200, 'BEL.NS': 220,
-        'ZOMATO.NS': 250, 'DLF.NS': 800, 'TRENT.NS': 5000
-    }
-
-    base = base_prices.get(symbol, 1000)
-    dates = pd.date_range(end=datetime.now(), periods=days, freq='B')
-
-    # Generate OHLCV with realistic patterns
-    trend = np.random.choice([-0.0002, 0, 0.0003], p=[0.3, 0.2, 0.5])
-    prices = [base]
-    for i in range(1, days):
-        change = trend + np.random.normal(0, 0.018)
-        prices.append(prices[-1] * (1 + change))
-
-    closes = np.array(prices)
-    opens = closes * (1 + np.random.normal(0, 0.005, days))
-    highs = np.maximum(opens, closes) * (1 + np.abs(np.random.normal(0, 0.008, days)))
-    lows = np.minimum(opens, closes) * (1 - np.abs(np.random.normal(0, 0.008, days)))
-    volumes = np.random.lognormal(mean=15, sigma=0.5, size=days).astype(int)
-
-    df = pd.DataFrame({
-        'Open': opens,
-        'High': highs,
-        'Low': lows,
-        'Close': closes,
-        'Volume': volumes
-    }, index=dates)
-
-    return df
-
+# ==============================================================
+#  ROUTES
+# ==============================================================
 
 @app.route('/')
 def index():
@@ -157,34 +138,113 @@ def index():
 
 @app.route('/api/stocks')
 def get_stocks():
-    """Get list of available Indian stocks."""
+    """Get list of all available stocks."""
     stocks = []
     for sym, info in INDIAN_STOCKS.items():
         stocks.append({
             'symbol': sym,
             'name': info['name'],
             'sector': info['sector'],
-            'cap': info['cap']
+            'cap': info['cap'],
+            'type': 'stock'
         })
     return jsonify(stocks)
 
 
-@app.route('/api/analyze/<symbol>')
+@app.route('/api/indices')
+def get_indices():
+    """Get all Indian indices grouped by category."""
+    grouped = {}
+    for sym, info in INDIAN_INDICES.items():
+        cat = info["category"]
+        if cat not in grouped:
+            grouped[cat] = []
+        price = cache.get_price(sym)
+        meta = cache.get_all_meta().get(sym, {})
+        grouped[cat].append({
+            "symbol": sym,
+            "name": info["name"],
+            "exchange": info["exchange"],
+            "sector": info["sector"],
+            "description": info["description"],
+            "price": price,
+            "change_pct": meta.get("change_pct", 0),
+            "last_updated": meta.get("updated"),
+            "type": "index"
+        })
+    return jsonify({
+        "categories": grouped,
+        "total": len(INDIAN_INDICES),
+        "category_names": CATEGORIES,
+        "sector_names": SECTORS,
+    })
+
+
+@app.route('/api/all')
+def get_all_symbols():
+    """Get both stocks and indices in one list."""
+    all_items = []
+
+    # Stocks
+    for sym, info in INDIAN_STOCKS.items():
+        meta = cache.get_all_meta().get(sym, {})
+        all_items.append({
+            "symbol": sym,
+            "name": info["name"],
+            "sector": info["sector"],
+            "cap": info.get("cap", 0),
+            "type": "stock",
+            "price": meta.get("last_price"),
+            "change_pct": meta.get("change_pct", 0),
+        })
+
+    # Indices
+    for sym, info in INDIAN_INDICES.items():
+        meta = cache.get_all_meta().get(sym, {})
+        all_items.append({
+            "symbol": sym,
+            "name": info["name"],
+            "sector": info["sector"],
+            "category": info["category"],
+            "exchange": info["exchange"],
+            "type": "index",
+            "price": meta.get("last_price"),
+            "change_pct": meta.get("change_pct", 0),
+        })
+
+    return jsonify(all_items)
+
+
+@app.route('/api/cache/status')
+def cache_status():
+    """Cache health & auto-refresh status."""
+    return jsonify(cache.get_cache_status())
+
+
+@app.route('/api/analyze/<path:symbol>')
 def analyze_stock(symbol):
-    """Full stock analysis."""
+    """Full stock/index analysis."""
     period = request.args.get('period', '2y')
 
     try:
         df = get_stock_data(symbol, period)
-        if df.empty:
-            raise ValueError("Empty data")
-    except Exception:
-        df = generate_mock_data(symbol)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 400
 
-    if df.empty or len(df) < 10:
+    if len(df) < 10:
         return jsonify({'error': 'Insufficient data for analysis'}), 400
 
-    stock_info = INDIAN_STOCKS.get(symbol, {'name': symbol, 'sector': 'General', 'cap': 100000})
+    # Determine if it's an index or stock
+    is_index = symbol in INDIAN_INDICES
+    if is_index:
+        stock_info = {
+            'name': INDIAN_INDICES[symbol]['name'],
+            'sector': INDIAN_INDICES[symbol]['sector'],
+            'cap': 500000  # default for indices
+        }
+    else:
+        stock_info = INDIAN_STOCKS.get(symbol, {'name': symbol, 'sector': 'General', 'cap': 100000})
+
     current_price = float(df['Close'].iloc[-1])
 
     # Run all engines
@@ -195,10 +255,10 @@ def analyze_stock(symbol):
     )
     investment_result = invest_engine.generate_recommendation(
         symbol, current_price, technical_result, sentiment_result,
-        candlestick_result, stock_info['sector'], stock_info['cap']
+        candlestick_result, stock_info['sector'], stock_info.get('cap', 100000)
     )
 
-    # Prepare chart data (last 120 candles)
+    # Chart data (last 120 candles)
     chart_df = df.tail(120)
     chart_data = {
         'dates': [d.strftime('%Y-%m-%d') for d in chart_df.index],
@@ -209,30 +269,11 @@ def analyze_stock(symbol):
         'volumes': [int(x) for x in chart_df['Volume']]
     }
 
-    # Convert numpy types for JSON serialization
-    def convert(obj):
-        if isinstance(obj, (np.integer,)):
-            return int(obj)
-        if isinstance(obj, (np.floating,)):
-            return float(obj)
-        if isinstance(obj, (np.bool_,)):
-            return bool(obj)
-        if isinstance(obj, np.ndarray):
-            return obj.tolist()
-        if isinstance(obj, dict):
-            return {str(k): convert(v) for k, v in obj.items()}
-        if isinstance(obj, (list, tuple)):
-            return [convert(v) for v in obj]
-        if isinstance(obj, float) and (obj != obj):  # NaN
-            return None
-        if isinstance(obj, float) and abs(obj) == float('inf'):
-            return None
-        return obj
-
     result = {
         'symbol': symbol,
         'name': stock_info['name'],
         'sector': stock_info['sector'],
+        'type': 'index' if is_index else 'stock',
         'current_price': round(current_price, 2),
         'chart_data': chart_data,
         'candlestick_patterns': convert(candlestick_result),
@@ -240,21 +281,20 @@ def analyze_stock(symbol):
         'sentiment': convert(sentiment_result),
         'investment': convert(investment_result),
         'analysis_date': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-        'data_points': len(df)
+        'data_points': len(df),
+        'cache_info': cache.get_cache_status(),
     }
 
     return jsonify(result)
 
 
-@app.route('/api/quick-signal/<symbol>')
+@app.route('/api/quick-signal/<path:symbol>')
 def quick_signal(symbol):
     """Quick buy/sell signal."""
     try:
         df = get_stock_data(symbol, '6mo')
-        if df.empty:
-            raise ValueError("Empty data")
     except Exception:
-        df = generate_mock_data(symbol, 120)
+        return jsonify({'error': f'No data for {symbol}'}), 400
 
     tech = tech_engine.calculate_all(df)
     signal = tech.get('signal', {})
@@ -266,6 +306,23 @@ def quick_signal(symbol):
         'score': signal.get('score', 50),
         'confidence': signal.get('confidence', 50)
     })
+
+
+# ==============================================================
+#  STARTUP — begin auto-refresh on first request
+# ==============================================================
+
+_started = False
+
+
+@app.before_request
+def _start_background_refresh():
+    global _started
+    if not _started:
+        _started = True
+        # Collect ALL symbols (stocks + indices) for auto-refresh
+        all_symbols = list(INDIAN_STOCKS.keys()) + list(INDIAN_INDICES.keys())
+        cache.start_auto_refresh(all_symbols, period="2y")
 
 
 if __name__ == '__main__':

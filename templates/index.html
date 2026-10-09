@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FutureCandle - Indian Stock Market Decision Maker</title>
+    <title>FutureCandle — Indian Stock Market Decision Maker</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.min.js"></script>
@@ -23,17 +23,31 @@
                 <div class="header-badge">
                     <span class="badge">AI-Powered</span>
                     <span class="badge badge-live">● LIVE Analysis</span>
+                    <span id="cacheInfo" class="badge" style="color:var(--accent-cyan);">🔄 Auto-refresh: 5h</span>
                 </div>
             </div>
         </header>
 
-        <!-- Stock Selector -->
+        <!-- Index Ticker Bar -->
+        <section class="ticker-bar" id="tickerBar">
+            <div class="ticker-content" id="tickerContent">
+                <span class="ticker-loading">Loading indices...</span>
+            </div>
+        </section>
+
+        <!-- Tabs: Stocks | Indices -->
         <section class="selector-section">
+            <div class="tab-bar">
+                <button class="tab active" onclick="switchTab('stocks')">📊 Stocks</button>
+                <button class="tab" onclick="switchTab('indices')">📈 Indices</button>
+                <button class="tab" onclick="switchTab('all')">🌐 All</button>
+            </div>
+
             <div class="selector-card">
                 <div class="selector-left">
-                    <label>Select Indian Stock</label>
+                    <label id="searchLabel">Search Stocks</label>
                     <div class="search-wrapper">
-                        <input type="text" id="stockSearch" placeholder="🔍 Search Nifty 50, stocks..." autocomplete="off">
+                        <input type="text" id="stockSearch" placeholder="🔍 Search Nifty 50, stocks, indices..." autocomplete="off">
                         <div id="stockDropdown" class="stock-dropdown"></div>
                     </div>
                 </div>
@@ -47,6 +61,15 @@
                         <span class="btn-icon">⚡</span> Analyze Now
                     </button>
                 </div>
+            </div>
+
+            <!-- Index Category Quick Select -->
+            <div id="indexCategories" class="index-categories hidden">
+                <div class="cat-group" id="catBroadMarket"></div>
+                <div class="cat-group" id="catSectoral"></div>
+                <div class="cat-group" id="catThematic"></div>
+                <div class="cat-group" id="catStrategy"></div>
+                <div class="cat-group" id="catVolatility"></div>
             </div>
         </section>
 
@@ -65,21 +88,15 @@
             <!-- Top Cards Row -->
             <div class="top-cards">
                 <div class="card verdict-card" id="verdictCard">
-                    <div class="card-header">
-                        <h2>📊 Investment Verdict</h2>
-                    </div>
+                    <div class="card-header"><h2>📊 Investment Verdict</h2></div>
                     <div id="verdictContent" class="card-body"></div>
                 </div>
                 <div class="card signal-card" id="signalCard">
-                    <div class="card-header">
-                        <h2>🎯 Trading Signal</h2>
-                    </div>
+                    <div class="card-header"><h2>🎯 Trading Signal</h2></div>
                     <div id="signalContent" class="card-body"></div>
                 </div>
                 <div class="card sentiment-card" id="sentimentCard">
-                    <div class="card-header">
-                        <h2>🧠 Market Sentiment</h2>
-                    </div>
+                    <div class="card-header"><h2>🧠 Market Sentiment</h2></div>
                     <div id="sentimentContent" class="card-body"></div>
                 </div>
             </div>
@@ -93,9 +110,7 @@
                         <button class="chart-btn" onclick="setChartType('candlestick')">Candles</button>
                     </div>
                 </div>
-                <div class="card-body">
-                    <canvas id="priceChart" height="100"></canvas>
-                </div>
+                <div class="card-body"><canvas id="priceChart" height="100"></canvas></div>
             </div>
 
             <!-- Technical Analysis -->

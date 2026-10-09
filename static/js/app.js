@@ -3,13 +3,19 @@
 
 let selectedSymbol = 'RELIANCE.NS';
 let stocksData = [];
+let indicesData = {};
+let allData = [];
 let priceChart = null;
 let currentChartType = 'line';
+let currentTab = 'stocks';
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     loadStocks();
+    loadIndices();
+    loadAllSymbols();
     setupSearch();
+    loadCacheStatus();
 });
 
 // Load stocks list
@@ -19,6 +25,134 @@ async function loadStocks() {
         stocksData = await res.json();
     } catch (e) {
         console.error('Failed to load stocks:', e);
+    }
+}
+
+// Load indices
+async function loadIndices() {
+    try {
+        const res = await fetch('/api/indices');
+        indicesData = await res.json();
+        renderTicker();
+        renderIndexCategories();
+    } catch (e) {
+        console.error('Failed to load indices:', e);
+    }
+}
+
+// Load all symbols (stocks + indices)
+async function loadAllSymbols() {
+    try {
+        const res = await fetch('/api/all');
+        allData = await res.json();
+    } catch (e) {
+        console.error('Failed to load all symbols:', e);
+    }
+}
+
+// Load cache status
+async function loadCacheStatus() {
+    try {
+        const res = await fetch('/api/cache/status');
+        const data = await res.json();
+        const el = document.getElementById('cacheInfo');
+        el.textContent = `🔄 ${data.total_cached} cached | Auto: ${data.refresh_hours}h`;
+    } catch (e) {}
+}
+
+// Render ticker bar
+function renderTicker() {
+    const container = document.getElementById('tickerContent');
+    if (!indicesData.categories) return;
+
+    // Key indices for ticker
+    const keySymbols = [
+        '^NSEI', '^BSESN', '^CNXIT', '^NSEBANK', 'NIFTY_PHARMA.NS',
+        'NIFTY_AUTO.NS', 'NIFTY_FMCG.NS', 'NIFTY_METAL.NS',
+        'NIFTY_ENERGY.NS', 'NIFTY_REALTY.NS', 'NIFTY_DEFENCE.NS',
+        '^INDIAVIX', 'NIFTY_FIN_SERVICE.NS', 'NIFTY_HEALTHCARE.NS',
+        'NIFTY_INFRA.NS', 'NIFTY_PSU_BANK.NS', 'NIFTY_PVT_BANK.NS'
+    ];
+
+    const allIndices = [];
+    Object.values(indicesData.categories).forEach(cat => {
+        cat.forEach(idx => allIndices.push(idx));
+    });
+
+    const keyItems = keySymbols
+        .map(sym => allIndices.find(i => i.symbol === sym))
+        .filter(Boolean);
+
+    // Duplicate for seamless scroll
+    const items = [...keyItems, ...keyItems];
+
+    container.innerHTML = items.map(idx => {
+        const changeClass = (idx.change_pct || 0) >= 0 ? 'up' : 'down';
+        const changeSign = (idx.change_pct || 0) >= 0 ? '+' : '';
+        const priceStr = idx.price ? `₹${idx.price.toLocaleString('en-IN')}` : '—';
+        return `
+            <div class="ticker-item" onclick="selectStock('${idx.symbol}', '${idx.name}', '${idx.sector}'); analyzeStock();">
+                <span class="ticker-name">${idx.name}</span>
+                <span class="ticker-price">${priceStr}</span>
+                <span class="ticker-change ${changeClass}">${changeSign}${(idx.change_pct || 0).toFixed(2)}%</span>
+            </div>
+        `;
+    }).join('');
+}
+
+// Render index category chips
+function renderIndexCategories() {
+    if (!indicesData.categories) return;
+
+    const containerMap = {
+        'Broad Market': 'catBroadMarket',
+        'Sectoral': 'catSectoral',
+        'Thematic': 'catThematic',
+        'Strategy': 'catStrategy',
+        'Volatility': 'catVolatility',
+    };
+
+    Object.entries(containerMap).forEach(([catName, elId]) => {
+        const el = document.getElementById(elId);
+        if (!el) return;
+        const items = indicesData.categories[catName] || [];
+        el.innerHTML = items.map(idx => {
+            const changeClass = (idx.change_pct || 0) >= 0 ? 'up' : 'down';
+            const changeSign = (idx.change_pct || 0) >= 0 ? '+' : '';
+            return `
+                <div class="index-chip" onclick="selectStock('${idx.symbol}', '${idx.name}', '${idx.sector}'); analyzeStock();">
+                    <span>${idx.name}</span>
+                    <span class="chip-exchange">${idx.exchange}</span>
+                    ${idx.price ? `<span class="chip-price">₹${idx.price.toLocaleString('en-IN')}</span>` : ''}
+                    <span class="chip-change ${changeClass}">${changeSign}${(idx.change_pct || 0).toFixed(2)}%</span>
+                </div>
+            `;
+        }).join('');
+    });
+}
+
+// Switch tabs
+function switchTab(tab) {
+    currentTab = tab;
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    event.target.classList.add('active');
+
+    const idxCats = document.getElementById('indexCategories');
+    const label = document.getElementById('searchLabel');
+    const input = document.getElementById('stockSearch');
+
+    if (tab === 'indices') {
+        idxCats.classList.remove('hidden');
+        label.textContent = 'Search Indices';
+        input.placeholder = '🔍 Search Nifty, Sensex, sector indices...';
+    } else if (tab === 'all') {
+        idxCats.classList.add('hidden');
+        label.textContent = 'Search Stocks & Indices';
+        input.placeholder = '🔍 Search everything...';
+    } else {
+        idxCats.classList.add('hidden');
+        label.textContent = 'Search Stocks';
+        input.placeholder = '🔍 Search Nifty 50, stocks...';
     }
 }
 
@@ -34,39 +168,60 @@ function setupSearch() {
             return;
         }
 
-        const filtered = stocksData.filter(s =>
-            s.symbol.toLowerCase().includes(q) ||
-            s.name.toLowerCase().includes(q) ||
-            s.sector.toLowerCase().includes(q)
-        ).slice(0, 15);
+        let source;
+        if (currentTab === 'indices') {
+            source = Object.entries(indicesData.categories || {}).flatMap(([cat, items]) =>
+                items.map(i => ({ ...i, category: cat }))
+            );
+        } else if (currentTab === 'all') {
+            source = allData;
+        } else {
+            source = stocksData;
+        }
+
+        const filtered = source.filter(s =>
+            (s.symbol || '').toLowerCase().includes(q) ||
+            (s.name || '').toLowerCase().includes(q) ||
+            (s.sector || '').toLowerCase().includes(q) ||
+            (s.category || '').toLowerCase().includes(q) ||
+            (s.exchange || '').toLowerCase().includes(q)
+        ).slice(0, 20);
 
         if (filtered.length === 0) {
             dropdown.classList.remove('show');
             return;
         }
 
-        dropdown.innerHTML = filtered.map(s => `
-            <div class="stock-dropdown-item" onclick="selectStock('${s.symbol}', '${s.name}', '${s.sector}')">
-                <div>
-                    <span class="sym">${s.symbol.replace('.NS', '')}</span>
-                    <span class="name"> — ${s.name}</span>
+        dropdown.innerHTML = filtered.map(s => {
+            const typeBadge = s.type === 'index'
+                ? `<span class="sector-badge" style="background:rgba(245,158,11,0.15);color:var(--accent-yellow);">INDEX</span>`
+                : `<span class="sector-badge">${s.sector || s.category || ''}</span>`;
+            const exchangeBadge = s.exchange
+                ? `<span style="font-size:10px; color:var(--text-muted); margin-right:6px;">${s.exchange}</span>` : '';
+            const priceStr = s.price ? `<span style="font-size:12px; color:var(--text-secondary); margin-right:8px;">₹${s.price.toLocaleString('en-IN')}</span>` : '';
+            return `
+                <div class="stock-dropdown-item" onclick="selectStock('${s.symbol}', '${s.name}', '${s.sector || s.category || ''}')">
+                    <div>
+                        ${exchangeBadge}
+                        <span class="sym">${s.symbol.replace('.NS','').replace('.BO','').replace('^','')}</span>
+                        <span class="name"> — ${s.name}</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        ${priceStr}
+                        ${typeBadge}
+                    </div>
                 </div>
-                <span class="sector-badge">${s.sector}</span>
-            </div>
-        `).join('');
+            `;
+        }).join('');
         dropdown.classList.add('show');
     });
 
     input.addEventListener('focus', () => {
-        if (input.value.length > 0) {
-            input.dispatchEvent(new Event('input'));
-        }
+        if (input.value.length > 0) input.dispatchEvent(new Event('input'));
     });
 
     document.addEventListener('click', (e) => {
-        if (!e.target.closest('.search-wrapper')) {
-            dropdown.classList.remove('show');
-        }
+        if (!e.target.closest('.search-wrapper')) dropdown.classList.remove('show');
     });
 }
 
