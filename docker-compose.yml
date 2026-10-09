@@ -1,0 +1,18 @@
+# ============================================================
+#  FutureCandle — Docker Compose
+#  Usage:  docker compose up -d
+# ============================================================
+services:
+  futurecandle:
+    build: .
+    container_name: futurecandle
+    ports:
+      - "${PORT:-5000}:5000"
+    environment:
+      - PORT=5000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/stocks"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

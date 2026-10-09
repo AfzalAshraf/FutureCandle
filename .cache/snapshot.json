@@ -1,0 +1,4904 @@
+{
+  "meta": {
+    "HDFCBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:29.905453",
+      "updated": "2026-10-09T06:56:29.910828",
+      "last_price": 16427.85,
+      "prev_close": 16548.94,
+      "change_pct": -0.73
+    },
+    "ICICIBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:29.933700",
+      "updated": "2026-10-09T06:56:29.939292",
+      "last_price": 17310.33,
+      "prev_close": 17267.37,
+      "change_pct": 0.25
+    },
+    "KOTAKBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:29.963931",
+      "updated": "2026-10-09T06:56:29.969445",
+      "last_price": 13320.0,
+      "prev_close": 13228.15,
+      "change_pct": 0.69
+    },
+    "AXISBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:29.993757",
+      "updated": "2026-10-09T06:56:29.999344",
+      "last_price": 10242.02,
+      "prev_close": 10128.01,
+      "change_pct": 1.13
+    },
+    "INDUSINDBK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.024415",
+      "updated": "2026-10-09T06:56:30.029269",
+      "last_price": 21382.29,
+      "prev_close": 21241.47,
+      "change_pct": 0.66
+    },
+    "FEDERALBNK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.051506",
+      "updated": "2026-10-09T06:56:30.056409",
+      "last_price": 15348.71,
+      "prev_close": 15228.43,
+      "change_pct": 0.79
+    },
+    "BANDHANBNK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.077928",
+      "updated": "2026-10-09T06:56:30.083012",
+      "last_price": 12142.71,
+      "prev_close": 12346.62,
+      "change_pct": -1.65
+    },
+    "IDFCFIRSTB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.107660",
+      "updated": "2026-10-09T06:56:30.113443",
+      "last_price": 14414.28,
+      "prev_close": 14419.21,
+      "change_pct": -0.03
+    },
+    "RBLBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.139444",
+      "updated": "2026-10-09T06:56:30.144900",
+      "last_price": 13988.37,
+      "prev_close": 14155.41,
+      "change_pct": -1.18
+    },
+    "CSBBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.168768",
+      "updated": "2026-10-09T06:56:30.174222",
+      "last_price": 18087.21,
+      "prev_close": 17380.11,
+      "change_pct": 4.07
+    },
+    "DCBBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.197881",
+      "updated": "2026-10-09T06:56:30.203442",
+      "last_price": 22351.39,
+      "prev_close": 22261.63,
+      "change_pct": 0.4
+    },
+    "KARURVYSYA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.227543",
+      "updated": "2026-10-09T06:56:30.232913",
+      "last_price": 6156.47,
+      "prev_close": 6160.9,
+      "change_pct": -0.07
+    },
+    "SOUTHBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.256162",
+      "updated": "2026-10-09T06:56:30.261524",
+      "last_price": 12440.61,
+      "prev_close": 12603.72,
+      "change_pct": -1.29
+    },
+    "CITYUNION.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.285422",
+      "updated": "2026-10-09T06:56:30.290878",
+      "last_price": 10075.59,
+      "prev_close": 9882.26,
+      "change_pct": 1.96
+    },
+    "DHANBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.314546",
+      "updated": "2026-10-09T06:56:30.319921",
+      "last_price": 35065.89,
+      "prev_close": 34879.74,
+      "change_pct": 0.53
+    },
+    "JKBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.345897",
+      "updated": "2026-10-09T06:56:30.351420",
+      "last_price": 13781.48,
+      "prev_close": 13779.28,
+      "change_pct": 0.02
+    },
+    "KARNATAKA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.375856",
+      "updated": "2026-10-09T06:56:30.381445",
+      "last_price": 11538.14,
+      "prev_close": 11404.21,
+      "change_pct": 1.17
+    },
+    "TMBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.439661",
+      "updated": "2026-10-09T06:56:30.444994",
+      "last_price": 14280.52,
+      "prev_close": 14426.74,
+      "change_pct": -1.01
+    },
+    "SBIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.469647",
+      "updated": "2026-10-09T06:56:30.475161",
+      "last_price": 14578.35,
+      "prev_close": 14721.65,
+      "change_pct": -0.97
+    },
+    "BANKBARODA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.499369",
+      "updated": "2026-10-09T06:56:30.504774",
+      "last_price": 11048.35,
+      "prev_close": 11078.52,
+      "change_pct": -0.27
+    },
+    "PNB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.529162",
+      "updated": "2026-10-09T06:56:30.534599",
+      "last_price": 20983.76,
+      "prev_close": 20969.5,
+      "change_pct": 0.07
+    },
+    "CANBK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.558735",
+      "updated": "2026-10-09T06:56:30.564206",
+      "last_price": 10765.37,
+      "prev_close": 10498.29,
+      "change_pct": 2.54
+    },
+    "UNIONBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.588822",
+      "updated": "2026-10-09T06:56:30.594452",
+      "last_price": 19754.69,
+      "prev_close": 19319.3,
+      "change_pct": 2.25
+    },
+    "BANKINDIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.619119",
+      "updated": "2026-10-09T06:56:30.624578",
+      "last_price": 14063.72,
+      "prev_close": 14166.88,
+      "change_pct": -0.73
+    },
+    "CENTRALBK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.649969",
+      "updated": "2026-10-09T06:56:30.655606",
+      "last_price": 13320.0,
+      "prev_close": 13228.15,
+      "change_pct": 0.69
+    },
+    "INDIANB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.681329",
+      "updated": "2026-10-09T06:56:30.686901",
+      "last_price": 15331.67,
+      "prev_close": 15147.39,
+      "change_pct": 1.22
+    },
+    "UCOBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.712001",
+      "updated": "2026-10-09T06:56:30.717469",
+      "last_price": 25631.36,
+      "prev_close": 26561.7,
+      "change_pct": -3.5
+    },
+    "IOB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.742289",
+      "updated": "2026-10-09T06:56:30.747956",
+      "last_price": 16171.62,
+      "prev_close": 16349.81,
+      "change_pct": -1.09
+    },
+    "MAHABANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.773923",
+      "updated": "2026-10-09T06:56:30.779582",
+      "last_price": 16608.44,
+      "prev_close": 16384.69,
+      "change_pct": 1.37
+    },
+    "PSBANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.805408",
+      "updated": "2026-10-09T06:56:30.811151",
+      "last_price": 18552.39,
+      "prev_close": 18781.75,
+      "change_pct": -1.22
+    },
+    "UJJIVANSFB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.837718",
+      "updated": "2026-10-09T06:56:30.842548",
+      "last_price": 24254.56,
+      "prev_close": 24535.71,
+      "change_pct": -1.15
+    },
+    "EQUITASBNK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.867395",
+      "updated": "2026-10-09T06:56:30.872530",
+      "last_price": 22755.39,
+      "prev_close": 22772.69,
+      "change_pct": -0.08
+    },
+    "SURANASOL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.900436",
+      "updated": "2026-10-09T06:56:30.908675",
+      "last_price": 19537.45,
+      "prev_close": 19314.96,
+      "change_pct": 1.15
+    },
+    "AUROPHARMA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.945262",
+      "updated": "2026-10-09T06:56:30.950419",
+      "last_price": 11089.01,
+      "prev_close": 10966.33,
+      "change_pct": 1.12
+    },
+    "BAJFINANCE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:30.974034",
+      "updated": "2026-10-09T06:56:30.978914",
+      "last_price": 14121.85,
+      "prev_close": 13851.14,
+      "change_pct": 1.95
+    },
+    "BAJAJFINSV.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.002322",
+      "updated": "2026-10-09T06:56:31.007309",
+      "last_price": 12821.84,
+      "prev_close": 12662.57,
+      "change_pct": 1.26
+    },
+    "MUTHOOTFIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.030983",
+      "updated": "2026-10-09T06:56:31.035829",
+      "last_price": 20413.13,
+      "prev_close": 20281.88,
+      "change_pct": 0.65
+    },
+    "MANAPPURAM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.059387",
+      "updated": "2026-10-09T06:56:31.064315",
+      "last_price": 24254.56,
+      "prev_close": 24535.71,
+      "change_pct": -1.15
+    },
+    "SHRIRAMFIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.088440",
+      "updated": "2026-10-09T06:56:31.093341",
+      "last_price": 20243.65,
+      "prev_close": 20681.57,
+      "change_pct": -2.12
+    },
+    "CHOLAFIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.117403",
+      "updated": "2026-10-09T06:56:31.122318",
+      "last_price": 23190.37,
+      "prev_close": 23243.46,
+      "change_pct": -0.23
+    },
+    "LICI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.148153",
+      "updated": "2026-10-09T06:56:31.153028",
+      "last_price": 16184.64,
+      "prev_close": 15899.23,
+      "change_pct": 1.8
+    },
+    "SBICARD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.179177",
+      "updated": "2026-10-09T06:56:31.184203",
+      "last_price": 17505.67,
+      "prev_close": 17415.46,
+      "change_pct": 0.52
+    },
+    "SBINPS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.207832",
+      "updated": "2026-10-09T06:56:31.212765",
+      "last_price": 20496.08,
+      "prev_close": 21100.67,
+      "change_pct": -2.87
+    },
+    "POONAWALLA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.236132",
+      "updated": "2026-10-09T06:56:31.240936",
+      "last_price": 28906.75,
+      "prev_close": 29569.01,
+      "change_pct": -2.24
+    },
+    "MASFIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.263482",
+      "updated": "2026-10-09T06:56:31.268333",
+      "last_price": 11066.25,
+      "prev_close": 11088.62,
+      "change_pct": -0.2
+    },
+    "APTUS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.291198",
+      "updated": "2026-10-09T06:56:31.296093",
+      "last_price": 23631.05,
+      "prev_close": 23220.55,
+      "change_pct": 1.77
+    },
+    "AAVAS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.319154",
+      "updated": "2026-10-09T06:56:31.323976",
+      "last_price": 15698.43,
+      "prev_close": 15357.51,
+      "change_pct": 2.22
+    },
+    "CANFINHOME.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.347387",
+      "updated": "2026-10-09T06:56:31.352295",
+      "last_price": 12924.22,
+      "prev_close": 12926.64,
+      "change_pct": -0.02
+    },
+    "GRUH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.376328",
+      "updated": "2026-10-09T06:56:31.381264",
+      "last_price": 17280.12,
+      "prev_close": 17194.59,
+      "change_pct": 0.5
+    },
+    "HOMEFIRST.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.405528",
+      "updated": "2026-10-09T06:56:31.410554",
+      "last_price": 12182.59,
+      "prev_close": 12124.12,
+      "change_pct": 0.48
+    },
+    "PIRAMAL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.434958",
+      "updated": "2026-10-09T06:56:31.439949",
+      "last_price": 15771.49,
+      "prev_close": 15992.02,
+      "change_pct": -1.38
+    },
+    "IIFL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.464499",
+      "updated": "2026-10-09T06:56:31.469448",
+      "last_price": 15454.67,
+      "prev_close": 15766.07,
+      "change_pct": -1.98
+    },
+    "L&TFH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.492539",
+      "updated": "2026-10-09T06:56:31.497362",
+      "last_price": 14843.86,
+      "prev_close": 15026.59,
+      "change_pct": -1.22
+    },
+    "RECLTD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.519350",
+      "updated": "2026-10-09T06:56:31.524177",
+      "last_price": 11066.25,
+      "prev_close": 11088.62,
+      "change_pct": -0.2
+    },
+    "PFC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.546201",
+      "updated": "2026-10-09T06:56:31.551028",
+      "last_price": 14705.53,
+      "prev_close": 14213.21,
+      "change_pct": 3.46
+    },
+    "IRFC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.573434",
+      "updated": "2026-10-09T06:56:31.578240",
+      "last_price": 15454.67,
+      "prev_close": 15766.07,
+      "change_pct": -1.98
+    },
+    "HUDCO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.600099",
+      "updated": "2026-10-09T06:56:31.604863",
+      "last_price": 23041.92,
+      "prev_close": 22583.44,
+      "change_pct": 2.03
+    },
+    "CDSL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.626771",
+      "updated": "2026-10-09T06:56:31.631558",
+      "last_price": 18323.42,
+      "prev_close": 18579.94,
+      "change_pct": -1.38
+    },
+    "BSE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.653011",
+      "updated": "2026-10-09T06:56:31.657850",
+      "last_price": 16171.62,
+      "prev_close": 16349.81,
+      "change_pct": -1.09
+    },
+    "CAMS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.679996",
+      "updated": "2026-10-09T06:56:31.684752",
+      "last_price": 15454.67,
+      "prev_close": 15766.07,
+      "change_pct": -1.98
+    },
+    "KFINTECH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.707313",
+      "updated": "2026-10-09T06:56:31.712357",
+      "last_price": 18843.89,
+      "prev_close": 19152.98,
+      "change_pct": -1.61
+    },
+    "ANGELONE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.734479",
+      "updated": "2026-10-09T06:56:31.739278",
+      "last_price": 13904.72,
+      "prev_close": 13669.61,
+      "change_pct": 1.72
+    },
+    "MOTILALOFS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.760943",
+      "updated": "2026-10-09T06:56:31.765673",
+      "last_price": 18006.52,
+      "prev_close": 18230.36,
+      "change_pct": -1.23
+    },
+    "JMFINANCIL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.787482",
+      "updated": "2026-10-09T06:56:31.792282",
+      "last_price": 13866.41,
+      "prev_close": 13862.09,
+      "change_pct": 0.03
+    },
+    "MAHSCOOTER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.813688",
+      "updated": "2026-10-09T06:56:31.818562",
+      "last_price": 11789.03,
+      "prev_close": 11838.05,
+      "change_pct": -0.41
+    },
+    "INDIACEM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.840607",
+      "updated": "2026-10-09T06:56:31.845307",
+      "last_price": 16270.82,
+      "prev_close": 16241.78,
+      "change_pct": 0.18
+    },
+    "PERSISTENT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.866913",
+      "updated": "2026-10-09T06:56:31.871643",
+      "last_price": 19276.66,
+      "prev_close": 19362.33,
+      "change_pct": -0.44
+    },
+    "HDFCLIFE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.893445",
+      "updated": "2026-10-09T06:56:31.898278",
+      "last_price": 23959.47,
+      "prev_close": 23780.61,
+      "change_pct": 0.75
+    },
+    "SBILIFE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.921978",
+      "updated": "2026-10-09T06:56:31.926891",
+      "last_price": 14179.41,
+      "prev_close": 14441.05,
+      "change_pct": -1.81
+    },
+    "ICICIPRULI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.948928",
+      "updated": "2026-10-09T06:56:31.953940",
+      "last_price": 17513.66,
+      "prev_close": 17763.88,
+      "change_pct": -1.41
+    },
+    "ICICIGI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:31.976209",
+      "updated": "2026-10-09T06:56:31.980983",
+      "last_price": 22224.23,
+      "prev_close": 21658.26,
+      "change_pct": 2.61
+    },
+    "BAJAJHLDNG.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.008019",
+      "updated": "2026-10-09T06:56:32.013375",
+      "last_price": 11048.35,
+      "prev_close": 11078.52,
+      "change_pct": -0.27
+    },
+    "STARHEALTH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.035732",
+      "updated": "2026-10-09T06:56:32.040604",
+      "last_price": 11089.01,
+      "prev_close": 10966.33,
+      "change_pct": 1.12
+    },
+    "NEWINDIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.062962",
+      "updated": "2026-10-09T06:56:32.067703",
+      "last_price": 14161.77,
+      "prev_close": 14040.52,
+      "change_pct": 0.86
+    },
+    "NIACL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.089524",
+      "updated": "2026-10-09T06:56:32.094571",
+      "last_price": 13808.75,
+      "prev_close": 13637.66,
+      "change_pct": 1.25
+    },
+    "ORIENTAL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.116184",
+      "updated": "2026-10-09T06:56:32.120790",
+      "last_price": 22398.58,
+      "prev_close": 22368.75,
+      "change_pct": 0.13
+    },
+    "UNITED.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.142129",
+      "updated": "2026-10-09T06:56:32.146842",
+      "last_price": 11735.9,
+      "prev_close": 11776.63,
+      "change_pct": -0.35
+    },
+    "TCS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.169760",
+      "updated": "2026-10-09T06:56:32.175235",
+      "last_price": 16760.03,
+      "prev_close": 16974.2,
+      "change_pct": -1.26
+    },
+    "INFY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.197159",
+      "updated": "2026-10-09T06:56:32.201918",
+      "last_price": 17280.12,
+      "prev_close": 17194.59,
+      "change_pct": 0.5
+    },
+    "WIPRO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.223961",
+      "updated": "2026-10-09T06:56:32.228663",
+      "last_price": 19368.34,
+      "prev_close": 19411.07,
+      "change_pct": -0.22
+    },
+    "HCLTECH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.250964",
+      "updated": "2026-10-09T06:56:32.256251",
+      "last_price": 12594.82,
+      "prev_close": 12594.36,
+      "change_pct": 0.0
+    },
+    "TECHM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.278383",
+      "updated": "2026-10-09T06:56:32.283175",
+      "last_price": 16397.41,
+      "prev_close": 16698.78,
+      "change_pct": -1.8
+    },
+    "LTIM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.304719",
+      "updated": "2026-10-09T06:56:32.309490",
+      "last_price": 17280.12,
+      "prev_close": 17194.59,
+      "change_pct": 0.5
+    },
+    "Mphasis.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.332109",
+      "updated": "2026-10-09T06:56:32.337413",
+      "last_price": 8902.69,
+      "prev_close": 8777.25,
+      "change_pct": 1.43
+    },
+    "MPHASIS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.361344",
+      "updated": "2026-10-09T06:56:32.366267",
+      "last_price": 21766.09,
+      "prev_close": 21717.27,
+      "change_pct": 0.22
+    },
+    "COFORGE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.389205",
+      "updated": "2026-10-09T06:56:32.394480",
+      "last_price": 12349.74,
+      "prev_close": 12617.63,
+      "change_pct": -2.12
+    },
+    "LTTS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.416819",
+      "updated": "2026-10-09T06:56:32.421625",
+      "last_price": 22390.5,
+      "prev_close": 22494.56,
+      "change_pct": -0.46
+    },
+    "KPITTECH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.444154",
+      "updated": "2026-10-09T06:56:32.448892",
+      "last_price": 18413.18,
+      "prev_close": 18286.4,
+      "change_pct": 0.69
+    },
+    "TATAELXSI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.470603",
+      "updated": "2026-10-09T06:56:32.475828",
+      "last_price": 12440.61,
+      "prev_close": 12603.72,
+      "change_pct": -1.29
+    },
+    "SONATSOFTW.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.497926",
+      "updated": "2026-10-09T06:56:32.502694",
+      "last_price": 9441.76,
+      "prev_close": 9365.06,
+      "change_pct": 0.82
+    },
+    "HEXAWARE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.524269",
+      "updated": "2026-10-09T06:56:32.528971",
+      "last_price": 29905.94,
+      "prev_close": 30103.8,
+      "change_pct": -0.66
+    },
+    "ZENSAR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.550823",
+      "updated": "2026-10-09T06:56:32.556201",
+      "last_price": 22165.23,
+      "prev_close": 22040.65,
+      "change_pct": 0.57
+    },
+    "BSOFT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.577917",
+      "updated": "2026-10-09T06:56:32.582624",
+      "last_price": 28276.04,
+      "prev_close": 28573.13,
+      "change_pct": -1.04
+    },
+    "MASTEK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.604683",
+      "updated": "2026-10-09T06:56:32.609345",
+      "last_price": 13625.68,
+      "prev_close": 13384.3,
+      "change_pct": 1.8
+    },
+    "NEWGEN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.631564",
+      "updated": "2026-10-09T06:56:32.636277",
+      "last_price": 15252.41,
+      "prev_close": 15481.13,
+      "change_pct": -1.48
+    },
+    "NIITTECH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.657668",
+      "updated": "2026-10-09T06:56:32.662333",
+      "last_price": 20331.47,
+      "prev_close": 20310.69,
+      "change_pct": 0.1
+    },
+    "HAPPSTMNDS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.683478",
+      "updated": "2026-10-09T06:56:32.688143",
+      "last_price": 6803.94,
+      "prev_close": 6897.47,
+      "change_pct": -1.36
+    },
+    "DATAPATTNS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.709543",
+      "updated": "2026-10-09T06:56:32.714244",
+      "last_price": 19596.93,
+      "prev_close": 19747.67,
+      "change_pct": -0.76
+    },
+    "ROUTE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.735230",
+      "updated": "2026-10-09T06:56:32.739851",
+      "last_price": 23678.0,
+      "prev_close": 23116.84,
+      "change_pct": 2.43
+    },
+    "TANLA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.761320",
+      "updated": "2026-10-09T06:56:32.765987",
+      "last_price": 28116.29,
+      "prev_close": 28560.26,
+      "change_pct": -1.55
+    },
+    "RATEGAIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.787341",
+      "updated": "2026-10-09T06:56:32.792016",
+      "last_price": 12568.43,
+      "prev_close": 12788.54,
+      "change_pct": -1.72
+    },
+    "MAPMYINDIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.813366",
+      "updated": "2026-10-09T06:56:32.818105",
+      "last_price": 14467.31,
+      "prev_close": 14513.77,
+      "change_pct": -0.32
+    },
+    "ZOMATO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.842249",
+      "updated": "2026-10-09T06:56:32.849241",
+      "last_price": 25716.82,
+      "prev_close": 25509.41,
+      "change_pct": 0.81
+    },
+    "PAYTM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.879457",
+      "updated": "2026-10-09T06:56:32.886325",
+      "last_price": 9768.23,
+      "prev_close": 9893.76,
+      "change_pct": -1.27
+    },
+    "NYKAA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.911940",
+      "updated": "2026-10-09T06:56:32.918119",
+      "last_price": 14249.71,
+      "prev_close": 14566.42,
+      "change_pct": -2.17
+    },
+    "DELHIVERY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.940812",
+      "updated": "2026-10-09T06:56:32.945535",
+      "last_price": 15696.62,
+      "prev_close": 15947.58,
+      "change_pct": -1.57
+    },
+    "POLICYBZR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.967499",
+      "updated": "2026-10-09T06:56:32.972487",
+      "last_price": 18488.92,
+      "prev_close": 18504.55,
+      "change_pct": -0.08
+    },
+    "CARTRADE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:32.994687",
+      "updated": "2026-10-09T06:56:32.999863",
+      "last_price": 15585.15,
+      "prev_close": 15842.08,
+      "change_pct": -1.62
+    },
+    "IXIGO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.024527",
+      "updated": "2026-10-09T06:56:33.029469",
+      "last_price": 14054.08,
+      "prev_close": 13898.41,
+      "change_pct": 1.12
+    },
+    "SUNPHARMA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.053429",
+      "updated": "2026-10-09T06:56:33.058250",
+      "last_price": 12440.61,
+      "prev_close": 12603.72,
+      "change_pct": -1.29
+    },
+    "DRREDDY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.080931",
+      "updated": "2026-10-09T06:56:33.085777",
+      "last_price": 23120.46,
+      "prev_close": 23338.68,
+      "change_pct": -0.94
+    },
+    "CIPLA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.109933",
+      "updated": "2026-10-09T06:56:33.114857",
+      "last_price": 11761.42,
+      "prev_close": 11648.47,
+      "change_pct": 0.97
+    },
+    "DIVISLAB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.137696",
+      "updated": "2026-10-09T06:56:33.142489",
+      "last_price": 12972.93,
+      "prev_close": 13125.85,
+      "change_pct": -1.17
+    },
+    "LUPIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.167257",
+      "updated": "2026-10-09T06:56:33.172150",
+      "last_price": 7762.93,
+      "prev_close": 7505.45,
+      "change_pct": 3.43
+    },
+    "TORNTPHARM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.195188",
+      "updated": "2026-10-09T06:56:33.199985",
+      "last_price": 10788.66,
+      "prev_close": 10604.82,
+      "change_pct": 1.73
+    },
+    "ALKEM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.222790",
+      "updated": "2026-10-09T06:56:33.227602",
+      "last_price": 16818.8,
+      "prev_close": 16665.98,
+      "change_pct": 0.92
+    },
+    "BIOCON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.253399",
+      "updated": "2026-10-09T06:56:33.258163",
+      "last_price": 19008.5,
+      "prev_close": 18877.76,
+      "change_pct": 0.69
+    },
+    "MANKIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.280895",
+      "updated": "2026-10-09T06:56:33.285768",
+      "last_price": 22472.91,
+      "prev_close": 22562.33,
+      "change_pct": -0.4
+    },
+    "IPCALAB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.307644",
+      "updated": "2026-10-09T06:56:33.312398",
+      "last_price": 20712.31,
+      "prev_close": 20968.99,
+      "change_pct": -1.22
+    },
+    "NATCOPHARM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.334524",
+      "updated": "2026-10-09T06:56:33.339230",
+      "last_price": 17513.66,
+      "prev_close": 17763.88,
+      "change_pct": -1.41
+    },
+    "GRANULES.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.361039",
+      "updated": "2026-10-09T06:56:33.365784",
+      "last_price": 6728.76,
+      "prev_close": 6665.9,
+      "change_pct": 0.94
+    },
+    "LAURUS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.387905",
+      "updated": "2026-10-09T06:56:33.392689",
+      "last_price": 12451.55,
+      "prev_close": 12139.13,
+      "change_pct": 2.57
+    },
+    "SOLARA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.414485",
+      "updated": "2026-10-09T06:56:33.419230",
+      "last_price": 9651.53,
+      "prev_close": 9794.84,
+      "change_pct": -1.46
+    },
+    "AJANTPHARM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.441315",
+      "updated": "2026-10-09T06:56:33.446033",
+      "last_price": 21955.92,
+      "prev_close": 21976.52,
+      "change_pct": -0.09
+    },
+    "GLENMARK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.468361",
+      "updated": "2026-10-09T06:56:33.473435",
+      "last_price": 10242.02,
+      "prev_close": 10128.01,
+      "change_pct": 1.13
+    },
+    "PFIZER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.496006",
+      "updated": "2026-10-09T06:56:33.500760",
+      "last_price": 11885.43,
+      "prev_close": 11643.06,
+      "change_pct": 2.08
+    },
+    "ABBOTINDIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.523004",
+      "updated": "2026-10-09T06:56:33.527706",
+      "last_price": 13323.43,
+      "prev_close": 13165.57,
+      "change_pct": 1.2
+    },
+    "GSK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.550104",
+      "updated": "2026-10-09T06:56:33.554901",
+      "last_price": 13872.81,
+      "prev_close": 14165.52,
+      "change_pct": -2.07
+    },
+    "SANOFI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.577029",
+      "updated": "2026-10-09T06:56:33.581817",
+      "last_price": 10454.79,
+      "prev_close": 10544.21,
+      "change_pct": -0.85
+    },
+    "ZYDUSLIFE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.604770",
+      "updated": "2026-10-09T06:56:33.609592",
+      "last_price": 52756.24,
+      "prev_close": 53057.64,
+      "change_pct": -0.57
+    },
+    "JBCHEPHARM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.632478",
+      "updated": "2026-10-09T06:56:33.640996",
+      "last_price": 14057.09,
+      "prev_close": 14328.86,
+      "change_pct": -1.9
+    },
+    "STRIDES.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.677763",
+      "updated": "2026-10-09T06:56:33.686486",
+      "last_price": 11319.69,
+      "prev_close": 11059.05,
+      "change_pct": 2.36
+    },
+    "SHOPERSTOP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.717649",
+      "updated": "2026-10-09T06:56:33.722483",
+      "last_price": 14198.09,
+      "prev_close": 13962.42,
+      "change_pct": 1.69
+    },
+    "METROPOLIS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.745481",
+      "updated": "2026-10-09T06:56:33.750298",
+      "last_price": 23538.08,
+      "prev_close": 24328.78,
+      "change_pct": -3.25
+    },
+    "LALPATHLAB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.789402",
+      "updated": "2026-10-09T06:56:33.795371",
+      "last_price": 8902.69,
+      "prev_close": 8777.25,
+      "change_pct": 1.43
+    },
+    "THYROCARE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.820420",
+      "updated": "2026-10-09T06:56:33.825226",
+      "last_price": 12182.59,
+      "prev_close": 12124.12,
+      "change_pct": 0.48
+    },
+    "MAXHEALTH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.848969",
+      "updated": "2026-10-09T06:56:33.853740",
+      "last_price": 24258.39,
+      "prev_close": 24207.43,
+      "change_pct": 0.21
+    },
+    "APOLLOHOSP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.909123",
+      "updated": "2026-10-09T06:56:33.929333",
+      "last_price": 10750.53,
+      "prev_close": 10802.44,
+      "change_pct": -0.48
+    },
+    "FORTIS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:33.968013",
+      "updated": "2026-10-09T06:56:33.972888",
+      "last_price": 30040.5,
+      "prev_close": 30628.11,
+      "change_pct": -1.92
+    },
+    "NARAYANHRUD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.000152",
+      "updated": "2026-10-09T06:56:34.004845",
+      "last_price": 28452.43,
+      "prev_close": 27952.86,
+      "change_pct": 1.79
+    },
+    "MEDANTA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.030199",
+      "updated": "2026-10-09T06:56:34.035029",
+      "last_price": 12528.41,
+      "prev_close": 12693.63,
+      "change_pct": -1.3
+    },
+    "RAINBOW.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.060835",
+      "updated": "2026-10-09T06:56:34.065630",
+      "last_price": 19437.55,
+      "prev_close": 19889.46,
+      "change_pct": -2.27
+    },
+    "YATHARTH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.091584",
+      "updated": "2026-10-09T06:56:34.096428",
+      "last_price": 20174.81,
+      "prev_close": 20086.41,
+      "change_pct": 0.44
+    },
+    "KRISHNADEF.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.122311",
+      "updated": "2026-10-09T06:56:34.127133",
+      "last_price": 22031.01,
+      "prev_close": 22807.88,
+      "change_pct": -3.41
+    },
+    "MARUTI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.151270",
+      "updated": "2026-10-09T06:56:34.156180",
+      "last_price": 18565.93,
+      "prev_close": 18073.83,
+      "change_pct": 2.72
+    },
+    "TATAMOTORS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.180457",
+      "updated": "2026-10-09T06:56:34.185347",
+      "last_price": 23538.08,
+      "prev_close": 24328.78,
+      "change_pct": -3.25
+    },
+    "M&M.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.209984",
+      "updated": "2026-10-09T06:56:34.214798",
+      "last_price": 17943.04,
+      "prev_close": 17818.16,
+      "change_pct": 0.7
+    },
+    "BAJAJ-AUTO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.242101",
+      "updated": "2026-10-09T06:56:34.246856",
+      "last_price": 18488.92,
+      "prev_close": 18504.55,
+      "change_pct": -0.08
+    },
+    "HEROMOTOCO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.268701",
+      "updated": "2026-10-09T06:56:34.273590",
+      "last_price": 14919.67,
+      "prev_close": 14831.7,
+      "change_pct": 0.59
+    },
+    "EICHERMOT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.296288",
+      "updated": "2026-10-09T06:56:34.301388",
+      "last_price": 19087.09,
+      "prev_close": 18978.83,
+      "change_pct": 0.57
+    },
+    "TVSMOTOR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.324144",
+      "updated": "2026-10-09T06:56:34.328975",
+      "last_price": 11538.14,
+      "prev_close": 11404.21,
+      "change_pct": 1.17
+    },
+    "ASHOKLEY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.351239",
+      "updated": "2026-10-09T06:56:34.355972",
+      "last_price": 17043.68,
+      "prev_close": 16929.97,
+      "change_pct": 0.67
+    },
+    "FORCEMOT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.377620",
+      "updated": "2026-10-09T06:56:34.382357",
+      "last_price": 28796.73,
+      "prev_close": 29056.05,
+      "change_pct": -0.89
+    },
+    "TIINDIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.405245",
+      "updated": "2026-10-09T06:56:34.409975",
+      "last_price": 22472.91,
+      "prev_close": 22562.33,
+      "change_pct": -0.4
+    },
+    "HYUNDAI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.431715",
+      "updated": "2026-10-09T06:56:34.436478",
+      "last_price": 19437.55,
+      "prev_close": 19889.46,
+      "change_pct": -2.27
+    },
+    "BOSCHLTD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.459360",
+      "updated": "2026-10-09T06:56:34.464137",
+      "last_price": 17546.52,
+      "prev_close": 17831.46,
+      "change_pct": -1.6
+    },
+    "MOTHERSON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.486116",
+      "updated": "2026-10-09T06:56:34.490971",
+      "last_price": 52756.24,
+      "prev_close": 53057.64,
+      "change_pct": -0.57
+    },
+    "SONACOMS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.512970",
+      "updated": "2026-10-09T06:56:34.517644",
+      "last_price": 19350.51,
+      "prev_close": 18751.56,
+      "change_pct": 3.19
+    },
+    "SAMVARDHAN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.539706",
+      "updated": "2026-10-09T06:56:34.544401",
+      "last_price": 20565.8,
+      "prev_close": 20453.69,
+      "change_pct": 0.55
+    },
+    "BALKRISIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.566906",
+      "updated": "2026-10-09T06:56:34.571839",
+      "last_price": 20584.09,
+      "prev_close": 20417.2,
+      "change_pct": 0.82
+    },
+    "MRF.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.596770",
+      "updated": "2026-10-09T06:56:34.606021",
+      "last_price": 13872.81,
+      "prev_close": 14165.52,
+      "change_pct": -2.07
+    },
+    "APOLLOTYRE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.641930",
+      "updated": "2026-10-09T06:56:34.650706",
+      "last_price": 23890.87,
+      "prev_close": 24139.29,
+      "change_pct": -1.03
+    },
+    "CEAT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.687677",
+      "updated": "2026-10-09T06:56:34.696180",
+      "last_price": 12414.1,
+      "prev_close": 12450.43,
+      "change_pct": -0.29
+    },
+    "JK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.720283",
+      "updated": "2026-10-09T06:56:34.725095",
+      "last_price": 11543.36,
+      "prev_close": 11656.66,
+      "change_pct": -0.97
+    },
+    "GOODYEAR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.748099",
+      "updated": "2026-10-09T06:56:34.753332",
+      "last_price": 12654.39,
+      "prev_close": 12696.53,
+      "change_pct": -0.33
+    },
+    "SUNDARMFIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.777294",
+      "updated": "2026-10-09T06:56:34.782123",
+      "last_price": 22755.39,
+      "prev_close": 22772.69,
+      "change_pct": -0.08
+    },
+    "SUNDRMFAST.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.804116",
+      "updated": "2026-10-09T06:56:34.808860",
+      "last_price": 19432.5,
+      "prev_close": 19552.55,
+      "change_pct": -0.61
+    },
+    "BHARATFORG.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.830497",
+      "updated": "2026-10-09T06:56:34.835234",
+      "last_price": 14414.28,
+      "prev_close": 14419.21,
+      "change_pct": -0.03
+    },
+    "RAMKRISHNA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.856651",
+      "updated": "2026-10-09T06:56:34.861307",
+      "last_price": 11089.01,
+      "prev_close": 10966.33,
+      "change_pct": 1.12
+    },
+    "MINDACORP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.884821",
+      "updated": "2026-10-09T06:56:34.889686",
+      "last_price": 15220.83,
+      "prev_close": 15162.29,
+      "change_pct": 0.39
+    },
+    "MOTHERSUMI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.912394",
+      "updated": "2026-10-09T06:56:34.917358",
+      "last_price": 20413.13,
+      "prev_close": 20281.88,
+      "change_pct": 0.65
+    },
+    "LUMAX.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.941608",
+      "updated": "2026-10-09T06:56:34.946478",
+      "last_price": 18461.36,
+      "prev_close": 18509.81,
+      "change_pct": -0.26
+    },
+    "VARROC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.969575",
+      "updated": "2026-10-09T06:56:34.974625",
+      "last_price": 18333.77,
+      "prev_close": 18378.52,
+      "change_pct": -0.24
+    },
+    "FIEM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:34.998358",
+      "updated": "2026-10-09T06:56:35.003255",
+      "last_price": 16184.64,
+      "prev_close": 15899.23,
+      "change_pct": 1.8
+    },
+    "GABRIEL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.027987",
+      "updated": "2026-10-09T06:56:35.032961",
+      "last_price": 28235.88,
+      "prev_close": 28062.17,
+      "change_pct": 0.62
+    },
+    "SETCO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.056370",
+      "updated": "2026-10-09T06:56:35.061205",
+      "last_price": 28276.04,
+      "prev_close": 28573.13,
+      "change_pct": -1.04
+    },
+    "SCHAEFFLER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.083569",
+      "updated": "2026-10-09T06:56:35.090589",
+      "last_price": 25205.67,
+      "prev_close": 24835.93,
+      "change_pct": 1.49
+    },
+    "SKF.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.114283",
+      "updated": "2026-10-09T06:56:35.119280",
+      "last_price": 17168.22,
+      "prev_close": 16883.92,
+      "change_pct": 1.68
+    },
+    "TIMKEN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.142976",
+      "updated": "2026-10-09T06:56:35.147819",
+      "last_price": 13181.07,
+      "prev_close": 12988.13,
+      "change_pct": 1.49
+    },
+    "NRBBEARING.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.171156",
+      "updated": "2026-10-09T06:56:35.176606",
+      "last_price": 17818.48,
+      "prev_close": 17693.69,
+      "change_pct": 0.71
+    },
+    "PRECWIRE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.198842",
+      "updated": "2026-10-09T06:56:35.203690",
+      "last_price": 6728.76,
+      "prev_close": 6665.9,
+      "change_pct": 0.94
+    },
+    "AMARARAJA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.225941",
+      "updated": "2026-10-09T06:56:35.230798",
+      "last_price": 12771.53,
+      "prev_close": 12659.35,
+      "change_pct": 0.89
+    },
+    "EXIDEIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.252652",
+      "updated": "2026-10-09T06:56:35.257457",
+      "last_price": 13040.95,
+      "prev_close": 12855.34,
+      "change_pct": 1.44
+    },
+    "HBL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.279888",
+      "updated": "2026-10-09T06:56:35.284803",
+      "last_price": 18160.57,
+      "prev_close": 18080.36,
+      "change_pct": 0.44
+    },
+    "HINDUNILVR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.307542",
+      "updated": "2026-10-09T06:56:35.315226",
+      "last_price": 19729.61,
+      "prev_close": 20025.5,
+      "change_pct": -1.48
+    },
+    "ITC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.350497",
+      "updated": "2026-10-09T06:56:35.359000",
+      "last_price": 20983.76,
+      "prev_close": 20969.5,
+      "change_pct": 0.07
+    },
+    "NESTLEIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.387963",
+      "updated": "2026-10-09T06:56:35.394530",
+      "last_price": 22526.23,
+      "prev_close": 23055.05,
+      "change_pct": -2.29
+    },
+    "BRITANNIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.435946",
+      "updated": "2026-10-09T06:56:35.448033",
+      "last_price": 19151.16,
+      "prev_close": 18564.88,
+      "change_pct": 3.16
+    },
+    "TATACONSUM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.493511",
+      "updated": "2026-10-09T06:56:35.498701",
+      "last_price": 14919.67,
+      "prev_close": 14831.7,
+      "change_pct": 0.59
+    },
+    "DABUR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.526260",
+      "updated": "2026-10-09T06:56:35.531587",
+      "last_price": 32673.24,
+      "prev_close": 32520.13,
+      "change_pct": 0.47
+    },
+    "MARICO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.556757",
+      "updated": "2026-10-09T06:56:35.561636",
+      "last_price": 14575.54,
+      "prev_close": 14483.58,
+      "change_pct": 0.63
+    },
+    "GODREJCP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.597797",
+      "updated": "2026-10-09T06:56:35.615076",
+      "last_price": 12972.93,
+      "prev_close": 13125.85,
+      "change_pct": -1.17
+    },
+    "COLPAL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.670526",
+      "updated": "2026-10-09T06:56:35.688524",
+      "last_price": 14575.54,
+      "prev_close": 14483.58,
+      "change_pct": 0.63
+    },
+    "PGHH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.734545",
+      "updated": "2026-10-09T06:56:35.745515",
+      "last_price": 9831.24,
+      "prev_close": 9634.78,
+      "change_pct": 2.04
+    },
+    "EMAMILTD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.791441",
+      "updated": "2026-10-09T06:56:35.800918",
+      "last_price": 15905.64,
+      "prev_close": 15987.32,
+      "change_pct": -0.51
+    },
+    "BATA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.825997",
+      "updated": "2026-10-09T06:56:35.830876",
+      "last_price": 15396.13,
+      "prev_close": 15748.16,
+      "change_pct": -2.24
+    },
+    "RELAXO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.860579",
+      "updated": "2026-10-09T06:56:35.870022",
+      "last_price": 14008.48,
+      "prev_close": 14205.37,
+      "change_pct": -1.39
+    },
+    "PAGEIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.893667",
+      "updated": "2026-10-09T06:56:35.898479",
+      "last_price": 17505.67,
+      "prev_close": 17415.46,
+      "change_pct": 0.52
+    },
+    "UNITDSPR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.922241",
+      "updated": "2026-10-09T06:56:35.927660",
+      "last_price": 18176.02,
+      "prev_close": 17892.6,
+      "change_pct": 1.58
+    },
+    "RADICO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.951028",
+      "updated": "2026-10-09T06:56:35.958968",
+      "last_price": 14368.37,
+      "prev_close": 14667.69,
+      "change_pct": -2.04
+    },
+    "UBL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:35.995797",
+      "updated": "2026-10-09T06:56:36.005692",
+      "last_price": 17214.8,
+      "prev_close": 17168.98,
+      "change_pct": 0.27
+    },
+    "VSTIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.033847",
+      "updated": "2026-10-09T06:56:36.038585",
+      "last_price": 13950.09,
+      "prev_close": 14112.67,
+      "change_pct": -1.15
+    },
+    "GILLETTE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.061141",
+      "updated": "2026-10-09T06:56:36.065886",
+      "last_price": 12654.39,
+      "prev_close": 12696.53,
+      "change_pct": -0.33
+    },
+    "HONAUT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.088002",
+      "updated": "2026-10-09T06:56:36.092844",
+      "last_price": 20496.08,
+      "prev_close": 21100.67,
+      "change_pct": -2.87
+    },
+    "PGHL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.115006",
+      "updated": "2026-10-09T06:56:36.119787",
+      "last_price": 18395.41,
+      "prev_close": 18699.21,
+      "change_pct": -1.62
+    },
+    "JYOTHYLAB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.141710",
+      "updated": "2026-10-09T06:56:36.146497",
+      "last_price": 20839.19,
+      "prev_close": 20693.88,
+      "change_pct": 0.7
+    },
+    "GODREJIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.168767",
+      "updated": "2026-10-09T06:56:36.173592",
+      "last_price": 13320.0,
+      "prev_close": 13228.15,
+      "change_pct": 0.69
+    },
+    "TASTYBITE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.195438",
+      "updated": "2026-10-09T06:56:36.200267",
+      "last_price": 14270.84,
+      "prev_close": 14188.86,
+      "change_pct": 0.58
+    },
+    "BIKAJI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.223248",
+      "updated": "2026-10-09T06:56:36.227984",
+      "last_price": 17432.66,
+      "prev_close": 17954.03,
+      "change_pct": -2.9
+    },
+    "CLEAN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.249893",
+      "updated": "2026-10-09T06:56:36.254808",
+      "last_price": 16678.15,
+      "prev_close": 16506.47,
+      "change_pct": 1.04
+    },
+    "PRATAAP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.278141",
+      "updated": "2026-10-09T06:56:36.283159",
+      "last_price": 17363.24,
+      "prev_close": 17558.01,
+      "change_pct": -1.11
+    },
+    "ZYDUS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.306951",
+      "updated": "2026-10-09T06:56:36.311833",
+      "last_price": 16181.12,
+      "prev_close": 16071.0,
+      "change_pct": 0.69
+    },
+    "CCL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.334776",
+      "updated": "2026-10-09T06:56:36.339646",
+      "last_price": 16235.51,
+      "prev_close": 16054.24,
+      "change_pct": 1.13
+    },
+    "VADILALIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.361753",
+      "updated": "2026-10-09T06:56:36.366610",
+      "last_price": 12924.22,
+      "prev_close": 12926.64,
+      "change_pct": -0.02
+    },
+    "ADFFOODS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.389348",
+      "updated": "2026-10-09T06:56:36.394405",
+      "last_price": 15585.15,
+      "prev_close": 15842.08,
+      "change_pct": -1.62
+    },
+    "HERITGFOOD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.416450",
+      "updated": "2026-10-09T06:56:36.421371",
+      "last_price": 21382.29,
+      "prev_close": 21241.47,
+      "change_pct": 0.66
+    },
+    "PARAGMILK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.443390",
+      "updated": "2026-10-09T06:56:36.448294",
+      "last_price": 19151.16,
+      "prev_close": 18564.88,
+      "change_pct": 3.16
+    },
+    "HATSUN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.469864",
+      "updated": "2026-10-09T06:56:36.474987",
+      "last_price": 22165.23,
+      "prev_close": 22040.65,
+      "change_pct": 0.57
+    },
+    "KWALITY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.496903",
+      "updated": "2026-10-09T06:56:36.501848",
+      "last_price": 13668.6,
+      "prev_close": 13697.25,
+      "change_pct": -0.21
+    },
+    "DODLA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.523936",
+      "updated": "2026-10-09T06:56:36.528787",
+      "last_price": 25535.22,
+      "prev_close": 24803.54,
+      "change_pct": 2.95
+    },
+    "MILKFOOD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.550351",
+      "updated": "2026-10-09T06:56:36.555167",
+      "last_price": 29905.94,
+      "prev_close": 30103.8,
+      "change_pct": -0.66
+    },
+    "RELIANCE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.576155",
+      "updated": "2026-10-09T06:56:36.581127",
+      "last_price": 17475.84,
+      "prev_close": 17300.36,
+      "change_pct": 1.01
+    },
+    "ONGC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.602739",
+      "updated": "2026-10-09T06:56:36.607505",
+      "last_price": 9831.24,
+      "prev_close": 9634.78,
+      "change_pct": 2.04
+    },
+    "NTPC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.629261",
+      "updated": "2026-10-09T06:56:36.634175",
+      "last_price": 26657.18,
+      "prev_close": 26024.75,
+      "change_pct": 2.43
+    },
+    "POWERGRID.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.656396",
+      "updated": "2026-10-09T06:56:36.661408",
+      "last_price": 25594.65,
+      "prev_close": 25366.28,
+      "change_pct": 0.9
+    },
+    "IOC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.683454",
+      "updated": "2026-10-09T06:56:36.688171",
+      "last_price": 15512.06,
+      "prev_close": 15316.82,
+      "change_pct": 1.27
+    },
+    "BPCL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.709877",
+      "updated": "2026-10-09T06:56:36.714736",
+      "last_price": 16184.64,
+      "prev_close": 15899.23,
+      "change_pct": 1.8
+    },
+    "HINDPETRO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.736671",
+      "updated": "2026-10-09T06:56:36.741585",
+      "last_price": 21627.35,
+      "prev_close": 21859.84,
+      "change_pct": -1.06
+    },
+    "GAIL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.764869",
+      "updated": "2026-10-09T06:56:36.769707",
+      "last_price": 12414.1,
+      "prev_close": 12450.43,
+      "change_pct": -0.29
+    },
+    "OIL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.791934",
+      "updated": "2026-10-09T06:56:36.796841",
+      "last_price": 17168.22,
+      "prev_close": 16883.92,
+      "change_pct": 1.68
+    },
+    "MRPL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.820859",
+      "updated": "2026-10-09T06:56:36.825877",
+      "last_price": 8006.68,
+      "prev_close": 8021.78,
+      "change_pct": -0.19
+    },
+    "CASTROLIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.851327",
+      "updated": "2026-10-09T06:56:36.856306",
+      "last_price": 20243.65,
+      "prev_close": 20681.57,
+      "change_pct": -2.12
+    },
+    "PETRONET.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.881043",
+      "updated": "2026-10-09T06:56:36.885953",
+      "last_price": 10748.28,
+      "prev_close": 10693.82,
+      "change_pct": 0.51
+    },
+    "IGL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.913152",
+      "updated": "2026-10-09T06:56:36.918373",
+      "last_price": 23360.78,
+      "prev_close": 23599.15,
+      "change_pct": -1.01
+    },
+    "MGL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.945885",
+      "updated": "2026-10-09T06:56:36.950992",
+      "last_price": 20983.76,
+      "prev_close": 20969.5,
+      "change_pct": 0.07
+    },
+    "GUJGASLTD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:36.974310",
+      "updated": "2026-10-09T06:56:36.979335",
+      "last_price": 19754.69,
+      "prev_close": 19319.3,
+      "change_pct": 2.25
+    },
+    "AEGISLOG.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.002792",
+      "updated": "2026-10-09T06:56:37.007993",
+      "last_price": 12568.43,
+      "prev_close": 12788.54,
+      "change_pct": -1.72
+    },
+    "TATAPOWER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.031488",
+      "updated": "2026-10-09T06:56:37.036918",
+      "last_price": 21743.89,
+      "prev_close": 21714.83,
+      "change_pct": 0.13
+    },
+    "ADANIGREEN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.060818",
+      "updated": "2026-10-09T06:56:37.065690",
+      "last_price": 15348.71,
+      "prev_close": 15228.43,
+      "change_pct": 0.79
+    },
+    "ADANIPOWER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.088730",
+      "updated": "2026-10-09T06:56:37.093551",
+      "last_price": 13511.99,
+      "prev_close": 13533.29,
+      "change_pct": -0.16
+    },
+    "ADANITRANS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.116176",
+      "updated": "2026-10-09T06:56:37.121107",
+      "last_price": 20565.8,
+      "prev_close": 20453.69,
+      "change_pct": 0.55
+    },
+    "NHPC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.145957",
+      "updated": "2026-10-09T06:56:37.150861",
+      "last_price": 40303.19,
+      "prev_close": 39824.69,
+      "change_pct": 1.2
+    },
+    "SJVN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.174468",
+      "updated": "2026-10-09T06:56:37.179349",
+      "last_price": 27626.77,
+      "prev_close": 28239.78,
+      "change_pct": -2.17
+    },
+    "TORNTPOWER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.201619",
+      "updated": "2026-10-09T06:56:37.206399",
+      "last_price": 14535.75,
+      "prev_close": 14881.94,
+      "change_pct": -2.33
+    },
+    "CESC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.228572",
+      "updated": "2026-10-09T06:56:37.233445",
+      "last_price": 15247.66,
+      "prev_close": 15224.73,
+      "change_pct": 0.15
+    },
+    "JSWENERGY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.254915",
+      "updated": "2026-10-09T06:56:37.260080",
+      "last_price": 18488.92,
+      "prev_close": 18504.55,
+      "change_pct": -0.08
+    },
+    "RPOWER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.282083",
+      "updated": "2026-10-09T06:56:37.286811",
+      "last_price": 12307.38,
+      "prev_close": 12593.81,
+      "change_pct": -2.27
+    },
+    "JPPOWER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.308913",
+      "updated": "2026-10-09T06:56:37.313650",
+      "last_price": 18518.31,
+      "prev_close": 18406.49,
+      "change_pct": 0.61
+    },
+    "SUZLON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.336014",
+      "updated": "2026-10-09T06:56:37.340776",
+      "last_price": 13750.09,
+      "prev_close": 13646.97,
+      "change_pct": 0.76
+    },
+    "INOXGREEN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.362425",
+      "updated": "2026-10-09T06:56:37.367242",
+      "last_price": 12440.61,
+      "prev_close": 12603.72,
+      "change_pct": -1.29
+    },
+    "RENUKA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.389591",
+      "updated": "2026-10-09T06:56:37.394475",
+      "last_price": 17144.86,
+      "prev_close": 17745.49,
+      "change_pct": -3.38
+    },
+    "TATASTEEL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.416441",
+      "updated": "2026-10-09T06:56:37.421344",
+      "last_price": 25974.55,
+      "prev_close": 25407.19,
+      "change_pct": 2.23
+    },
+    "JSWSTEEL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.447869",
+      "updated": "2026-10-09T06:56:37.456492",
+      "last_price": 10748.28,
+      "prev_close": 10693.82,
+      "change_pct": 0.51
+    },
+    "HINDALCO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.494867",
+      "updated": "2026-10-09T06:56:37.500888",
+      "last_price": 12001.88,
+      "prev_close": 11933.8,
+      "change_pct": 0.57
+    },
+    "VEDL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.533625",
+      "updated": "2026-10-09T06:56:37.538758",
+      "last_price": 18395.41,
+      "prev_close": 18699.21,
+      "change_pct": -1.62
+    },
+    "NATIONALUM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.568604",
+      "updated": "2026-10-09T06:56:37.573606",
+      "last_price": 9905.19,
+      "prev_close": 10049.56,
+      "change_pct": -1.44
+    },
+    "HINDZINC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.598949",
+      "updated": "2026-10-09T06:56:37.604161",
+      "last_price": 26991.72,
+      "prev_close": 26521.11,
+      "change_pct": 1.77
+    },
+    "NMDC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.629400",
+      "updated": "2026-10-09T06:56:37.634281",
+      "last_price": 9693.29,
+      "prev_close": 9611.94,
+      "change_pct": 0.85
+    },
+    "COALINDIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.659690",
+      "updated": "2026-10-09T06:56:37.667801",
+      "last_price": 13893.0,
+      "prev_close": 13791.1,
+      "change_pct": 0.74
+    },
+    "SAIL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.703011",
+      "updated": "2026-10-09T06:56:37.710927",
+      "last_price": 40303.19,
+      "prev_close": 39824.69,
+      "change_pct": 1.2
+    },
+    "JINDALSTEL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.743340",
+      "updated": "2026-10-09T06:56:37.748456",
+      "last_price": 13511.99,
+      "prev_close": 13533.29,
+      "change_pct": -0.16
+    },
+    "WELCORP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.783795",
+      "updated": "2026-10-09T06:56:37.791353",
+      "last_price": 18573.59,
+      "prev_close": 18198.3,
+      "change_pct": 2.06
+    },
+    "RATNAMANI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.848013",
+      "updated": "2026-10-09T06:56:37.862341",
+      "last_price": 16986.86,
+      "prev_close": 16285.7,
+      "change_pct": 4.31
+    },
+    "APLAPOLLO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.904845",
+      "updated": "2026-10-09T06:56:37.913125",
+      "last_price": 40243.92,
+      "prev_close": 41622.71,
+      "change_pct": -3.31
+    },
+    "HINDCOPPER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:37.953827",
+      "updated": "2026-10-09T06:56:37.962525",
+      "last_price": 6044.66,
+      "prev_close": 6052.58,
+      "change_pct": -0.13
+    },
+    "JSL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.003282",
+      "updated": "2026-10-09T06:56:38.009963",
+      "last_price": 20113.38,
+      "prev_close": 20365.69,
+      "change_pct": -1.24
+    },
+    "JSLHISAR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.037133",
+      "updated": "2026-10-09T06:56:38.042047",
+      "last_price": 17043.68,
+      "prev_close": 16929.97,
+      "change_pct": 0.67
+    },
+    "BALRAMCHIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.069045",
+      "updated": "2026-10-09T06:56:38.073977",
+      "last_price": 16117.97,
+      "prev_close": 15780.79,
+      "change_pct": 2.14
+    },
+    "MAITHANALL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.111981",
+      "updated": "2026-10-09T06:56:38.126193",
+      "last_price": 13866.41,
+      "prev_close": 13862.09,
+      "change_pct": 0.03
+    },
+    "SHYAMMETL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.172460",
+      "updated": "2026-10-09T06:56:38.179439",
+      "last_price": 13575.12,
+      "prev_close": 13645.63,
+      "change_pct": -0.52
+    },
+    "RAMCOCEM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.207765",
+      "updated": "2026-10-09T06:56:38.213232",
+      "last_price": 38561.12,
+      "prev_close": 37752.73,
+      "change_pct": 2.14
+    },
+    "GPIL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.239783",
+      "updated": "2026-10-09T06:56:38.244654",
+      "last_price": 14578.35,
+      "prev_close": 14721.65,
+      "change_pct": -0.97
+    },
+    "SANDUMA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.270875",
+      "updated": "2026-10-09T06:56:38.276328",
+      "last_price": 17363.24,
+      "prev_close": 17558.01,
+      "change_pct": -1.11
+    },
+    "MOIL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.303086",
+      "updated": "2026-10-09T06:56:38.307974",
+      "last_price": 18913.31,
+      "prev_close": 18963.43,
+      "change_pct": -0.26
+    },
+    "KIOCL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.334953",
+      "updated": "2026-10-09T06:56:38.339916",
+      "last_price": 23294.42,
+      "prev_close": 23501.58,
+      "change_pct": -0.88
+    },
+    "DLF.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.367156",
+      "updated": "2026-10-09T06:56:38.372445",
+      "last_price": 18160.57,
+      "prev_close": 18080.36,
+      "change_pct": 0.44
+    },
+    "GODREJPROP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.399736",
+      "updated": "2026-10-09T06:56:38.404693",
+      "last_price": 36055.71,
+      "prev_close": 35540.31,
+      "change_pct": 1.45
+    },
+    "PRESTIGE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.431602",
+      "updated": "2026-10-09T06:56:38.436754",
+      "last_price": 19350.51,
+      "prev_close": 18751.56,
+      "change_pct": 3.19
+    },
+    "OBEROIRLTY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.463234",
+      "updated": "2026-10-09T06:56:38.468281",
+      "last_price": 23890.87,
+      "prev_close": 24139.29,
+      "change_pct": -1.03
+    },
+    "BRIGADE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.495786",
+      "updated": "2026-10-09T06:56:38.500879",
+      "last_price": 12323.61,
+      "prev_close": 12172.41,
+      "change_pct": 1.24
+    },
+    "PHOENIXLTD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.527213",
+      "updated": "2026-10-09T06:56:38.532513",
+      "last_price": 14919.67,
+      "prev_close": 14831.7,
+      "change_pct": 0.59
+    },
+    "LODHA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.559733",
+      "updated": "2026-10-09T06:56:38.564701",
+      "last_price": 16799.65,
+      "prev_close": 16682.07,
+      "change_pct": 0.7
+    },
+    "SUNTV.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.591921",
+      "updated": "2026-10-09T06:56:38.597159",
+      "last_price": 20890.1,
+      "prev_close": 20890.6,
+      "change_pct": -0.0
+    },
+    "SOBHA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.623304",
+      "updated": "2026-10-09T06:56:38.628310",
+      "last_price": 14724.71,
+      "prev_close": 14629.37,
+      "change_pct": 0.65
+    },
+    "PREMEXPLQ.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.653806",
+      "updated": "2026-10-09T06:56:38.658606",
+      "last_price": 18488.92,
+      "prev_close": 18504.55,
+      "change_pct": -0.08
+    },
+    "SIGNATURE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.683536",
+      "updated": "2026-10-09T06:56:38.688486",
+      "last_price": 30522.38,
+      "prev_close": 30316.5,
+      "change_pct": 0.68
+    },
+    "KOLTEPATIL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.714202",
+      "updated": "2026-10-09T06:56:38.719223",
+      "last_price": 15699.57,
+      "prev_close": 15702.62,
+      "change_pct": -0.02
+    },
+    "MAHLIFE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.743468",
+      "updated": "2026-10-09T06:56:38.748250",
+      "last_price": 28235.88,
+      "prev_close": 28062.17,
+      "change_pct": 0.62
+    },
+    "PURAVANKARA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.773207",
+      "updated": "2026-10-09T06:56:38.778036",
+      "last_price": 22852.79,
+      "prev_close": 23333.25,
+      "change_pct": -2.06
+    },
+    "ASHIANA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.802837",
+      "updated": "2026-10-09T06:56:38.807630",
+      "last_price": 15331.67,
+      "prev_close": 15147.39,
+      "change_pct": 1.22
+    },
+    "AJMERA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.833183",
+      "updated": "2026-10-09T06:56:38.838045",
+      "last_price": 15873.3,
+      "prev_close": 15638.28,
+      "change_pct": 1.5
+    },
+    "NBCC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.863630",
+      "updated": "2026-10-09T06:56:38.868570",
+      "last_price": 22690.45,
+      "prev_close": 22199.9,
+      "change_pct": 2.21
+    },
+    "IRCON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.894587",
+      "updated": "2026-10-09T06:56:38.900670",
+      "last_price": 16798.87,
+      "prev_close": 16975.14,
+      "change_pct": -1.04
+    },
+    "RVNL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.928405",
+      "updated": "2026-10-09T06:56:38.933346",
+      "last_price": 22838.41,
+      "prev_close": 22296.5,
+      "change_pct": 2.43
+    },
+    "RAILTEL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:38.966299",
+      "updated": "2026-10-09T06:56:38.975233",
+      "last_price": 25035.61,
+      "prev_close": 25245.47,
+      "change_pct": -0.83
+    },
+    "CAMPUS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.011167",
+      "updated": "2026-10-09T06:56:39.016048",
+      "last_price": 11735.9,
+      "prev_close": 11776.63,
+      "change_pct": -0.35
+    },
+    "LT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.041104",
+      "updated": "2026-10-09T06:56:39.046186",
+      "last_price": 12319.0,
+      "prev_close": 12154.49,
+      "change_pct": 1.35
+    },
+    "ADANIENT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.069276",
+      "updated": "2026-10-09T06:56:39.074382",
+      "last_price": 23190.37,
+      "prev_close": 23243.46,
+      "change_pct": -0.23
+    },
+    "ADANIPORTS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.098127",
+      "updated": "2026-10-09T06:56:39.102984",
+      "last_price": 11789.03,
+      "prev_close": 11838.05,
+      "change_pct": -0.41
+    },
+    "SIEMENS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.125420",
+      "updated": "2026-10-09T06:56:39.130171",
+      "last_price": 16906.14,
+      "prev_close": 17139.96,
+      "change_pct": -1.36
+    },
+    "ABB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.151479",
+      "updated": "2026-10-09T06:56:39.156188",
+      "last_price": 22552.46,
+      "prev_close": 21814.05,
+      "change_pct": 3.39
+    },
+    "BHEL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.177934",
+      "updated": "2026-10-09T06:56:39.182718",
+      "last_price": 19572.81,
+      "prev_close": 19298.19,
+      "change_pct": 1.42
+    },
+    "CUMMINSIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.204125",
+      "updated": "2026-10-09T06:56:39.209142",
+      "last_price": 22755.39,
+      "prev_close": 22772.69,
+      "change_pct": -0.08
+    },
+    "THERMAX.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.231091",
+      "updated": "2026-10-09T06:56:39.235884",
+      "last_price": 12098.48,
+      "prev_close": 12230.25,
+      "change_pct": -1.08
+    },
+    "VOLTAS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.257004",
+      "updated": "2026-10-09T06:56:39.261663",
+      "last_price": 13585.47,
+      "prev_close": 13724.21,
+      "change_pct": -1.01
+    },
+    "BLUESTAR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.284051",
+      "updated": "2026-10-09T06:56:39.291545",
+      "last_price": 13954.16,
+      "prev_close": 14238.79,
+      "change_pct": -2.0
+    },
+    "HAVELLS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.313582",
+      "updated": "2026-10-09T06:56:39.318314",
+      "last_price": 30052.5,
+      "prev_close": 29633.77,
+      "change_pct": 1.41
+    },
+    "CROMPTON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.339951",
+      "updated": "2026-10-09T06:56:39.344621",
+      "last_price": 12758.0,
+      "prev_close": 12931.12,
+      "change_pct": -1.34
+    },
+    "POLYCAB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.365781",
+      "updated": "2026-10-09T06:56:39.370434",
+      "last_price": 10600.49,
+      "prev_close": 10657.85,
+      "change_pct": -0.54
+    },
+    "KEI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.399732",
+      "updated": "2026-10-09T06:56:39.406092",
+      "last_price": 14705.53,
+      "prev_close": 14213.21,
+      "change_pct": 3.46
+    },
+    "FINOLEX.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.428979",
+      "updated": "2026-10-09T06:56:39.433862",
+      "last_price": 21766.09,
+      "prev_close": 21717.27,
+      "change_pct": 0.22
+    },
+    "SUPRAJIT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.455910",
+      "updated": "2026-10-09T06:56:39.460733",
+      "last_price": 12758.0,
+      "prev_close": 12931.12,
+      "change_pct": -1.34
+    },
+    "DBCORP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.482504",
+      "updated": "2026-10-09T06:56:39.487242",
+      "last_price": 19008.5,
+      "prev_close": 18877.76,
+      "change_pct": 0.69
+    },
+    "GRINDWELL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.508756",
+      "updated": "2026-10-09T06:56:39.513424",
+      "last_price": 17049.24,
+      "prev_close": 16933.67,
+      "change_pct": 0.68
+    },
+    "ELGIEQUIP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.534614",
+      "updated": "2026-10-09T06:56:39.539346",
+      "last_price": 19754.69,
+      "prev_close": 19319.3,
+      "change_pct": 2.25
+    },
+    "KSB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.560865",
+      "updated": "2026-10-09T06:56:39.565501",
+      "last_price": 20983.76,
+      "prev_close": 20969.5,
+      "change_pct": 0.07
+    },
+    "JYOTI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.586851",
+      "updated": "2026-10-09T06:56:39.591520",
+      "last_price": 23678.0,
+      "prev_close": 23116.84,
+      "change_pct": 2.43
+    },
+    "IRB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.620782",
+      "updated": "2026-10-09T06:56:39.628894",
+      "last_price": 13153.63,
+      "prev_close": 13437.63,
+      "change_pct": -2.11
+    },
+    "GRINFRA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.650807",
+      "updated": "2026-10-09T06:56:39.655575",
+      "last_price": 17363.24,
+      "prev_close": 17558.01,
+      "change_pct": -1.11
+    },
+    "PNC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.677578",
+      "updated": "2026-10-09T06:56:39.682224",
+      "last_price": 36927.05,
+      "prev_close": 36321.39,
+      "change_pct": 1.67
+    },
+    "KNRCON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.703652",
+      "updated": "2026-10-09T06:56:39.708346",
+      "last_price": 14008.48,
+      "prev_close": 14205.37,
+      "change_pct": -1.39
+    },
+    "DILIPBUILDCON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.730018",
+      "updated": "2026-10-09T06:56:39.734824",
+      "last_price": 16425.85,
+      "prev_close": 17075.44,
+      "change_pct": -3.8
+    },
+    "HGINFRAST.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.756406",
+      "updated": "2026-10-09T06:56:39.761145",
+      "last_price": 22526.23,
+      "prev_close": 23055.05,
+      "change_pct": -2.29
+    },
+    "RITES.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.782704",
+      "updated": "2026-10-09T06:56:39.787401",
+      "last_price": 18461.36,
+      "prev_close": 18509.81,
+      "change_pct": -0.26
+    },
+    "ENGINERSIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.809191",
+      "updated": "2026-10-09T06:56:39.813928",
+      "last_price": 24254.56,
+      "prev_close": 24535.71,
+      "change_pct": -1.15
+    },
+    "GMRINFRA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.835416",
+      "updated": "2026-10-09T06:56:39.840046",
+      "last_price": 15930.53,
+      "prev_close": 16086.49,
+      "change_pct": -0.97
+    },
+    "ULTRACEMCO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.861028",
+      "updated": "2026-10-09T06:56:39.865581",
+      "last_price": 9506.88,
+      "prev_close": 9396.27,
+      "change_pct": 1.18
+    },
+    "GRASIM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.887770",
+      "updated": "2026-10-09T06:56:39.892458",
+      "last_price": 24797.66,
+      "prev_close": 24931.11,
+      "change_pct": -0.54
+    },
+    "ACC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.913927",
+      "updated": "2026-10-09T06:56:39.918685",
+      "last_price": 19019.25,
+      "prev_close": 18323.66,
+      "change_pct": 3.8
+    },
+    "AMBUJACEM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.940277",
+      "updated": "2026-10-09T06:56:39.944942",
+      "last_price": 12056.81,
+      "prev_close": 12439.09,
+      "change_pct": -3.07
+    },
+    "SHREECEM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.965883",
+      "updated": "2026-10-09T06:56:39.970638",
+      "last_price": 18843.89,
+      "prev_close": 19152.98,
+      "change_pct": -1.61
+    },
+    "JKCEMENT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:39.991855",
+      "updated": "2026-10-09T06:56:39.996469",
+      "last_price": 10242.02,
+      "prev_close": 10128.01,
+      "change_pct": 1.13
+    },
+    "HEIDELBERG.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.017499",
+      "updated": "2026-10-09T06:56:40.022093",
+      "last_price": 13028.75,
+      "prev_close": 12768.64,
+      "change_pct": 2.04
+    },
+    "DALBHARAT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.043479",
+      "updated": "2026-10-09T06:56:40.048082",
+      "last_price": 15075.47,
+      "prev_close": 15477.63,
+      "change_pct": -2.6
+    },
+    "JKLAKSHMI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.069344",
+      "updated": "2026-10-09T06:56:40.074021",
+      "last_price": 17680.2,
+      "prev_close": 17786.56,
+      "change_pct": -0.6
+    },
+    "NUVOCO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.095328",
+      "updated": "2026-10-09T06:56:40.099862",
+      "last_price": 25716.82,
+      "prev_close": 25509.41,
+      "change_pct": 0.81
+    },
+    "ORIENTCEM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.120856",
+      "updated": "2026-10-09T06:56:40.125421",
+      "last_price": 22526.23,
+      "prev_close": 23055.05,
+      "change_pct": -2.29
+    },
+    "STARCEMENT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.146947",
+      "updated": "2026-10-09T06:56:40.151565",
+      "last_price": 14406.75,
+      "prev_close": 14611.12,
+      "change_pct": -1.4
+    },
+    "PRISM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.172588",
+      "updated": "2026-10-09T06:56:40.177522",
+      "last_price": 9768.23,
+      "prev_close": 9893.76,
+      "change_pct": -1.27
+    },
+    "SAHYADRI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.199518",
+      "updated": "2026-10-09T06:56:40.204366",
+      "last_price": 29905.94,
+      "prev_close": 30103.8,
+      "change_pct": -0.66
+    },
+    "PIDILITIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.225249",
+      "updated": "2026-10-09T06:56:40.229865",
+      "last_price": 13511.99,
+      "prev_close": 13533.29,
+      "change_pct": -0.16
+    },
+    "ASIANPAINT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.251128",
+      "updated": "2026-10-09T06:56:40.255697",
+      "last_price": 14430.39,
+      "prev_close": 14084.12,
+      "change_pct": 2.46
+    },
+    "BERGER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.276603",
+      "updated": "2026-10-09T06:56:40.281162",
+      "last_price": 13179.62,
+      "prev_close": 13269.45,
+      "change_pct": -0.68
+    },
+    "AKZOINDIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.302431",
+      "updated": "2026-10-09T06:56:40.307082",
+      "last_price": 12308.08,
+      "prev_close": 12210.15,
+      "change_pct": 0.8
+    },
+    "KANSAINER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.327839",
+      "updated": "2026-10-09T06:56:40.332383",
+      "last_price": 24258.39,
+      "prev_close": 24207.43,
+      "change_pct": 0.21
+    },
+    "DEEPAKNTR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.353620",
+      "updated": "2026-10-09T06:56:40.358332",
+      "last_price": 17680.2,
+      "prev_close": 17786.56,
+      "change_pct": -0.6
+    },
+    "ATUL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.379457",
+      "updated": "2026-10-09T06:56:40.383974",
+      "last_price": 17280.12,
+      "prev_close": 17194.59,
+      "change_pct": 0.5
+    },
+    "NAVIN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.405344",
+      "updated": "2026-10-09T06:56:40.409932",
+      "last_price": 17026.43,
+      "prev_close": 16518.31,
+      "change_pct": 3.08
+    },
+    "SRF.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.431313",
+      "updated": "2026-10-09T06:56:40.436178",
+      "last_price": 12404.95,
+      "prev_close": 12379.88,
+      "change_pct": 0.2
+    },
+    "FLUOROCHEM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.457469",
+      "updated": "2026-10-09T06:56:40.462011",
+      "last_price": 19596.93,
+      "prev_close": 19747.67,
+      "change_pct": -0.76
+    },
+    "AETHER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.483004",
+      "updated": "2026-10-09T06:56:40.487565",
+      "last_price": 13332.84,
+      "prev_close": 13165.25,
+      "change_pct": 1.27
+    },
+    "LXCHEM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.509013",
+      "updated": "2026-10-09T06:56:40.513522",
+      "last_price": 26232.37,
+      "prev_close": 26295.14,
+      "change_pct": -0.24
+    },
+    "ANURAS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.534452",
+      "updated": "2026-10-09T06:56:40.539228",
+      "last_price": 19372.74,
+      "prev_close": 19360.89,
+      "change_pct": 0.06
+    },
+    "TATACHEM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.560344",
+      "updated": "2026-10-09T06:56:40.564847",
+      "last_price": 38561.12,
+      "prev_close": 37752.73,
+      "change_pct": 2.14
+    },
+    "GUJALKALI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.585827",
+      "updated": "2026-10-09T06:56:40.590411",
+      "last_price": 11475.92,
+      "prev_close": 11470.56,
+      "change_pct": 0.05
+    },
+    "DCW.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.611899",
+      "updated": "2026-10-09T06:56:40.616456",
+      "last_price": 28528.33,
+      "prev_close": 28258.34,
+      "change_pct": 0.96
+    },
+    "GHCL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.637313",
+      "updated": "2026-10-09T06:56:40.641861",
+      "last_price": 15247.66,
+      "prev_close": 15224.73,
+      "change_pct": 0.15
+    },
+    "BASF.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.663082",
+      "updated": "2026-10-09T06:56:40.667690",
+      "last_price": 17800.65,
+      "prev_close": 17373.03,
+      "change_pct": 2.46
+    },
+    "DYNAMATECH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.688672",
+      "updated": "2026-10-09T06:56:40.693302",
+      "last_price": 12821.84,
+      "prev_close": 12662.57,
+      "change_pct": 1.26
+    },
+    "UPL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.721629",
+      "updated": "2026-10-09T06:56:40.730036",
+      "last_price": 14304.49,
+      "prev_close": 14320.75,
+      "change_pct": -0.11
+    },
+    "PIIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.763883",
+      "updated": "2026-10-09T06:56:40.772283",
+      "last_price": 14249.71,
+      "prev_close": 14566.42,
+      "change_pct": -2.17
+    },
+    "BAYERCROP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.803554",
+      "updated": "2026-10-09T06:56:40.808188",
+      "last_price": 25974.55,
+      "prev_close": 25407.19,
+      "change_pct": 2.23
+    },
+    "SYNGENTA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.829787",
+      "updated": "2026-10-09T06:56:40.834388",
+      "last_price": 22580.41,
+      "prev_close": 22827.21,
+      "change_pct": -1.08
+    },
+    "RALLIS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.856327",
+      "updated": "2026-10-09T06:56:40.860914",
+      "last_price": 12561.66,
+      "prev_close": 12755.35,
+      "change_pct": -1.52
+    },
+    "INSECTICID.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.882384",
+      "updated": "2026-10-09T06:56:40.887106",
+      "last_price": 22031.01,
+      "prev_close": 22807.88,
+      "change_pct": -3.41
+    },
+    "CHAMBLFERT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.908936",
+      "updated": "2026-10-09T06:56:40.913767",
+      "last_price": 12924.22,
+      "prev_close": 12926.64,
+      "change_pct": -0.02
+    },
+    "GSFC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.935370",
+      "updated": "2026-10-09T06:56:40.939975",
+      "last_price": 27640.99,
+      "prev_close": 26960.78,
+      "change_pct": 2.52
+    },
+    "NFL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.961835",
+      "updated": "2026-10-09T06:56:40.966408",
+      "last_price": 20983.76,
+      "prev_close": 20969.5,
+      "change_pct": 0.07
+    },
+    "COROMANDEL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:40.988105",
+      "updated": "2026-10-09T06:56:40.992708",
+      "last_price": 13029.25,
+      "prev_close": 12917.26,
+      "change_pct": 0.87
+    },
+    "FACT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.014503",
+      "updated": "2026-10-09T06:56:41.019088",
+      "last_price": 15247.66,
+      "prev_close": 15224.73,
+      "change_pct": 0.15
+    },
+    "ZUARI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.040669",
+      "updated": "2026-10-09T06:56:41.045247",
+      "last_price": 9768.23,
+      "prev_close": 9893.76,
+      "change_pct": -1.27
+    },
+    "EIDPARRY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.066937",
+      "updated": "2026-10-09T06:56:41.071598",
+      "last_price": 17043.68,
+      "prev_close": 16929.97,
+      "change_pct": 0.67
+    },
+    "BHARTIARTL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.093117",
+      "updated": "2026-10-09T06:56:41.097698",
+      "last_price": 17513.66,
+      "prev_close": 17763.88,
+      "change_pct": -1.41
+    },
+    "IDEA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.119752",
+      "updated": "2026-10-09T06:56:41.124307",
+      "last_price": 21291.18,
+      "prev_close": 20704.1,
+      "change_pct": 2.84
+    },
+    "INDUS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.145710",
+      "updated": "2026-10-09T06:56:41.150294",
+      "last_price": 11384.55,
+      "prev_close": 11430.18,
+      "change_pct": -0.4
+    },
+    "TATACOMM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.172438",
+      "updated": "2026-10-09T06:56:41.177200",
+      "last_price": 15930.53,
+      "prev_close": 16086.49,
+      "change_pct": -0.97
+    },
+    "ITI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.198768",
+      "updated": "2026-10-09T06:56:41.203385",
+      "last_price": 11436.77,
+      "prev_close": 11778.87,
+      "change_pct": -2.9
+    },
+    "TEJASNET.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.224755",
+      "updated": "2026-10-09T06:56:41.229313",
+      "last_price": 22398.58,
+      "prev_close": 22368.75,
+      "change_pct": 0.13
+    },
+    "GTLINFRA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.250687",
+      "updated": "2026-10-09T06:56:41.255270",
+      "last_price": 26991.72,
+      "prev_close": 26521.11,
+      "change_pct": 1.77
+    },
+    "ONMOBILE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.276691",
+      "updated": "2026-10-09T06:56:41.281277",
+      "last_price": 29905.94,
+      "prev_close": 30103.8,
+      "change_pct": -0.66
+    },
+    "ZEEL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.302280",
+      "updated": "2026-10-09T06:56:41.306915",
+      "last_price": 19171.35,
+      "prev_close": 19265.2,
+      "change_pct": -0.49
+    },
+    "PVRINOX.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.329488",
+      "updated": "2026-10-09T06:56:41.334239",
+      "last_price": 11953.01,
+      "prev_close": 12205.24,
+      "change_pct": -2.07
+    },
+    "DISHTV.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.355445",
+      "updated": "2026-10-09T06:56:41.360145",
+      "last_price": 18565.93,
+      "prev_close": 18073.83,
+      "change_pct": 2.72
+    },
+    "TVTODAY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.381578",
+      "updated": "2026-10-09T06:56:41.386135",
+      "last_price": 18973.22,
+      "prev_close": 19082.4,
+      "change_pct": -0.57
+    },
+    "JAGRAN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.407747",
+      "updated": "2026-10-09T06:56:41.412384",
+      "last_price": 20700.64,
+      "prev_close": 20881.49,
+      "change_pct": -0.87
+    },
+    "NAVNETEDUL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.433727",
+      "updated": "2026-10-09T06:56:41.438349",
+      "last_price": 14406.75,
+      "prev_close": 14611.12,
+      "change_pct": -1.4
+    },
+    "NAZARA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.459823",
+      "updated": "2026-10-09T06:56:41.464478",
+      "last_price": 14280.52,
+      "prev_close": 14426.74,
+      "change_pct": -1.01
+    },
+    "DEN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.485825",
+      "updated": "2026-10-09T06:56:41.490431",
+      "last_price": 12925.49,
+      "prev_close": 13301.67,
+      "change_pct": -2.83
+    },
+    "HATHWAY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.511655",
+      "updated": "2026-10-09T06:56:41.516328",
+      "last_price": 16152.35,
+      "prev_close": 16176.32,
+      "change_pct": -0.15
+    },
+    "HAL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.537603",
+      "updated": "2026-10-09T06:56:41.542197",
+      "last_price": 18267.32,
+      "prev_close": 18891.97,
+      "change_pct": -3.31
+    },
+    "BEL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.563278",
+      "updated": "2026-10-09T06:56:41.567935",
+      "last_price": 10388.48,
+      "prev_close": 10435.88,
+      "change_pct": -0.45
+    },
+    "BDL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.589287",
+      "updated": "2026-10-09T06:56:41.593810",
+      "last_price": 16235.51,
+      "prev_close": 16054.24,
+      "change_pct": 1.13
+    },
+    "SOLARINDS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.615109",
+      "updated": "2026-10-09T06:56:41.619701",
+      "last_price": 12440.61,
+      "prev_close": 12603.72,
+      "change_pct": -1.29
+    },
+    "COCHINSHIP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.641129",
+      "updated": "2026-10-09T06:56:41.645719",
+      "last_price": 14430.39,
+      "prev_close": 14084.12,
+      "change_pct": 2.46
+    },
+    "GARDENREACH.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.667221",
+      "updated": "2026-10-09T06:56:41.671785",
+      "last_price": 15073.64,
+      "prev_close": 15500.92,
+      "change_pct": -2.76
+    },
+    "MAZAGON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.693191",
+      "updated": "2026-10-09T06:56:41.697701",
+      "last_price": 25035.61,
+      "prev_close": 25245.47,
+      "change_pct": -0.83
+    },
+    "PARAS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.719030",
+      "updated": "2026-10-09T06:56:41.723583",
+      "last_price": 13844.06,
+      "prev_close": 13850.58,
+      "change_pct": -0.05
+    },
+    "ZENTEC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.745283",
+      "updated": "2026-10-09T06:56:41.749801",
+      "last_price": 11735.9,
+      "prev_close": 11776.63,
+      "change_pct": -0.35
+    },
+    "APAR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.770798",
+      "updated": "2026-10-09T06:56:41.775392",
+      "last_price": 15454.67,
+      "prev_close": 15766.07,
+      "change_pct": -1.98
+    },
+    "CENTUM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.796669",
+      "updated": "2026-10-09T06:56:41.801266",
+      "last_price": 12483.87,
+      "prev_close": 12777.62,
+      "change_pct": -2.3
+    },
+    "DCXINDIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.822890",
+      "updated": "2026-10-09T06:56:41.827468",
+      "last_price": 23190.37,
+      "prev_close": 23243.46,
+      "change_pct": -0.23
+    },
+    "TRIDENT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.848528",
+      "updated": "2026-10-09T06:56:41.853088",
+      "last_price": 28860.35,
+      "prev_close": 28145.17,
+      "change_pct": 2.54
+    },
+    "VARDHMAN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.874526",
+      "updated": "2026-10-09T06:56:41.879165",
+      "last_price": 10242.02,
+      "prev_close": 10128.01,
+      "change_pct": 1.13
+    },
+    "ARVIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.900648",
+      "updated": "2026-10-09T06:56:41.905355",
+      "last_price": 15252.41,
+      "prev_close": 15481.13,
+      "change_pct": -1.48
+    },
+    "SPDL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.929692",
+      "updated": "2026-10-09T06:56:41.934521",
+      "last_price": 14920.27,
+      "prev_close": 14951.64,
+      "change_pct": -0.21
+    },
+    "KPR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.956981",
+      "updated": "2026-10-09T06:56:41.961895",
+      "last_price": 22401.32,
+      "prev_close": 22105.21,
+      "change_pct": 1.34
+    },
+    "WELSPUNIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:41.984353",
+      "updated": "2026-10-09T06:56:41.989015",
+      "last_price": 11988.79,
+      "prev_close": 11575.12,
+      "change_pct": 3.57
+    },
+    "RUCHI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.010739",
+      "updated": "2026-10-09T06:56:42.015350",
+      "last_price": 16798.87,
+      "prev_close": 16975.14,
+      "change_pct": -1.04
+    },
+    "ALOKTEXT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.037206",
+      "updated": "2026-10-09T06:56:42.041852",
+      "last_price": 10019.94,
+      "prev_close": 9730.08,
+      "change_pct": 2.98
+    },
+    "SIYARAM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.063996",
+      "updated": "2026-10-09T06:56:42.068834",
+      "last_price": 16152.35,
+      "prev_close": 16176.32,
+      "change_pct": -0.15
+    },
+    "HIMADRI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.090844",
+      "updated": "2026-10-09T06:56:42.095470",
+      "last_price": 14179.41,
+      "prev_close": 14441.05,
+      "change_pct": -1.81
+    },
+    "RTNPOWER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.117833",
+      "updated": "2026-10-09T06:56:42.122721",
+      "last_price": 14063.72,
+      "prev_close": 14166.88,
+      "change_pct": -0.73
+    },
+    "SPANDANA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.146927",
+      "updated": "2026-10-09T06:56:42.152193",
+      "last_price": 15585.15,
+      "prev_close": 15842.08,
+      "change_pct": -1.62
+    },
+    "BANNARIAMM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.175892",
+      "updated": "2026-10-09T06:56:42.181121",
+      "last_price": 26612.13,
+      "prev_close": 26990.31,
+      "change_pct": -1.4
+    },
+    "BAJAJHIND.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.203999",
+      "updated": "2026-10-09T06:56:42.209223",
+      "last_price": 24228.55,
+      "prev_close": 23597.98,
+      "change_pct": 2.67
+    },
+    "DCMSHRIRAM.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.231516",
+      "updated": "2026-10-09T06:56:42.236203",
+      "last_price": 13511.99,
+      "prev_close": 13533.29,
+      "change_pct": -0.16
+    },
+    "DHAMPUR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.257965",
+      "updated": "2026-10-09T06:56:42.262741",
+      "last_price": 23258.21,
+      "prev_close": 23145.31,
+      "change_pct": 0.49
+    },
+    "MAGADSUGAR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.285572",
+      "updated": "2026-10-09T06:56:42.290393",
+      "last_price": 8733.38,
+      "prev_close": 8853.11,
+      "change_pct": -1.35
+    },
+    "KRBL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.313342",
+      "updated": "2026-10-09T06:56:42.318143",
+      "last_price": 18395.41,
+      "prev_close": 18699.21,
+      "change_pct": -1.62
+    },
+    "LTFOODS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.340691",
+      "updated": "2026-10-09T06:56:42.345720",
+      "last_price": 18057.2,
+      "prev_close": 17911.5,
+      "change_pct": 0.81
+    },
+    "KOHINOOR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.368976",
+      "updated": "2026-10-09T06:56:42.374154",
+      "last_price": 22580.41,
+      "prev_close": 22827.21,
+      "change_pct": -1.08
+    },
+    "IBREALEST.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.398979",
+      "updated": "2026-10-09T06:56:42.403886",
+      "last_price": 16986.86,
+      "prev_close": 16285.7,
+      "change_pct": 4.31
+    },
+    "AVANTIFEED.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.428592",
+      "updated": "2026-10-09T06:56:42.433363",
+      "last_price": 12159.95,
+      "prev_close": 12262.92,
+      "change_pct": -0.84
+    },
+    "GODREJAGRO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.455347",
+      "updated": "2026-10-09T06:56:42.460380",
+      "last_price": 13029.25,
+      "prev_close": 12917.26,
+      "change_pct": 0.87
+    },
+    "JUBLFOOD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.484804",
+      "updated": "2026-10-09T06:56:42.489875",
+      "last_price": 29905.94,
+      "prev_close": 30103.8,
+      "change_pct": -0.66
+    },
+    "DEVYANI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.512158",
+      "updated": "2026-10-09T06:56:42.517022",
+      "last_price": 31870.1,
+      "prev_close": 31684.65,
+      "change_pct": 0.59
+    },
+    "SAPPHIRE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.575294",
+      "updated": "2026-10-09T06:56:42.580197",
+      "last_price": 18413.18,
+      "prev_close": 18286.4,
+      "change_pct": 0.69
+    },
+    "WESTLIFE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.602413",
+      "updated": "2026-10-09T06:56:42.607819",
+      "last_price": 19350.51,
+      "prev_close": 18751.56,
+      "change_pct": 3.19
+    },
+    "BECTORFOOD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.630076",
+      "updated": "2026-10-09T06:56:42.634833",
+      "last_price": 18439.86,
+      "prev_close": 18084.01,
+      "change_pct": 1.97
+    },
+    "VENKEYS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.656946",
+      "updated": "2026-10-09T06:56:42.661741",
+      "last_price": 13668.6,
+      "prev_close": 13697.25,
+      "change_pct": -0.21
+    },
+    "AWL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.683878",
+      "updated": "2026-10-09T06:56:42.688568",
+      "last_price": 17168.22,
+      "prev_close": 16883.92,
+      "change_pct": 1.68
+    },
+    "CONTAINER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.710352",
+      "updated": "2026-10-09T06:56:42.715087",
+      "last_price": 14384.45,
+      "prev_close": 14241.5,
+      "change_pct": 1.0
+    },
+    "GATEWAY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.737121",
+      "updated": "2026-10-09T06:56:42.741875",
+      "last_price": 19437.55,
+      "prev_close": 19889.46,
+      "change_pct": -2.27
+    },
+    "TCI.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.763815",
+      "updated": "2026-10-09T06:56:42.768568",
+      "last_price": 20983.76,
+      "prev_close": 20969.5,
+      "change_pct": 0.07
+    },
+    "MAHLOG.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.790514",
+      "updated": "2026-10-09T06:56:42.795263",
+      "last_price": 10575.79,
+      "prev_close": 10526.63,
+      "change_pct": 0.47
+    },
+    "ALLCARGO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.817419",
+      "updated": "2026-10-09T06:56:42.822086",
+      "last_price": 16718.67,
+      "prev_close": 16546.57,
+      "change_pct": 1.04
+    },
+    "BLUEDART.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.844050",
+      "updated": "2026-10-09T06:56:42.849019",
+      "last_price": 17546.52,
+      "prev_close": 17831.46,
+      "change_pct": -1.6
+    },
+    "SJLOGISTIC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.870800",
+      "updated": "2026-10-09T06:56:42.875510",
+      "last_price": 19737.56,
+      "prev_close": 19869.86,
+      "change_pct": -0.67
+    },
+    "SIS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.899744",
+      "updated": "2026-10-09T06:56:42.904696",
+      "last_price": 12770.13,
+      "prev_close": 12720.83,
+      "change_pct": 0.39
+    },
+    "TVSSCS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.926956",
+      "updated": "2026-10-09T06:56:42.931788",
+      "last_price": 16694.68,
+      "prev_close": 16535.7,
+      "change_pct": 0.96
+    },
+    "CELLO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.954549",
+      "updated": "2026-10-09T06:56:42.959463",
+      "last_price": 18670.71,
+      "prev_close": 18275.0,
+      "change_pct": 2.17
+    },
+    "TITAN.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:42.981959",
+      "updated": "2026-10-09T06:56:42.986882",
+      "last_price": 14054.08,
+      "prev_close": 13898.41,
+      "change_pct": 1.12
+    },
+    "KAJARIACER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.009251",
+      "updated": "2026-10-09T06:56:43.014132",
+      "last_price": 13323.43,
+      "prev_close": 13165.57,
+      "change_pct": 1.2
+    },
+    "CENTURY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.036812",
+      "updated": "2026-10-09T06:56:43.041733",
+      "last_price": 31354.44,
+      "prev_close": 31387.2,
+      "change_pct": -0.1
+    },
+    "GREENPLY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.070234",
+      "updated": "2026-10-09T06:56:43.075238",
+      "last_price": 15044.08,
+      "prev_close": 14977.97,
+      "change_pct": 0.44
+    },
+    "DIXON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.098107",
+      "updated": "2026-10-09T06:56:43.102974",
+      "last_price": 22726.95,
+      "prev_close": 22348.45,
+      "change_pct": 1.69
+    },
+    "AMBER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.126789",
+      "updated": "2026-10-09T06:56:43.131644",
+      "last_price": 13808.75,
+      "prev_close": 13637.66,
+      "change_pct": 1.25
+    },
+    "SYMPHONY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.154762",
+      "updated": "2026-10-09T06:56:43.159703",
+      "last_price": 18183.46,
+      "prev_close": 17870.66,
+      "change_pct": 1.75
+    },
+    "VGUARD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.184186",
+      "updated": "2026-10-09T06:56:43.189247",
+      "last_price": 11735.9,
+      "prev_close": 11776.63,
+      "change_pct": -0.35
+    },
+    "WHIRLPOOL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.213486",
+      "updated": "2026-10-09T06:56:43.218491",
+      "last_price": 13242.47,
+      "prev_close": 13249.43,
+      "change_pct": -0.05
+    },
+    "TTKPRESTIG.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.242310",
+      "updated": "2026-10-09T06:56:43.247252",
+      "last_price": 19276.66,
+      "prev_close": 19362.33,
+      "change_pct": -0.44
+    },
+    "RAJESHEXPO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.269203",
+      "updated": "2026-10-09T06:56:43.274005",
+      "last_price": 15699.57,
+      "prev_close": 15702.62,
+      "change_pct": -0.02
+    },
+    "KALYANKJIL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.296302",
+      "updated": "2026-10-09T06:56:43.301013",
+      "last_price": 13511.99,
+      "prev_close": 13533.29,
+      "change_pct": -0.16
+    },
+    "PNGJEWL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.322941",
+      "updated": "2026-10-09T06:56:43.327649",
+      "last_price": 21676.83,
+      "prev_close": 22255.14,
+      "change_pct": -2.6
+    },
+    "SENCO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.349730",
+      "updated": "2026-10-09T06:56:43.354403",
+      "last_price": 9976.9,
+      "prev_close": 9685.82,
+      "change_pct": 3.01
+    },
+    "JCHAC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.376163",
+      "updated": "2026-10-09T06:56:43.380880",
+      "last_price": 17231.02,
+      "prev_close": 16846.59,
+      "change_pct": 2.28
+    },
+    "CERA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.403349",
+      "updated": "2026-10-09T06:56:43.408095",
+      "last_price": 19572.81,
+      "prev_close": 19298.19,
+      "change_pct": 1.42
+    },
+    "HINDWARE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.429493",
+      "updated": "2026-10-09T06:56:43.434153",
+      "last_price": 11724.23,
+      "prev_close": 11703.06,
+      "change_pct": 0.18
+    },
+    "JKPAPER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.455776",
+      "updated": "2026-10-09T06:56:43.460429",
+      "last_price": 25035.61,
+      "prev_close": 25245.47,
+      "change_pct": -0.83
+    },
+    "WESTROST.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.481783",
+      "updated": "2026-10-09T06:56:43.486614",
+      "last_price": 38098.36,
+      "prev_close": 39538.97,
+      "change_pct": -3.64
+    },
+    "EMAMIPAP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.508450",
+      "updated": "2026-10-09T06:56:43.513120",
+      "last_price": 13040.95,
+      "prev_close": 12855.34,
+      "change_pct": 1.44
+    },
+    "ORIENTPPR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.534468",
+      "updated": "2026-10-09T06:56:43.539241",
+      "last_price": 16873.69,
+      "prev_close": 17049.14,
+      "change_pct": -1.03
+    },
+    "SESHAPAPER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.560750",
+      "updated": "2026-10-09T06:56:43.565416",
+      "last_price": 6044.66,
+      "prev_close": 6052.58,
+      "change_pct": -0.13
+    },
+    "SATIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.586903",
+      "updated": "2026-10-09T06:56:43.591597",
+      "last_price": 23294.42,
+      "prev_close": 23501.58,
+      "change_pct": -0.88
+    },
+    "PAPERPROD.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.613584",
+      "updated": "2026-10-09T06:56:43.618329",
+      "last_price": 21627.35,
+      "prev_close": 21859.84,
+      "change_pct": -1.06
+    },
+    "UFPACK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.640546",
+      "updated": "2026-10-09T06:56:43.645370",
+      "last_price": 19008.5,
+      "prev_close": 18877.76,
+      "change_pct": 0.69
+    },
+    "ESABINDIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.667286",
+      "updated": "2026-10-09T06:56:43.671978",
+      "last_price": 12771.53,
+      "prev_close": 12659.35,
+      "change_pct": 0.89
+    },
+    "ELECON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.693853",
+      "updated": "2026-10-09T06:56:43.698570",
+      "last_price": 14653.06,
+      "prev_close": 14736.43,
+      "change_pct": -0.57
+    },
+    "SCHNEIDER.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.721016",
+      "updated": "2026-10-09T06:56:43.725887",
+      "last_price": 15236.33,
+      "prev_close": 14911.36,
+      "change_pct": 2.18
+    },
+    "ZAGGLE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.748521",
+      "updated": "2026-10-09T06:56:43.753351",
+      "last_price": 19008.5,
+      "prev_close": 18877.76,
+      "change_pct": 0.69
+    },
+    "NETWEB.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.775674",
+      "updated": "2026-10-09T06:56:43.780505",
+      "last_price": 13625.68,
+      "prev_close": 13384.3,
+      "change_pct": 1.8
+    },
+    "KAYNES.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.802358",
+      "updated": "2026-10-09T06:56:43.807118",
+      "last_price": 14008.48,
+      "prev_close": 14205.37,
+      "change_pct": -1.39
+    },
+    "AVALON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.829033",
+      "updated": "2026-10-09T06:56:43.833754",
+      "last_price": 26232.37,
+      "prev_close": 26295.14,
+      "change_pct": -0.24
+    },
+    "IDEAFORGE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.855189",
+      "updated": "2026-10-09T06:56:43.859764",
+      "last_price": 20232.99,
+      "prev_close": 19758.9,
+      "change_pct": 2.4
+    },
+    "OPTIEMUS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.881725",
+      "updated": "2026-10-09T06:56:43.886559",
+      "last_price": 13552.07,
+      "prev_close": 13499.83,
+      "change_pct": 0.39
+    },
+    "YATRA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.908691",
+      "updated": "2026-10-09T06:56:43.913405",
+      "last_price": 17874.41,
+      "prev_close": 18094.46,
+      "change_pct": -1.22
+    },
+    "EASEMYTRIP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.935197",
+      "updated": "2026-10-09T06:56:43.939903",
+      "last_price": 19729.61,
+      "prev_close": 20025.5,
+      "change_pct": -1.48
+    },
+    "^NSEI": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.961463",
+      "updated": "2026-10-09T06:56:43.966146",
+      "last_price": 29208.79,
+      "prev_close": 28932.76,
+      "change_pct": 0.95
+    },
+    "^BSESN": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:43.987872",
+      "updated": "2026-10-09T06:56:43.992577",
+      "last_price": 149721.35,
+      "prev_close": 149208.39,
+      "change_pct": 0.34
+    },
+    "^NSEMDCP50": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.014523",
+      "updated": "2026-10-09T06:56:44.019200",
+      "last_price": 14179.41,
+      "prev_close": 14441.05,
+      "change_pct": -1.81
+    },
+    "NIFTY_MIDCAP_100.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.040837",
+      "updated": "2026-10-09T06:56:44.045478",
+      "last_price": 30094.25,
+      "prev_close": 29979.72,
+      "change_pct": 0.38
+    },
+    "NIFTY_SMLCAP_100.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.066799",
+      "updated": "2026-10-09T06:56:44.071408",
+      "last_price": 24680.64,
+      "prev_close": 24675.31,
+      "change_pct": 0.02
+    },
+    "^NSMIDCP": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.093103",
+      "updated": "2026-10-09T06:56:44.097666",
+      "last_price": 46327.7,
+      "prev_close": 45033.5,
+      "change_pct": 2.87
+    },
+    "^NSEMDCP150": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.125948",
+      "updated": "2026-10-09T06:56:44.133115",
+      "last_price": 17187.41,
+      "prev_close": 17070.89,
+      "change_pct": 0.68
+    },
+    "NIFTY_TOTAL_MKT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.159577",
+      "updated": "2026-10-09T06:56:44.164669",
+      "last_price": 25651.93,
+      "prev_close": 25607.26,
+      "change_pct": 0.17
+    },
+    "NIFTY500.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.188524",
+      "updated": "2026-10-09T06:56:44.193424",
+      "last_price": 20941.99,
+      "prev_close": 20769.37,
+      "change_pct": 0.83
+    },
+    "NIFTY_MICROCAP_250.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.216899",
+      "updated": "2026-10-09T06:56:44.221706",
+      "last_price": 12853.23,
+      "prev_close": 12740.48,
+      "change_pct": 0.89
+    },
+    "^CNXIT": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.244869",
+      "updated": "2026-10-09T06:56:44.249695",
+      "last_price": 24429.63,
+      "prev_close": 23841.3,
+      "change_pct": 2.47
+    },
+    "^NSEBANK": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.272006",
+      "updated": "2026-10-09T06:56:44.276745",
+      "last_price": 65852.35,
+      "prev_close": 65997.63,
+      "change_pct": -0.22
+    },
+    "NIFTY_PHARMA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.298522",
+      "updated": "2026-10-09T06:56:44.303339",
+      "last_price": 17765.97,
+      "prev_close": 17902.06,
+      "change_pct": -0.76
+    },
+    "NIFTY_AUTO.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.325242",
+      "updated": "2026-10-09T06:56:44.329858",
+      "last_price": 25512.5,
+      "prev_close": 25403.86,
+      "change_pct": 0.43
+    },
+    "NIFTY_FMCG.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.351327",
+      "updated": "2026-10-09T06:56:44.355964",
+      "last_price": 37938.34,
+      "prev_close": 38129.84,
+      "change_pct": -0.5
+    },
+    "NIFTY_METAL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.377902",
+      "updated": "2026-10-09T06:56:44.382547",
+      "last_price": 2991.75,
+      "prev_close": 3013.84,
+      "change_pct": -0.73
+    },
+    "NIFTY_ENERGY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.404008",
+      "updated": "2026-10-09T06:56:44.408702",
+      "last_price": 44798.23,
+      "prev_close": 45447.84,
+      "change_pct": -1.43
+    },
+    "NIFTY_REALTY.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.430290",
+      "updated": "2026-10-09T06:56:44.434956",
+      "last_price": 710.49,
+      "prev_close": 749.59,
+      "change_pct": -5.22
+    },
+    "NIFTY_INFRA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.456356",
+      "updated": "2026-10-09T06:56:44.460936",
+      "last_price": 9803.5,
+      "prev_close": 9777.36,
+      "change_pct": 0.27
+    },
+    "NIFTY_PVT_BANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.482513",
+      "updated": "2026-10-09T06:56:44.487191",
+      "last_price": 26827.19,
+      "prev_close": 26576.56,
+      "change_pct": 0.94
+    },
+    "NIFTY_PSU_BANK.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.508705",
+      "updated": "2026-10-09T06:56:44.513505",
+      "last_price": 7619.74,
+      "prev_close": 7585.84,
+      "change_pct": 0.45
+    },
+    "NIFTY_MEDIA.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.535735",
+      "updated": "2026-10-09T06:56:44.540410",
+      "last_price": 898.15,
+      "prev_close": 869.77,
+      "change_pct": 3.26
+    },
+    "NIFTY_consum.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.561747",
+      "updated": "2026-10-09T06:56:44.566423",
+      "last_price": 17392.74,
+      "prev_close": 17925.25,
+      "change_pct": -2.97
+    },
+    "NIFTY_COMMODITIES.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.588132",
+      "updated": "2026-10-09T06:56:44.592769",
+      "last_price": 9525.37,
+      "prev_close": 9347.83,
+      "change_pct": 1.9
+    },
+    "NIFTY_SERV_SECTOR.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.614149",
+      "updated": "2026-10-09T06:56:44.618784",
+      "last_price": 15873.95,
+      "prev_close": 15576.24,
+      "change_pct": 1.91
+    },
+    "NIFTY_MNC.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.640481",
+      "updated": "2026-10-09T06:56:44.645143",
+      "last_price": 12142.71,
+      "prev_close": 12346.62,
+      "change_pct": -1.65
+    },
+    "NIFTY_INDIA_MFG.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.666519",
+      "updated": "2026-10-09T06:56:44.671271",
+      "last_price": 8207.52,
+      "prev_close": 8176.29,
+      "change_pct": 0.38
+    },
+    "NIFTY_INDIA_DIGITAL.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.692964",
+      "updated": "2026-10-09T06:56:44.697575",
+      "last_price": 11344.31,
+      "prev_close": 11423.44,
+      "change_pct": -0.69
+    },
+    "NIFTY_HEALTHCARE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.719362",
+      "updated": "2026-10-09T06:56:44.724108",
+      "last_price": 33430.88,
+      "prev_close": 33638.98,
+      "change_pct": -0.62
+    },
+    "NIFTY_OIL_GAS.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.747389",
+      "updated": "2026-10-09T06:56:44.752511",
+      "last_price": 13727.94,
+      "prev_close": 13541.16,
+      "change_pct": 1.38
+    },
+    "NIFTY_FIN_SERVICE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.775193",
+      "updated": "2026-10-09T06:56:44.780768",
+      "last_price": 27407.26,
+      "prev_close": 27695.88,
+      "change_pct": -1.04
+    },
+    "NIFTY_CPSE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.805046",
+      "updated": "2026-10-09T06:56:44.809906",
+      "last_price": 15073.64,
+      "prev_close": 15500.92,
+      "change_pct": -2.76
+    },
+    "NIFTY_PSE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.832122",
+      "updated": "2026-10-09T06:56:44.836936",
+      "last_price": 16117.97,
+      "prev_close": 15780.79,
+      "change_pct": 2.14
+    },
+    "NIFTY_DEFENCE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.859197",
+      "updated": "2026-10-09T06:56:44.863895",
+      "last_price": 2196.73,
+      "prev_close": 2163.83,
+      "change_pct": 1.52
+    },
+    "NIFTY_EV_N_NEW_AUTOMOTIVE.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.885804",
+      "updated": "2026-10-09T06:56:44.890538",
+      "last_price": 11259.64,
+      "prev_close": 11242.31,
+      "change_pct": 0.15
+    },
+    "NIFTY_INDIA_RAILWAYS_NIPPON.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.913461",
+      "updated": "2026-10-09T06:56:44.918290",
+      "last_price": 18155.8,
+      "prev_close": 18514.72,
+      "change_pct": -1.94
+    },
+    "NIFTY_INDIA_TMSC.TI": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.940206",
+      "updated": "2026-10-09T06:56:44.944993",
+      "last_price": 19539.9,
+      "prev_close": 19261.46,
+      "change_pct": 1.45
+    },
+    "NIFTY500_MULTICAP.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:44.967221",
+      "updated": "2026-10-09T06:56:44.971914",
+      "last_price": 10985.44,
+      "prev_close": 10924.02,
+      "change_pct": 0.56
+    },
+    "NIFTY_GROWSECT_15.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.000375",
+      "updated": "2026-10-09T06:56:45.011008",
+      "last_price": 31274.27,
+      "prev_close": 31906.75,
+      "change_pct": -1.98
+    },
+    "NIFTY50_EQUAL_WEIGHT.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.040509",
+      "updated": "2026-10-09T06:56:45.045474",
+      "last_price": 11032.03,
+      "prev_close": 10987.62,
+      "change_pct": 0.4
+    },
+    "NIFTY100_QUALTY30.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.072492",
+      "updated": "2026-10-09T06:56:45.077390",
+      "last_price": 24849.14,
+      "prev_close": 24930.68,
+      "change_pct": -0.33
+    },
+    "NIFTY_ALPHA_30.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.101932",
+      "updated": "2026-10-09T06:56:45.106752",
+      "last_price": 65811.24,
+      "prev_close": 65490.14,
+      "change_pct": 0.49
+    },
+    "NIFTY50_VALUE_20.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.130576",
+      "updated": "2026-10-09T06:56:45.136793",
+      "last_price": 8976.71,
+      "prev_close": 9008.61,
+      "change_pct": -0.35
+    },
+    "NIFTY_LOW_VOLATILITY_50.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.159432",
+      "updated": "2026-10-09T06:56:45.164191",
+      "last_price": 36160.71,
+      "prev_close": 36254.37,
+      "change_pct": -0.26
+    },
+    "NIFTY_MOMENTUM_30.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.185968",
+      "updated": "2026-10-09T06:56:45.190614",
+      "last_price": 30357.16,
+      "prev_close": 30315.82,
+      "change_pct": 0.14
+    },
+    "NIFTY_HIGH_BETA_50.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.212535",
+      "updated": "2026-10-09T06:56:45.217193",
+      "last_price": 13455.42,
+      "prev_close": 13544.53,
+      "change_pct": -0.66
+    },
+    "NIFTY_QUALITY_30.NS": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.238814",
+      "updated": "2026-10-09T06:56:45.243564",
+      "last_price": 18368.69,
+      "prev_close": 18453.07,
+      "change_pct": -0.46
+    },
+    "^INDIAVIX": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.265389",
+      "updated": "2026-10-09T06:56:45.270041",
+      "last_price": 11.7,
+      "prev_close": 11.65,
+      "change_pct": 0.48
+    },
+    "BSE-MIDCAP.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.291873",
+      "updated": "2026-10-09T06:56:45.296595",
+      "last_price": 19754.69,
+      "prev_close": 19319.3,
+      "change_pct": 2.25
+    },
+    "BSE-SMLCAP.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.318576",
+      "updated": "2026-10-09T06:56:45.323274",
+      "last_price": 21743.89,
+      "prev_close": 21714.83,
+      "change_pct": 0.13
+    },
+    "^BSE100": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.345218",
+      "updated": "2026-10-09T06:56:45.349874",
+      "last_price": 27024.23,
+      "prev_close": 26804.21,
+      "change_pct": 0.82
+    },
+    "^BSE200": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.371833",
+      "updated": "2026-10-09T06:56:45.376588",
+      "last_price": 12095.41,
+      "prev_close": 12565.82,
+      "change_pct": -3.74
+    },
+    "^BSE500": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.398011",
+      "updated": "2026-10-09T06:56:45.402737",
+      "last_price": 18343.97,
+      "prev_close": 18388.4,
+      "change_pct": -0.24
+    },
+    "S&P_BSE_BANKEX.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.424323",
+      "updated": "2026-10-09T06:56:45.428941",
+      "last_price": 16218.49,
+      "prev_close": 16081.16,
+      "change_pct": 0.85
+    },
+    "S&P_BSE_TECK.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.450214",
+      "updated": "2026-10-09T06:56:45.454887",
+      "last_price": 13214.54,
+      "prev_close": 13276.95,
+      "change_pct": -0.47
+    },
+    "S&P_BSE_HEALTHCARE.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.476440",
+      "updated": "2026-10-09T06:56:45.481042",
+      "last_price": 11545.29,
+      "prev_close": 11688.59,
+      "change_pct": -1.23
+    },
+    "S&P_BSE_AUTO.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.502268",
+      "updated": "2026-10-09T06:56:45.506932",
+      "last_price": 9367.57,
+      "prev_close": 9263.51,
+      "change_pct": 1.12
+    },
+    "S&P_BSE_METAL.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.528373",
+      "updated": "2026-10-09T06:56:45.532984",
+      "last_price": 15835.86,
+      "prev_close": 15193.84,
+      "change_pct": 4.23
+    },
+    "S&P_BSE_OILGAS.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.554344",
+      "updated": "2026-10-09T06:56:45.558974",
+      "last_price": 26157.1,
+      "prev_close": 26100.28,
+      "change_pct": 0.22
+    },
+    "S&P_BSE_POWER.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.580391",
+      "updated": "2026-10-09T06:56:45.585028",
+      "last_price": 14551.79,
+      "prev_close": 14587.1,
+      "change_pct": -0.24
+    },
+    "S&P_BSE_REALTY.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.606272",
+      "updated": "2026-10-09T06:56:45.611027",
+      "last_price": 11654.4,
+      "prev_close": 11722.91,
+      "change_pct": -0.58
+    },
+    "S&P_BSE_IT.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.633224",
+      "updated": "2026-10-09T06:56:45.638041",
+      "last_price": 28906.75,
+      "prev_close": 29569.01,
+      "change_pct": -2.24
+    },
+    "S&P_BSE_FMCG.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.659921",
+      "updated": "2026-10-09T06:56:45.664612",
+      "last_price": 12901.12,
+      "prev_close": 13265.71,
+      "change_pct": -2.75
+    },
+    "S&P_BSE_CG.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.686558",
+      "updated": "2026-10-09T06:56:45.691312",
+      "last_price": 13866.41,
+      "prev_close": 13862.09,
+      "change_pct": 0.03
+    },
+    "S&P_BSE_CONS_DURABLES.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.713950",
+      "updated": "2026-10-09T06:56:45.718794",
+      "last_price": 27650.37,
+      "prev_close": 27966.95,
+      "change_pct": -1.13
+    },
+    "S&P_BSE_BASICMATERIALS.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.741388",
+      "updated": "2026-10-09T06:56:45.746231",
+      "last_price": 14369.27,
+      "prev_close": 14757.05,
+      "change_pct": -2.63
+    },
+    "S&P_BSE_INDUSTRIALS.BO": {
+      "rows": 504,
+      "last_date": "2026-10-09 06:56:45.768586",
+      "updated": "2026-10-09T06:56:45.773479",
+      "last_price": 8863.03,
+      "prev_close": 8754.52,
+      "change_pct": 1.24
+    }
+  },
+  "last_update": {
+    "HDFCBANK.NS": 1791528989.9106905,
+    "ICICIBANK.NS": 1791528989.939203,
+    "KOTAKBANK.NS": 1791528989.9693882,
+    "AXISBANK.NS": 1791528989.9992638,
+    "INDUSINDBK.NS": 1791528990.0292132,
+    "FEDERALBNK.NS": 1791528990.0563552,
+    "BANDHANBNK.NS": 1791528990.0829504,
+    "IDFCFIRSTB.NS": 1791528990.1133556,
+    "RBLBANK.NS": 1791528990.1447861,
+    "CSBBANK.NS": 1791528990.1741667,
+    "DCBBANK.NS": 1791528990.2033825,
+    "KARURVYSYA.NS": 1791528990.2328582,
+    "SOUTHBANK.NS": 1791528990.2614722,
+    "CITYUNION.NS": 1791528990.2908225,
+    "DHANBANK.NS": 1791528990.3198657,
+    "JKBANK.NS": 1791528990.3513608,
+    "KARNATAKA.NS": 1791528990.3813736,
+    "TMBANK.NS": 1791528990.444934,
+    "SBIN.NS": 1791528990.475094,
+    "BANKBARODA.NS": 1791528990.504718,
+    "PNB.NS": 1791528990.5345387,
+    "CANBK.NS": 1791528990.5641448,
+    "UNIONBANK.NS": 1791528990.594391,
+    "BANKINDIA.NS": 1791528990.6245172,
+    "CENTRALBK.NS": 1791528990.6555443,
+    "INDIANB.NS": 1791528990.6868389,
+    "UCOBANK.NS": 1791528990.7174077,
+    "IOB.NS": 1791528990.7478938,
+    "MAHABANK.NS": 1791528990.7795212,
+    "PSBANK.NS": 1791528990.8110378,
+    "UJJIVANSFB.NS": 1791528990.8424904,
+    "EQUITASBNK.NS": 1791528990.8724668,
+    "SURANASOL.NS": 1791528990.9085948,
+    "AUROPHARMA.NS": 1791528990.9503572,
+    "BAJFINANCE.NS": 1791528990.9788585,
+    "BAJAJFINSV.NS": 1791528991.0072525,
+    "MUTHOOTFIN.NS": 1791528991.0357723,
+    "MANAPPURAM.NS": 1791528991.0642545,
+    "SHRIRAMFIN.NS": 1791528991.0932813,
+    "CHOLAFIN.NS": 1791528991.1222568,
+    "LICI.NS": 1791528991.1529717,
+    "SBICARD.NS": 1791528991.1841407,
+    "SBINPS.NS": 1791528991.2127037,
+    "POONAWALLA.NS": 1791528991.2408795,
+    "MASFIN.NS": 1791528991.268277,
+    "APTUS.NS": 1791528991.2960057,
+    "AAVAS.NS": 1791528991.3239243,
+    "CANFINHOME.NS": 1791528991.3522332,
+    "GRUH.NS": 1791528991.3812056,
+    "HOMEFIRST.NS": 1791528991.4104898,
+    "PIRAMAL.NS": 1791528991.4398854,
+    "IIFL.NS": 1791528991.4693837,
+    "L&TFH.NS": 1791528991.497309,
+    "RECLTD.NS": 1791528991.5241196,
+    "PFC.NS": 1791528991.5509741,
+    "IRFC.NS": 1791528991.5781868,
+    "HUDCO.NS": 1791528991.6048114,
+    "CDSL.NS": 1791528991.6315086,
+    "BSE.NS": 1791528991.6577988,
+    "CAMS.NS": 1791528991.6846976,
+    "KFINTECH.NS": 1791528991.7123005,
+    "ANGELONE.NS": 1791528991.7392268,
+    "MOTILALOFS.NS": 1791528991.7656229,
+    "JMFINANCIL.NS": 1791528991.792231,
+    "MAHSCOOTER.NS": 1791528991.818511,
+    "INDIACEM.NS": 1791528991.8452578,
+    "PERSISTENT.NS": 1791528991.871594,
+    "HDFCLIFE.NS": 1791528991.8982277,
+    "SBILIFE.NS": 1791528991.926838,
+    "ICICIPRULI.NS": 1791528991.9538937,
+    "ICICIGI.NS": 1791528991.9809232,
+    "BAJAJHLDNG.NS": 1791528992.0133207,
+    "STARHEALTH.NS": 1791528992.0405467,
+    "NEWINDIA.NS": 1791528992.0676548,
+    "NIACL.NS": 1791528992.09453,
+    "ORIENTAL.NS": 1791528992.1207469,
+    "UNITED.NS": 1791528992.146796,
+    "TCS.NS": 1791528992.175183,
+    "INFY.NS": 1791528992.2018697,
+    "WIPRO.NS": 1791528992.2286139,
+    "HCLTECH.NS": 1791528992.256198,
+    "TECHM.NS": 1791528992.283123,
+    "LTIM.NS": 1791528992.309435,
+    "Mphasis.NS": 1791528992.3373606,
+    "MPHASIS.NS": 1791528992.3662188,
+    "COFORGE.NS": 1791528992.3944182,
+    "LTTS.NS": 1791528992.4215727,
+    "KPITTECH.NS": 1791528992.4488425,
+    "TATAELXSI.NS": 1791528992.4757793,
+    "SONATSOFTW.NS": 1791528992.502607,
+    "HEXAWARE.NS": 1791528992.528924,
+    "ZENSAR.NS": 1791528992.5561516,
+    "BSOFT.NS": 1791528992.5825784,
+    "MASTEK.NS": 1791528992.609302,
+    "NEWGEN.NS": 1791528992.6362338,
+    "NIITTECH.NS": 1791528992.6622868,
+    "HAPPSTMNDS.NS": 1791528992.6880956,
+    "DATAPATTNS.NS": 1791528992.7141986,
+    "ROUTE.NS": 1791528992.739806,
+    "TANLA.NS": 1791528992.7659407,
+    "RATEGAIN.NS": 1791528992.7919695,
+    "MAPMYINDIA.NS": 1791528992.8180313,
+    "ZOMATO.NS": 1791528992.8491805,
+    "PAYTM.NS": 1791528992.8862622,
+    "NYKAA.NS": 1791528992.9180212,
+    "DELHIVERY.NS": 1791528992.9454892,
+    "POLICYBZR.NS": 1791528992.972418,
+    "CARTRADE.NS": 1791528992.999809,
+    "IXIGO.NS": 1791528993.0294132,
+    "SUNPHARMA.NS": 1791528993.058198,
+    "DRREDDY.NS": 1791528993.0857258,
+    "CIPLA.NS": 1791528993.114799,
+    "DIVISLAB.NS": 1791528993.142441,
+    "LUPIN.NS": 1791528993.1720958,
+    "TORNTPHARM.NS": 1791528993.1999333,
+    "ALKEM.NS": 1791528993.2275531,
+    "BIOCON.NS": 1791528993.2581081,
+    "MANKIND.NS": 1791528993.2857199,
+    "IPCALAB.NS": 1791528993.3123472,
+    "NATCOPHARM.NS": 1791528993.339182,
+    "GRANULES.NS": 1791528993.3657374,
+    "LAURUS.NS": 1791528993.3926413,
+    "SOLARA.NS": 1791528993.419184,
+    "AJANTPHARM.NS": 1791528993.445985,
+    "GLENMARK.NS": 1791528993.4733856,
+    "PFIZER.NS": 1791528993.5007129,
+    "ABBOTINDIA.NS": 1791528993.5276587,
+    "GSK.NS": 1791528993.5548508,
+    "SANOFI.NS": 1791528993.581765,
+    "ZYDUSLIFE.NS": 1791528993.6095443,
+    "JBCHEPHARM.NS": 1791528993.6409354,
+    "STRIDES.NS": 1791528993.686416,
+    "SHOPERSTOP.NS": 1791528993.7224274,
+    "METROPOLIS.NS": 1791528993.7502463,
+    "LALPATHLAB.NS": 1791528993.7953157,
+    "THYROCARE.NS": 1791528993.8251717,
+    "MAXHEALTH.NS": 1791528993.8536878,
+    "APOLLOHOSP.NS": 1791528993.9292057,
+    "FORTIS.NS": 1791528993.9728372,
+    "NARAYANHRUD.NS": 1791528994.004792,
+    "MEDANTA.NS": 1791528994.0349748,
+    "RAINBOW.NS": 1791528994.0655794,
+    "YATHARTH.NS": 1791528994.0963778,
+    "KRISHNADEF.NS": 1791528994.12705,
+    "MARUTI.NS": 1791528994.1560295,
+    "TATAMOTORS.NS": 1791528994.1852949,
+    "M&M.NS": 1791528994.2147458,
+    "BAJAJ-AUTO.NS": 1791528994.2468028,
+    "HEROMOTOCO.NS": 1791528994.2735345,
+    "EICHERMOT.NS": 1791528994.3013337,
+    "TVSMOTOR.NS": 1791528994.3289256,
+    "ASHOKLEY.NS": 1791528994.3559222,
+    "FORCEMOT.NS": 1791528994.38231,
+    "TIINDIA.NS": 1791528994.4099267,
+    "HYUNDAI.NS": 1791528994.436429,
+    "BOSCHLTD.NS": 1791528994.4640868,
+    "MOTHERSON.NS": 1791528994.4909208,
+    "SONACOMS.NS": 1791528994.517597,
+    "SAMVARDHAN.NS": 1791528994.5443525,
+    "BALKRISIND.NS": 1791528994.5717835,
+    "MRF.NS": 1791528994.6059449,
+    "APOLLOTYRE.NS": 1791528994.650582,
+    "CEAT.NS": 1791528994.6961179,
+    "JK.NS": 1791528994.7250135,
+    "GOODYEAR.NS": 1791528994.7532766,
+    "SUNDARMFIN.NS": 1791528994.782035,
+    "SUNDRMFAST.NS": 1791528994.8088121,
+    "BHARATFORG.NS": 1791528994.835188,
+    "RAMKRISHNA.NS": 1791528994.8612623,
+    "MINDACORP.NS": 1791528994.889632,
+    "MOTHERSUMI.NS": 1791528994.9173052,
+    "LUMAX.NS": 1791528994.9464252,
+    "VARROC.NS": 1791528994.974568,
+    "FIEM.NS": 1791528995.003198,
+    "GABRIEL.NS": 1791528995.0329022,
+    "SETCO.NS": 1791528995.0611496,
+    "SCHAEFFLER.NS": 1791528995.0905309,
+    "SKF.NS": 1791528995.119221,
+    "TIMKEN.NS": 1791528995.1477602,
+    "NRBBEARING.NS": 1791528995.1765525,
+    "PRECWIRE.NS": 1791528995.2036357,
+    "AMARARAJA.NS": 1791528995.2307446,
+    "EXIDEIND.NS": 1791528995.257407,
+    "HBL.NS": 1791528995.284748,
+    "HINDUNILVR.NS": 1791528995.3151457,
+    "ITC.NS": 1791528995.3588772,
+    "NESTLEIND.NS": 1791528995.394428,
+    "BRITANNIA.NS": 1791528995.4479122,
+    "TATACONSUM.NS": 1791528995.4985836,
+    "DABUR.NS": 1791528995.5315187,
+    "MARICO.NS": 1791528995.5615766,
+    "GODREJCP.NS": 1791528995.6149452,
+    "COLPAL.NS": 1791528995.6883934,
+    "PGHH.NS": 1791528995.7454545,
+    "EMAMILTD.NS": 1791528995.8008533,
+    "BATA.NS": 1791528995.8308194,
+    "RELAXO.NS": 1791528995.8699608,
+    "PAGEIND.NS": 1791528995.898421,
+    "UNITDSPR.NS": 1791528995.9276123,
+    "RADICO.NS": 1791528995.9589024,
+    "UBL.NS": 1791528996.0056226,
+    "VSTIND.NS": 1791528996.0385363,
+    "GILLETTE.NS": 1791528996.065834,
+    "HONAUT.NS": 1791528996.0927958,
+    "PGHL.NS": 1791528996.1197379,
+    "JYOTHYLAB.NS": 1791528996.14644,
+    "GODREJIND.NS": 1791528996.1735425,
+    "TASTYBITE.NS": 1791528996.2002192,
+    "BIKAJI.NS": 1791528996.2279265,
+    "CLEAN.NS": 1791528996.2547505,
+    "PRATAAP.NS": 1791528996.2830918,
+    "ZYDUS.NS": 1791528996.3117788,
+    "CCL.NS": 1791528996.3395813,
+    "VADILALIND.NS": 1791528996.366551,
+    "ADFFOODS.NS": 1791528996.3943326,
+    "HERITGFOOD.NS": 1791528996.4213207,
+    "PARAGMILK.NS": 1791528996.448246,
+    "HATSUN.NS": 1791528996.474935,
+    "KWALITY.NS": 1791528996.5018015,
+    "DODLA.NS": 1791528996.5287397,
+    "MILKFOOD.NS": 1791528996.5551229,
+    "RELIANCE.NS": 1791528996.581078,
+    "ONGC.NS": 1791528996.6074576,
+    "NTPC.NS": 1791528996.6341295,
+    "POWERGRID.NS": 1791528996.661364,
+    "IOC.NS": 1791528996.6881273,
+    "BPCL.NS": 1791528996.714685,
+    "HINDPETRO.NS": 1791528996.741534,
+    "GAIL.NS": 1791528996.7696574,
+    "OIL.NS": 1791528996.7967803,
+    "MRPL.NS": 1791528996.825815,
+    "CASTROLIND.NS": 1791528996.8562453,
+    "PETRONET.NS": 1791528996.885895,
+    "IGL.NS": 1791528996.91831,
+    "MGL.NS": 1791528996.9509354,
+    "GUJGASLTD.NS": 1791528996.9792786,
+    "AEGISLOG.NS": 1791528997.0079424,
+    "TATAPOWER.NS": 1791528997.0368586,
+    "ADANIGREEN.NS": 1791528997.0656369,
+    "ADANIPOWER.NS": 1791528997.0934925,
+    "ADANITRANS.NS": 1791528997.1210225,
+    "NHPC.NS": 1791528997.1508048,
+    "SJVN.NS": 1791528997.179293,
+    "TORNTPOWER.NS": 1791528997.206351,
+    "CESC.NS": 1791528997.2333975,
+    "JSWENERGY.NS": 1791528997.2600067,
+    "RPOWER.NS": 1791528997.2867644,
+    "JPPOWER.NS": 1791528997.3136067,
+    "SUZLON.NS": 1791528997.3407292,
+    "INOXGREEN.NS": 1791528997.3671937,
+    "RENUKA.NS": 1791528997.3944287,
+    "TATASTEEL.NS": 1791528997.4212878,
+    "JSWSTEEL.NS": 1791528997.45639,
+    "HINDALCO.NS": 1791528997.500767,
+    "VEDL.NS": 1791528997.5386388,
+    "NATIONALUM.NS": 1791528997.573529,
+    "HINDZINC.NS": 1791528997.6040967,
+    "NMDC.NS": 1791528997.6342242,
+    "COALINDIA.NS": 1791528997.6677318,
+    "SAIL.NS": 1791528997.7108433,
+    "JINDALSTEL.NS": 1791528997.748385,
+    "WELCORP.NS": 1791528997.791284,
+    "RATNAMANI.NS": 1791528997.8622544,
+    "APLAPOLLO.NS": 1791528997.913006,
+    "HINDCOPPER.NS": 1791528997.962441,
+    "JSL.NS": 1791528998.0098982,
+    "JSLHISAR.NS": 1791528998.0419843,
+    "BALRAMCHIN.NS": 1791528998.0739152,
+    "MAITHANALL.NS": 1791528998.1260293,
+    "SHYAMMETL.NS": 1791528998.179378,
+    "RAMCOCEM.NS": 1791528998.2131724,
+    "GPIL.NS": 1791528998.2445955,
+    "SANDUMA.NS": 1791528998.2762666,
+    "MOIL.NS": 1791528998.3079133,
+    "KIOCL.NS": 1791528998.3398566,
+    "DLF.NS": 1791528998.3723788,
+    "GODREJPROP.NS": 1791528998.4046297,
+    "PRESTIGE.NS": 1791528998.436691,
+    "OBEROIRLTY.NS": 1791528998.4682205,
+    "BRIGADE.NS": 1791528998.5008192,
+    "PHOENIXLTD.NS": 1791528998.5324516,
+    "LODHA.NS": 1791528998.564642,
+    "SUNTV.NS": 1791528998.5970933,
+    "SOBHA.NS": 1791528998.6282532,
+    "PREMEXPLQ.NS": 1791528998.6585546,
+    "SIGNATURE.NS": 1791528998.688431,
+    "KOLTEPATIL.NS": 1791528998.719171,
+    "MAHLIFE.NS": 1791528998.7481985,
+    "PURAVANKARA.NS": 1791528998.7779791,
+    "ASHIANA.NS": 1791528998.8075812,
+    "AJMERA.NS": 1791528998.8379881,
+    "NBCC.NS": 1791528998.8685098,
+    "IRCON.NS": 1791528998.900591,
+    "RVNL.NS": 1791528998.9332926,
+    "RAILTEL.NS": 1791528998.975154,
+    "CAMPUS.NS": 1791528999.015995,
+    "LT.NS": 1791528999.0461338,
+    "ADANIENT.NS": 1791528999.0743253,
+    "ADANIPORTS.NS": 1791528999.1029332,
+    "SIEMENS.NS": 1791528999.1301174,
+    "ABB.NS": 1791528999.1561399,
+    "BHEL.NS": 1791528999.1826286,
+    "CUMMINSIND.NS": 1791528999.2090938,
+    "THERMAX.NS": 1791528999.2358408,
+    "VOLTAS.NS": 1791528999.2616196,
+    "BLUESTAR.NS": 1791528999.2914906,
+    "HAVELLS.NS": 1791528999.318271,
+    "CROMPTON.NS": 1791528999.3445804,
+    "POLYCAB.NS": 1791528999.3703876,
+    "KEI.NS": 1791528999.4060106,
+    "FINOLEX.NS": 1791528999.433816,
+    "SUPRAJIT.NS": 1791528999.4606857,
+    "DBCORP.NS": 1791528999.487194,
+    "GRINDWELL.NS": 1791528999.5133786,
+    "ELGIEQUIP.NS": 1791528999.5392988,
+    "KSB.NS": 1791528999.5654573,
+    "JYOTI.NS": 1791528999.5914724,
+    "IRB.NS": 1791528999.6288323,
+    "GRINFRA.NS": 1791528999.655529,
+    "PNC.NS": 1791528999.6821778,
+    "KNRCON.NS": 1791528999.7082992,
+    "DILIPBUILDCON.NS": 1791528999.7347612,
+    "HGINFRAST.NS": 1791528999.7610989,
+    "RITES.NS": 1791528999.7873547,
+    "ENGINERSIN.NS": 1791528999.813882,
+    "GMRINFRA.NS": 1791528999.8400044,
+    "ULTRACEMCO.NS": 1791528999.865532,
+    "GRASIM.NS": 1791528999.8924131,
+    "ACC.NS": 1791528999.918605,
+    "AMBUJACEM.NS": 1791528999.9448993,
+    "SHREECEM.NS": 1791528999.9705985,
+    "JKCEMENT.NS": 1791528999.99643,
+    "HEIDELBERG.NS": 1791529000.022028,
+    "DALBHARAT.NS": 1791529000.0480194,
+    "JKLAKSHMI.NS": 1791529000.0739865,
+    "NUVOCO.NS": 1791529000.099826,
+    "ORIENTCEM.NS": 1791529000.1253855,
+    "STARCEMENT.NS": 1791529000.1515236,
+    "PRISM.NS": 1791529000.1774774,
+    "SAHYADRI.NS": 1791529000.2043252,
+    "PIDILITIND.NS": 1791529000.2298248,
+    "ASIANPAINT.NS": 1791529000.2556548,
+    "BERGER.NS": 1791529000.281124,
+    "AKZOINDIA.NS": 1791529000.3070173,
+    "KANSAINER.NS": 1791529000.332347,
+    "DEEPAKNTR.NS": 1791529000.3582962,
+    "ATUL.NS": 1791529000.3839364,
+    "NAVIN.NS": 1791529000.4098916,
+    "SRF.NS": 1791529000.4361372,
+    "FLUOROCHEM.NS": 1791529000.4619744,
+    "AETHER.NS": 1791529000.4875212,
+    "LXCHEM.NS": 1791529000.5134838,
+    "ANURAS.NS": 1791529000.5391917,
+    "TATACHEM.NS": 1791529000.5648093,
+    "GUJALKALI.NS": 1791529000.5903728,
+    "DCW.NS": 1791529000.6164153,
+    "GHCL.NS": 1791529000.641823,
+    "BASF.NS": 1791529000.6676497,
+    "DYNAMATECH.NS": 1791529000.6932635,
+    "UPL.NS": 1791529000.7299855,
+    "PIIND.NS": 1791529000.7722304,
+    "BAYERCROP.NS": 1791529000.808145,
+    "SYNGENTA.NS": 1791529000.8343492,
+    "RALLIS.NS": 1791529000.8608735,
+    "INSECTICID.NS": 1791529000.8870316,
+    "CHAMBLFERT.NS": 1791529000.913723,
+    "GSFC.NS": 1791529000.9399338,
+    "NFL.NS": 1791529000.9663672,
+    "COROMANDEL.NS": 1791529000.9926682,
+    "FACT.NS": 1791529001.0190196,
+    "ZUARI.NS": 1791529001.0452068,
+    "EIDPARRY.NS": 1791529001.0715504,
+    "BHARTIARTL.NS": 1791529001.097658,
+    "IDEA.NS": 1791529001.124268,
+    "INDUS.NS": 1791529001.1502564,
+    "TATACOMM.NS": 1791529001.1771553,
+    "ITI.NS": 1791529001.203347,
+    "TEJASNET.NS": 1791529001.2292762,
+    "GTLINFRA.NS": 1791529001.2552342,
+    "ONMOBILE.NS": 1791529001.2812397,
+    "ZEEL.NS": 1791529001.30687,
+    "PVRINOX.NS": 1791529001.3341987,
+    "DISHTV.NS": 1791529001.360033,
+    "TVTODAY.NS": 1791529001.3860955,
+    "JAGRAN.NS": 1791529001.4123414,
+    "NAVNETEDUL.NS": 1791529001.438311,
+    "NAZARA.NS": 1791529001.4644322,
+    "DEN.NS": 1791529001.4903934,
+    "HATHWAY.NS": 1791529001.51629,
+    "HAL.NS": 1791529001.5421593,
+    "BEL.NS": 1791529001.5678983,
+    "BDL.NS": 1791529001.593774,
+    "SOLARINDS.NS": 1791529001.6196592,
+    "COCHINSHIP.NS": 1791529001.6456826,
+    "GARDENREACH.NS": 1791529001.6717486,
+    "MAZAGON.NS": 1791529001.697664,
+    "PARAS.NS": 1791529001.723548,
+    "ZENTEC.NS": 1791529001.7497656,
+    "APAR.NS": 1791529001.7753541,
+    "CENTUM.NS": 1791529001.8012292,
+    "DCXINDIA.NS": 1791529001.8274336,
+    "TRIDENT.NS": 1791529001.8530264,
+    "VARDHMAN.NS": 1791529001.8791294,
+    "ARVIND.NS": 1791529001.9053175,
+    "SPDL.NS": 1791529001.934472,
+    "KPR.NS": 1791529001.961849,
+    "WELSPUNIND.NS": 1791529001.9889712,
+    "RUCHI.NS": 1791529002.015311,
+    "ALOKTEXT.NS": 1791529002.0418124,
+    "SIYARAM.NS": 1791529002.0687895,
+    "HIMADRI.NS": 1791529002.0954304,
+    "RTNPOWER.NS": 1791529002.1226287,
+    "SPANDANA.NS": 1791529002.152121,
+    "BANNARIAMM.NS": 1791529002.1810305,
+    "BAJAJHIND.NS": 1791529002.209172,
+    "DCMSHRIRAM.NS": 1791529002.236158,
+    "DHAMPUR.NS": 1791529002.2626915,
+    "MAGADSUGAR.NS": 1791529002.2903447,
+    "KRBL.NS": 1791529002.3180904,
+    "LTFOODS.NS": 1791529002.3456707,
+    "KOHINOOR.NS": 1791529002.37408,
+    "IBREALEST.NS": 1791529002.4038277,
+    "AVANTIFEED.NS": 1791529002.4333127,
+    "GODREJAGRO.NS": 1791529002.4603233,
+    "JUBLFOOD.NS": 1791529002.4898221,
+    "DEVYANI.NS": 1791529002.5169725,
+    "SAPPHIRE.NS": 1791529002.58014,
+    "WESTLIFE.NS": 1791529002.6077588,
+    "BECTORFOOD.NS": 1791529002.634786,
+    "VENKEYS.NS": 1791529002.6616976,
+    "AWL.NS": 1791529002.6885216,
+    "CONTAINER.NS": 1791529002.7150133,
+    "GATEWAY.NS": 1791529002.741834,
+    "TCI.NS": 1791529002.768525,
+    "MAHLOG.NS": 1791529002.7952197,
+    "ALLCARGO.NS": 1791529002.822019,
+    "BLUEDART.NS": 1791529002.8489728,
+    "SJLOGISTIC.NS": 1791529002.87546,
+    "SIS.NS": 1791529002.9046488,
+    "TVSSCS.NS": 1791529002.9317377,
+    "CELLO.NS": 1791529002.9594119,
+    "TITAN.NS": 1791529002.9868295,
+    "KAJARIACER.NS": 1791529003.0140474,
+    "CENTURY.NS": 1791529003.0416787,
+    "GREENPLY.NS": 1791529003.0751836,
+    "DIXON.NS": 1791529003.102918,
+    "AMBER.NS": 1791529003.1315885,
+    "SYMPHONY.NS": 1791529003.1596258,
+    "VGUARD.NS": 1791529003.1891856,
+    "WHIRLPOOL.NS": 1791529003.2184384,
+    "TTKPRESTIG.NS": 1791529003.2471993,
+    "RAJESHEXPO.NS": 1791529003.2739568,
+    "KALYANKJIL.NS": 1791529003.3009672,
+    "PNGJEWL.NS": 1791529003.327604,
+    "SENCO.NS": 1791529003.3543603,
+    "JCHAC.NS": 1791529003.3808386,
+    "CERA.NS": 1791529003.4080162,
+    "HINDWARE.NS": 1791529003.4341106,
+    "JKPAPER.NS": 1791529003.4603884,
+    "WESTROST.NS": 1791529003.4865718,
+    "EMAMIPAP.NS": 1791529003.5130506,
+    "ORIENTPPR.NS": 1791529003.539199,
+    "SESHAPAPER.NS": 1791529003.5653765,
+    "SATIA.NS": 1791529003.5915525,
+    "PAPERPROD.NS": 1791529003.6182833,
+    "UFPACK.NS": 1791529003.6453233,
+    "ESABINDIA.NS": 1791529003.671933,
+    "ELECON.NS": 1791529003.6985245,
+    "SCHNEIDER.NS": 1791529003.7258334,
+    "ZAGGLE.NS": 1791529003.7533019,
+    "NETWEB.NS": 1791529003.780455,
+    "KAYNES.NS": 1791529003.8070328,
+    "AVALON.NS": 1791529003.8337076,
+    "IDEAFORGE.NS": 1791529003.8597205,
+    "OPTIEMUS.NS": 1791529003.8864841,
+    "YATRA.NS": 1791529003.913359,
+    "EASEMYTRIP.NS": 1791529003.939859,
+    "^NSEI": 1791529003.966098,
+    "^BSESN": 1791529003.9925325,
+    "^NSEMDCP50": 1791529004.0191526,
+    "NIFTY_MIDCAP_100.NS": 1791529004.0454383,
+    "NIFTY_SMLCAP_100.NS": 1791529004.0713685,
+    "^NSMIDCP": 1791529004.0976262,
+    "^NSEMDCP150": 1791529004.1330209,
+    "NIFTY_TOTAL_MKT.NS": 1791529004.1646123,
+    "NIFTY500.NS": 1791529004.193371,
+    "NIFTY_MICROCAP_250.NS": 1791529004.2216544,
+    "^CNXIT": 1791529004.249644,
+    "^NSEBANK": 1791529004.2766955,
+    "NIFTY_PHARMA.NS": 1791529004.3032904,
+    "NIFTY_AUTO.NS": 1791529004.329812,
+    "NIFTY_FMCG.NS": 1791529004.3559215,
+    "NIFTY_METAL.NS": 1791529004.3825011,
+    "NIFTY_ENERGY.NS": 1791529004.4086597,
+    "NIFTY_REALTY.NS": 1791529004.4349139,
+    "NIFTY_INFRA.NS": 1791529004.4608963,
+    "NIFTY_PVT_BANK.NS": 1791529004.4871507,
+    "NIFTY_PSU_BANK.NS": 1791529004.5134516,
+    "NIFTY_MEDIA.NS": 1791529004.5403638,
+    "NIFTY_consum.NS": 1791529004.56638,
+    "NIFTY_COMMODITIES.NS": 1791529004.5927265,
+    "NIFTY_SERV_SECTOR.NS": 1791529004.6187418,
+    "NIFTY_MNC.NS": 1791529004.6450963,
+    "NIFTY_INDIA_MFG.NS": 1791529004.6712282,
+    "NIFTY_INDIA_DIGITAL.NS": 1791529004.6975303,
+    "NIFTY_HEALTHCARE.NS": 1791529004.7240267,
+    "NIFTY_OIL_GAS.NS": 1791529004.7524493,
+    "NIFTY_FIN_SERVICE.NS": 1791529004.7807143,
+    "NIFTY_CPSE.NS": 1791529004.8098538,
+    "NIFTY_PSE.NS": 1791529004.836887,
+    "NIFTY_DEFENCE.NS": 1791529004.8638456,
+    "NIFTY_EV_N_NEW_AUTOMOTIVE.NS": 1791529004.8904867,
+    "NIFTY_INDIA_RAILWAYS_NIPPON.NS": 1791529004.9182363,
+    "NIFTY_INDIA_TMSC.TI": 1791529004.9449441,
+    "NIFTY500_MULTICAP.NS": 1791529004.9718652,
+    "NIFTY_GROWSECT_15.NS": 1791529005.010916,
+    "NIFTY50_EQUAL_WEIGHT.NS": 1791529005.0454118,
+    "NIFTY100_QUALTY30.NS": 1791529005.0773365,
+    "NIFTY_ALPHA_30.NS": 1791529005.106698,
+    "NIFTY50_VALUE_20.NS": 1791529005.1367412,
+    "NIFTY_LOW_VOLATILITY_50.NS": 1791529005.1641362,
+    "NIFTY_MOMENTUM_30.NS": 1791529005.190569,
+    "NIFTY_HIGH_BETA_50.NS": 1791529005.217151,
+    "NIFTY_QUALITY_30.NS": 1791529005.2435212,
+    "^INDIAVIX": 1791529005.2699993,
+    "BSE-MIDCAP.BO": 1791529005.2965531,
+    "BSE-SMLCAP.BO": 1791529005.3232315,
+    "^BSE100": 1791529005.349833,
+    "^BSE200": 1791529005.3765416,
+    "^BSE500": 1791529005.4026906,
+    "S&P_BSE_BANKEX.BO": 1791529005.4288998,
+    "S&P_BSE_TECK.BO": 1791529005.4548466,
+    "S&P_BSE_HEALTHCARE.BO": 1791529005.4810011,
+    "S&P_BSE_AUTO.BO": 1791529005.506894,
+    "S&P_BSE_METAL.BO": 1791529005.532943,
+    "S&P_BSE_OILGAS.BO": 1791529005.5589335,
+    "S&P_BSE_POWER.BO": 1791529005.5849872,
+    "S&P_BSE_REALTY.BO": 1791529005.6109827,
+    "S&P_BSE_IT.BO": 1791529005.6379907,
+    "S&P_BSE_FMCG.BO": 1791529005.66456,
+    "S&P_BSE_CG.BO": 1791529005.6912632,
+    "S&P_BSE_CONS_DURABLES.BO": 1791529005.7187335,
+    "S&P_BSE_BASICMATERIALS.BO": 1791529005.7461789,
+    "S&P_BSE_INDUSTRIALS.BO": 1791529005.7734156
+  },
+  "saved_at": "2026-10-09T06:56:45.773819",
+  "refresh_hours": 5
+}

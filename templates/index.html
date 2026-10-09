@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureCandle — Indian Stock Market Decision Maker</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/charts.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-brand">
+        <span class="logo-icon">🔮</span>
+        <div>
+            <h1>FutureCandle</h1>
+            <small>AI Stock Market Decision Engine</small>
+        </div>
+    </div>
+    <div class="nav-search">
+        <input type="text" id="globalSearch" placeholder="Search any stock, index, sector... (VEDL, FEDERALBNK, HAL, Nifty Bank...)" autocomplete="off">
+        <div id="searchDD" class="search-dd"></div>
+    </div>
+    <div class="nav-meta">
+        <span class="badge green">● LIVE</span>
+        <span class="badge" id="cacheBadge">Loading...</span>
+    </div>
+</nav>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<!-- HERO: Stock Selector -->
+<section class="hero">
+    <div class="hero-inner">
+        <!-- Left: Search + Sector Browse -->
+        <div class="hero-left">
+            <div class="browse-box">
+                <div class="browse-tabs">
+                    <button class="btab active" onclick="browseTab(this,'stocks')">📊 Stocks <span id="stockCountBadge"></span></button>
+                    <button class="btab" onclick="browseTab(this,'indices')">📈 Indices</button>
+                    <button class="btab" onclick="browseTab(this,'sectors')">🏭 Sectors</button>
+                </div>
+                <div class="browse-search">
+                    <input type="text" id="browseSearch" placeholder="Filter stocks..." oninput="filterBrowse(this.value)">
+                </div>
+                <div class="browse-list" id="browseList"></div>
+            </div>
+        </div>
+
+        <!-- Right: Active Stock Info -->
+        <div class="hero-right">
+            <div class="stock-hero" id="stockHero">
+                <div class="sh-top">
+                    <div class="sh-info">
+                        <h2 id="aName">Select a stock to analyze</h2>
+                        <span class="sh-sym" id="aSym">—</span>
+                        <span class="sh-sector" id="aSector">—</span>
+                    </div>
+                    <div class="sh-price">
+                        <div class="sh-current" id="aPrice">—</div>
+                        <div class="sh-change" id="aChange">—</div>
+                    </div>
+                    <button class="btn-go" onclick="analyzeActive()">⚡ Analyze</button>
+                </div>
+            </div>
+
+            <!-- Chart -->
+            <div class="chart-box">
+                <div class="chart-bar">
+                    <button class="cbtn active" onclick="setCType(this,'area')">📈 Area</button>
+                    <button class="cbtn" onclick="setCType(this,'candle')">🕯️ Candles</button>
+                    <span class="chart-label" id="chartLabel"></span>
+                </div>
+                <div id="chartContainer" class="chart-canvas"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LOADING -->
+<div id="loader" class="loader-wrap hidden">
+    <div class="loader-inner">
+        <div class="loader-ring"></div>
+        <p>Analyzing <strong id="loadSym"></strong>...</p>
+        <small>40+ patterns · 25+ indicators · sentiment · investment engine</small>
+    </div>
+</div>
+
+<!-- RESULTS -->
+<div id="results" class="results hidden">
+
+    <!-- ROW 1: Signal + Sentiment + Verdict -->
+    <div class="cards-row">
+        <div class="card c-signal">
+            <h3>🎯 Trading Signal</h3>
+            <div id="rSignal"></div>
+        </div>
+        <div class="card c-sentiment">
+            <h3>🧠 Market Sentiment</h3>
+            <div id="rSentiment"></div>
+        </div>
+        <div class="card c-verdict">
+            <h3>📊 Investment Verdict</h3>
+            <div id="rVerdict"></div>
+        </div>
+    </div>
+
+    <!-- ROW 2: Entry/Exit + Investment -->
+    <div class="cards-row">
+        <div class="card c-entry wide">
+            <h3>🎯 Best Entry & Exit Points (Long Term)</h3>
+            <div id="rEntryExit"></div>
+        </div>
+        <div class="card c-invest">
+            <h3>💰 Investment Strategy</h3>
+            <div id="rInvest"></div>
+        </div>
+    </div>
+
+    <!-- ROW 3: Technical Indicators -->
+    <div class="card c-tech">
+        <h3>📉 Technical Indicators <span class="card-badge" id="techBadge"></span></h3>
+        <div id="rTech"></div>
+    </div>
+
+    <!-- ROW 4: Candlestick Patterns -->
+    <div class="card c-patterns">
+        <h3>🕯️ Candlestick Patterns <span class="card-badge" id="patBadge"></span></h3>
+        <div id="rPatterns"></div>
+    </div>
+
+    <!-- ROW 5: Price Targets -->
+    <div class="card c-targets">
+        <h3>📍 Price Targets & Projections</h3>
+        <div id="rTargets"></div>
+    </div>
+
+    <!-- ROW 6: SIP + Wealth + Risk -->
+    <div class="cards-row triple">
+        <div class="card c-sip">
+            <h3>📅 SIP Recommendation</h3>
+            <div id="rSIP"></div>
+        </div>
+        <div class="card c-wealth">
+            <h3>💎 Wealth Projections</h3>
+            <div id="rWealth"></div>
+        </div>
+        <div class="card c-risk">
+            <h3>⚠️ Risk Assessment</h3>
+            <div id="rRisk"></div>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        ⚠️ NOT financial advice. Algorithmic analysis only. Consult a SEBI-registered advisor. Past performance ≠ future results.
+    </div>
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

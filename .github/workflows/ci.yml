@@ -1,0 +1,181 @@
+# ============================================================
+#  FutureCandle — CI Pipeline
+#  Runs on every push & PR to main
+#  Tests the app, validates all engines, checks API responses
+# ============================================================
+name: CI — Test & Validate
+
+on:
+  push:
+    branches: [main, 'arena/**']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: 🧪 Test Suite
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+
+      - name: 📦 Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: 🧪 Test Candlestick Pattern Engine
+        run: |
+          python3 -c "
+          from engine.candlestick_patterns import CandlestickPatternEngine
+          import numpy as np, pandas as pd
+          
+          np.random.seed(42)
+          n = 200
+          c = np.cumsum(np.random.normal(0,10,n)) + 2500
+          o = c + np.random.normal(0,5,n)
+          h = np.maximum(o,c) + np.abs(np.random.normal(0,8,n))
+          l = np.minimum(o,c) - np.abs(np.random.normal(0,8,n))
+          v = np.random.lognormal(15,0.5,n).astype(int)
+          df = pd.DataFrame({'Open':o,'High':h,'Low':l,'Close':c,'Volume':v})
+          
+          engine = CandlestickPatternEngine()
+          result = engine.analyze_dataframe(df)
+          assert 'signal' in result
+          assert 'bullish_score' in result
+          assert 'recent_patterns' in result
+          print(f'✅ Candlestick Engine: {result[\"signal\"]} | {result[\"total_patterns_detected\"]} patterns')
+          "
+
+      - name: 🧪 Test Technical Analysis Engine
+        run: |
+          python3 -c "
+          from engine.technical_analysis import TechnicalAnalysisEngine
+          import numpy as np, pandas as pd
+          
+          np.random.seed(42)
+          n = 200
+          c = np.cumsum(np.random.normal(0,10,n)) + 2500
+          o = c + np.random.normal(0,5,n)
+          h = np.maximum(o,c) + np.abs(np.random.normal(0,8,n))
+          l = np.minimum(o,c) - np.abs(np.random.normal(0,8,n))
+          v = np.random.lognormal(15,0.5,n).astype(int)
+          df = pd.DataFrame({'Open':o,'High':h,'Low':l,'Close':c,'Volume':v})
+          
+          engine = TechnicalAnalysisEngine()
+          result = engine.calculate_all(df)
+          assert 'rsi' in result
+          assert 'macd' in result
+          assert 'overall_score' in result
+          assert 'signal' in result
+          print(f'✅ Technical Engine: Score={result[\"overall_score\"]} | Signal={result[\"signal\"][\"action\"]}')
+          "
+
+      - name: 🧪 Test Sentiment Engine
+        run: |
+          python3 -c "
+          from engine.sentiment_analysis import SentimentAnalysisEngine
+          
+          engine = SentimentAnalysisEngine()
+          result = engine.analyze('TEST.NS', 2500.0,
+              {'rsi':{'value':55},'adx':{'value':30,'direction':'BULLISH','trend':'STRONG'},
+               'macd':{'signal_type':'BULLISH'},'bollinger_bands':{'signal':'BULLISH','price_position':60},
+               'stochastic':{'k':55},'volume_analysis':{'signal':'NORMAL','trend':'INCREASING'},
+               'obv':{'signal':'BULLISH'},'vwap':{'signal':'BULLISH'},'mfi':{'value':55},
+               'roc':{'value':2},'williams_r':{'value':-40},'cci':{'value':30}},
+              {'bullish_score':60,'bearish_score':40,'signal':'BULLISH','recent_patterns':[]}, 'IT')
+          assert 'overall' in result
+          assert 'composite_score' in result
+          assert 'fear_greed_index' in result
+          print(f'✅ Sentiment Engine: {result[\"overall\"]} | Score={result[\"composite_score\"]}')
+          "
+
+      - name: 🧪 Test Investment Engine
+        run: |
+          python3 -c "
+          from engine.investment_engine import InvestmentEngine
+          
+          engine = InvestmentEngine()
+          result = engine.generate_recommendation('TEST.NS', 2500.0,
+              {'rsi':{'value':55},'adx':{'value':30,'direction':'BULLISH','trend':'STRONG'},
+               'macd':{'signal_type':'BULLISH'},'bollinger_bands':{'signal':'BULLISH','price_position':60,'bandwidth':5,'lower':2300,'upper':2700},
+               'stochastic':{'k':55},'volume_analysis':{'signal':'NORMAL','trend':'INCREASING'},
+               'obv':{'signal':'BULLISH'},'vwap':{'signal':'BULLISH'},'mfi':{'value':55},
+               'roc':{'value':2},'williams_r':{'value':-40},'cci':{'value':30},
+               'atr':{'value':30,'percentage':1.2,'volatility':'LOW'},
+               'trend_strength':{'direction':'BULLISH','pattern':'UPTREND'},
+               'support_resistance':{'nearest_support':2400,'nearest_resistance':2600},
+               'pivot_points':{'pivot':2500,'r1':2550,'r2':2600,'s1':2450,'s2':2400},
+               'ichimoku':{'signal':'BULLISH','tk_cross':'BULLISH'},
+               'supertrend':{'signal':'BULLISH','upper_band':2700,'lower_band':2300},
+               'overall_score':65,'signal':{'action':'BUY','score':65,'confidence':65}},
+              {'composite_score':60,'fear_greed_index':{'index':55},'overall':'BULLISH'},
+              {'bullish_score':60,'bearish_score':40,'signal':'BULLISH','recent_patterns':[]}, 'IT', 500000)
+          assert 'verdict' in result
+          assert 'projections' in result
+          assert 'sip' in result
+          print(f'✅ Investment Engine: {result[\"verdict\"][\"verdict\"]} | CAGR={result[\"verdict\"][\"expected_cagr\"]}')
+          "
+
+      - name: 🧪 Test Full API
+        run: |
+          python3 -c "
+          import sys
+          sys.path.insert(0, '.')
+          from app import app
+          
+          with app.test_client() as client:
+              # Test stocks endpoint
+              r = client.get('/api/stocks')
+              assert r.status_code == 200
+              stocks = r.get_json()
+              assert len(stocks) >= 50
+              print(f'✅ /api/stocks → {len(stocks)} stocks')
+              
+              # Test analysis endpoint
+              r = client.get('/api/analyze/RELIANCE.NS')
+              assert r.status_code == 200
+              data = r.get_json()
+              assert 'candlestick_patterns' in data
+              assert 'technical_analysis' in data
+              assert 'sentiment' in data
+              assert 'investment' in data
+              assert 'chart_data' in data
+              print(f'✅ /api/analyze/RELIANCE.NS → Price ₹{data[\"current_price\"]}')
+              
+              # Test quick signal
+              r = client.get('/api/quick-signal/TCS.NS')
+              assert r.status_code == 200
+              data = r.get_json()
+              assert 'signal' in data
+              print(f'✅ /api/quick-signal/TCS.NS → {data[\"signal\"]}')
+              
+              # Test home page
+              r = client.get('/')
+              assert r.status_code == 200
+              print(f'✅ Homepage loads OK')
+              
+          print('🎉 All API tests passed!')
+          "
+
+  lint:
+    name: 🔍 Lint Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install flake8
+      - run: flake8 engine/ app.py --max-line-length=120 --ignore=E501,W503,E722 --count --statistics || true
