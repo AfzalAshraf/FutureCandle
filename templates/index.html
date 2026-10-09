@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureCandle - Indian Stock Market Decision Maker</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🔮</span>
+                    <h1>FutureCandle</h1>
+                    <span class="subtitle">Indian Stock Market Decision Maker</span>
+                </div>
+                <div class="header-badge">
+                    <span class="badge">AI-Powered</span>
+                    <span class="badge badge-live">● LIVE Analysis</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stock Selector -->
+        <section class="selector-section">
+            <div class="selector-card">
+                <div class="selector-left">
+                    <label>Select Indian Stock</label>
+                    <div class="search-wrapper">
+                        <input type="text" id="stockSearch" placeholder="🔍 Search Nifty 50, stocks..." autocomplete="off">
+                        <div id="stockDropdown" class="stock-dropdown"></div>
+                    </div>
+                </div>
+                <div class="selector-right">
+                    <div id="selectedStock" class="selected-stock">
+                        <span class="stock-symbol">RELIANCE.NS</span>
+                        <span class="stock-name">Reliance Industries</span>
+                        <span class="stock-sector">Energy</span>
+                    </div>
+                    <button id="analyzeBtn" class="btn-analyze" onclick="analyzeStock()">
+                        <span class="btn-icon">⚡</span> Analyze Now
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading -->
+        <div id="loading" class="loading hidden">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <p>Analyzing candlestick patterns, technical indicators & sentiment...</p>
+                <p class="loading-sub">Running 40+ pattern detections across 25+ indicators</p>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div id="results" class="results hidden">
+
+            <!-- Top Cards Row -->
+            <div class="top-cards">
+                <div class="card verdict-card" id="verdictCard">
+                    <div class="card-header">
+                        <h2>📊 Investment Verdict</h2>
+                    </div>
+                    <div id="verdictContent" class="card-body"></div>
+                </div>
+                <div class="card signal-card" id="signalCard">
+                    <div class="card-header">
+                        <h2>🎯 Trading Signal</h2>
+                    </div>
+                    <div id="signalContent" class="card-body"></div>
+                </div>
+                <div class="card sentiment-card" id="sentimentCard">
+                    <div class="card-header">
+                        <h2>🧠 Market Sentiment</h2>
+                    </div>
+                    <div id="sentimentContent" class="card-body"></div>
+                </div>
+            </div>
+
+            <!-- Chart Section -->
+            <div class="card chart-card">
+                <div class="card-header">
+                    <h2>📈 Price Chart with Candlestick Patterns</h2>
+                    <div class="chart-controls">
+                        <button class="chart-btn active" onclick="setChartType('line')">Line</button>
+                        <button class="chart-btn" onclick="setChartType('candlestick')">Candles</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <canvas id="priceChart" height="100"></canvas>
+                </div>
+            </div>
+
+            <!-- Technical Analysis -->
+            <div class="grid-2">
+                <div class="card" id="techCard">
+                    <div class="card-header"><h2>📉 Technical Indicators</h2></div>
+                    <div id="techContent" class="card-body"></div>
+                </div>
+                <div class="card" id="patternsCard">
+                    <div class="card-header"><h2>🕯️ Candlestick Patterns</h2></div>
+                    <div id="patternsContent" class="card-body"></div>
+                </div>
+            </div>
+
+            <!-- Investment Details -->
+            <div class="card" id="investmentCard">
+                <div class="card-header"><h2>💰 Investment Recommendation (Detailed)</h2></div>
+                <div id="investmentContent" class="card-body"></div>
+            </div>
+
+            <!-- Price Targets -->
+            <div class="card" id="targetsCard">
+                <div class="card-header"><h2>🎯 Price Targets & Projections</h2></div>
+                <div id="targetsContent" class="card-body"></div>
+            </div>
+
+            <!-- Risk Assessment -->
+            <div class="card" id="riskCard">
+                <div class="card-header"><h2>⚠️ Risk Assessment</h2></div>
+                <div id="riskContent" class="card-body"></div>
+            </div>
+
+            <!-- SIP Calculator -->
+            <div class="card" id="sipCard">
+                <div class="card-header"><h2>📅 SIP Investment Calculator</h2></div>
+                <div id="sipContent" class="card-body"></div>
+            </div>
+
+            <!-- Wealth Projections -->
+            <div class="card" id="projectionsCard">
+                <div class="card-header">
+                    <h2>💎 Wealth Creation Projections</h2>
+                    <span style="font-size:12px; color:var(--text-muted);">How much your money grows over time</span>
+                </div>
+                <div id="projectionsContent" class="card-body"></div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="disclaimer">
+                <p>⚠️ <strong>DISCLAIMER:</strong> This is algorithmic analysis based on technical indicators and historical patterns.
+                This is <strong>NOT financial advice</strong>. Past performance does not guarantee future results.
+                Always consult a SEBI-registered financial advisor before making investment decisions.
+                Stock market investments carry inherent risks. Never invest more than you can afford to lose.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
