@@ -10,7 +10,6 @@ let allIndices = [];
 let allSymbols = [];
 let sectors = [];
 let tvChart = null;
-let tvLineSeries = null;
 let chartData = null;
 
 // ---- INIT ----
@@ -260,22 +259,14 @@ async function analyzeSymbol(symbol) {
     }
 }
 
-// ---- CHART (TradingView Lightweight) ----
+// ---- CHART (Self-contained Canvas) ----
 function renderChart(data, type) {
     const container = document.getElementById('tvChart');
-    container.innerHTML = '';
 
-    if (tvChart) { tvChart.remove(); tvChart = null; }
+    if (tvChart) { tvChart.destroy(); tvChart = null; }
 
-    tvChart = LightweightCharts.createChart(container, {
-        width: container.clientWidth,
-        height: 380,
-        layout: { background: { type: 'solid', color: '#12121a' }, textColor: '#9a9eb0' },
-        grid: { vertLines: { color: '#1e1e2e' }, horzLines: { color: '#1e1e2e' } },
-        crosshair: { mode: 0 },
-        rightPriceScale: { borderColor: '#2a2a3a' },
-        timeScale: { borderColor: '#2a2a3a', timeVisible: false },
-    });
+    tvChart = new FCChart('tvChart');
+    tvChart.type = type === 'candle' ? 'candle' : 'area';
 
     const dates = data.dates;
     const closes = data.closes;
@@ -284,57 +275,26 @@ function renderChart(data, type) {
     const lows = data.lows;
 
     if (type === 'candle') {
-        tvLineSeries = tvChart.addCandlestickSeries({
-            upColor: '#26a69a', downColor: '#ef5350',
-            borderUpColor: '#26a69a', borderDownColor: '#ef5350',
-            wickUpColor: '#26a69a', wickDownColor: '#ef5350',
-        });
         const candleData = dates.map((d,i) => ({
-            time: d,
-            open: opens[i], high: highs[i], low: lows[i], close: closes[i]
+            time: d, open: opens[i], high: highs[i], low: lows[i], close: closes[i]
         }));
-        tvLineSeries.setData(candleData);
+        tvChart.setData(candleData);
     } else {
-        tvLineSeries = tvChart.addAreaSeries({
-            topColor: 'rgba(41,98,255,0.3)', bottomColor: 'rgba(41,98,255,0.02)',
-            lineColor: '#2962ff', lineWidth: 2,
-        });
         const lineData = dates.map((d,i) => ({ time: d, value: closes[i] }));
-        tvLineSeries.setData(lineData);
+        tvChart.setData(lineData);
     }
 
-    // Add SMA 20
+    // Add SMA overlays
     if (closes.length >= 20) {
-        const sma20 = tvChart.addLineSeries({ color: '#ffab00', lineWidth: 1, lineStyle: 2 });
-        const smaData = [];
-        for (let i = 19; i < dates.length; i++) {
-            let sum = 0;
-            for (let j = 0; j < 20; j++) sum += closes[i-j];
-            smaData.push({ time: dates[i], value: sum/20 });
-        }
-        sma20.setData(smaData);
+        const sma20 = FCChart.computeSMA(dates.map((d,i) => ({time:d, value:closes[i]})), 20);
+        tvChart.addOverlay(sma20, '#ffab00', 1, true);
     }
-
-    // Add SMA 50
     if (closes.length >= 50) {
-        const sma50 = tvChart.addLineSeries({ color: '#ab47bc', lineWidth: 1, lineStyle: 2 });
-        const smaData = [];
-        for (let i = 49; i < dates.length; i++) {
-            let sum = 0;
-            for (let j = 0; j < 50; j++) sum += closes[i-j];
-            smaData.push({ time: dates[i], value: sum/50 });
-        }
-        sma50.setData(smaData);
+        const sma50 = FCChart.computeSMA(dates.map((d,i) => ({time:d, value:closes[i]})), 50);
+        tvChart.addOverlay(sma50, '#ab47bc', 1, true);
     }
 
-    tvChart.timeScale().fitContent();
     document.getElementById('chartInfo').textContent = `${dates.length} candles · ${dates[0]} → ${dates[dates.length-1]}`;
-
-    // Resize handler
-    const observer = new ResizeObserver(() => {
-        if (tvChart) tvChart.applyOptions({ width: container.clientWidth });
-    });
-    observer.observe(container);
 }
 
 function setTimeframe(btn, type) {
