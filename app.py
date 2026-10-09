@@ -15,6 +15,7 @@ from engine.technical_analysis import TechnicalAnalysisEngine
 from engine.sentiment_analysis import SentimentAnalysisEngine
 from engine.investment_engine import InvestmentEngine
 from engine.indices import INDIAN_INDICES, CATEGORIES, SECTORS
+from engine.all_stocks import get_all_stocks_flat, SECTOR_STOCKS, get_sector_count
 from engine.data_cache import get_cache
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
@@ -27,75 +28,8 @@ sentiment_engine = SentimentAnalysisEngine()
 invest_engine = InvestmentEngine()
 cache = get_cache()
 
-# Indian stock symbols with sector info
-INDIAN_STOCKS = {
-    'RELIANCE.NS': {'name': 'Reliance Industries', 'sector': 'Energy', 'cap': 1700000},
-    'TCS.NS': {'name': 'Tata Consultancy Services', 'sector': 'IT', 'cap': 1200000},
-    'HDFCBANK.NS': {'name': 'HDFC Bank', 'sector': 'Banking', 'cap': 1100000},
-    'INFY.NS': {'name': 'Infosys', 'sector': 'IT', 'cap': 650000},
-    'ICICIBANK.NS': {'name': 'ICICI Bank', 'sector': 'Banking', 'cap': 700000},
-    'HINDUNILVR.NS': {'name': 'Hindustan Unilever', 'sector': 'FMCG', 'cap': 550000},
-    'ITC.NS': {'name': 'ITC Limited', 'sector': 'FMCG', 'cap': 520000},
-    'SBIN.NS': {'name': 'State Bank of India', 'sector': 'Banking', 'cap': 500000},
-    'BHARTIARTL.NS': {'name': 'Bharti Airtel', 'sector': 'Telecom', 'cap': 480000},
-    'KOTAKBANK.NS': {'name': 'Kotak Mahindra Bank', 'sector': 'Banking', 'cap': 350000},
-    'LT.NS': {'name': 'Larsen & Toubro', 'sector': 'Infra', 'cap': 400000},
-    'AXISBANK.NS': {'name': 'Axis Bank', 'sector': 'Banking', 'cap': 300000},
-    'WIPRO.NS': {'name': 'Wipro', 'sector': 'IT', 'cap': 220000},
-    'HCLTECH.NS': {'name': 'HCL Technologies', 'sector': 'IT', 'cap': 350000},
-    'ASIANPAINT.NS': {'name': 'Asian Paints', 'sector': 'FMCG', 'cap': 250000},
-    'MARUTI.NS': {'name': 'Maruti Suzuki', 'sector': 'Auto', 'cap': 350000},
-    'SUNPHARMA.NS': {'name': 'Sun Pharma', 'sector': 'Pharma', 'cap': 300000},
-    'TATAMOTORS.NS': {'name': 'Tata Motors', 'sector': 'Auto', 'cap': 250000},
-    'TITAN.NS': {'name': 'Titan Company', 'sector': 'FMCG', 'cap': 280000},
-    'ULTRACEMCO.NS': {'name': 'UltraTech Cement', 'sector': 'Cement', 'cap': 300000},
-    'NTPC.NS': {'name': 'NTPC Limited', 'sector': 'Energy', 'cap': 300000},
-    'POWERGRID.NS': {'name': 'Power Grid Corp', 'sector': 'Energy', 'cap': 250000},
-    'ONGC.NS': {'name': 'Oil & Natural Gas Corp', 'sector': 'Energy', 'cap': 250000},
-    'M&M.NS': {'name': 'Mahindra & Mahindra', 'sector': 'Auto', 'cap': 300000},
-    'TATASTEEL.NS': {'name': 'Tata Steel', 'sector': 'Metals', 'cap': 180000},
-    'JSWSTEEL.NS': {'name': 'JSW Steel', 'sector': 'Metals', 'cap': 200000},
-    'COALINDIA.NS': {'name': 'Coal India', 'sector': 'Energy', 'cap': 150000},
-    'BAJFINANCE.NS': {'name': 'Bajaj Finance', 'sector': 'Banking', 'cap': 400000},
-    'BAJAJFINSV.NS': {'name': 'Bajaj Finserv', 'sector': 'Banking', 'cap': 250000},
-    'DRREDDY.NS': {'name': "Dr. Reddy's Laboratories", 'sector': 'Pharma', 'cap': 100000},
-    'CIPLA.NS': {'name': 'Cipla Limited', 'sector': 'Pharma', 'cap': 100000},
-    'DIVISLAB.NS': {'name': "Divi's Laboratories", 'sector': 'Pharma', 'cap': 120000},
-    'EICHERMOT.NS': {'name': 'Eicher Motors', 'sector': 'Auto', 'cap': 100000},
-    'HEROMOTOCO.NS': {'name': 'Hero MotoCorp', 'sector': 'Auto', 'cap': 80000},
-    'BRITANNIA.NS': {'name': 'Britannia Industries', 'sector': 'FMCG', 'cap': 120000},
-    'NESTLEIND.NS': {'name': 'Nestle India', 'sector': 'FMCG', 'cap': 220000},
-    'TECHM.NS': {'name': 'Tech Mahindra', 'sector': 'IT', 'cap': 130000},
-    'ADANIENT.NS': {'name': 'Adani Enterprises', 'sector': 'Infra', 'cap': 300000},
-    'ADANIPORTS.NS': {'name': 'Adani Ports', 'sector': 'Infra', 'cap': 250000},
-    'GRASIM.NS': {'name': 'Grasim Industries', 'sector': 'Cement', 'cap': 150000},
-    'HINDALCO.NS': {'name': 'Hindalco Industries', 'sector': 'Metals', 'cap': 130000},
-    'INDUSINDBK.NS': {'name': 'IndusInd Bank', 'sector': 'Banking', 'cap': 80000},
-    'TATACONSUM.NS': {'name': 'Tata Consumer Products', 'sector': 'FMCG', 'cap': 90000},
-    'APOLLOHOSP.NS': {'name': 'Apollo Hospitals', 'sector': 'Pharma', 'cap': 70000},
-    'BPCL.NS': {'name': 'Bharat Petroleum', 'sector': 'Energy', 'cap': 100000},
-    'HDFCLIFE.NS': {'name': 'HDFC Life Insurance', 'sector': 'Banking', 'cap': 130000},
-    'SBILIFE.NS': {'name': 'SBI Life Insurance', 'sector': 'Banking', 'cap': 150000},
-    'BAJAJ-AUTO.NS': {'name': 'Bajaj Auto', 'sector': 'Auto', 'cap': 200000},
-    'TRENT.NS': {'name': 'Trent Limited', 'sector': 'FMCG', 'cap': 180000},
-    'HAL.NS': {'name': 'Hindustan Aeronautics', 'sector': 'Defense', 'cap': 250000},
-    'BEL.NS': {'name': 'Bharat Electronics', 'sector': 'Defense', 'cap': 180000},
-    'DABUR.NS': {'name': 'Dabur India', 'sector': 'FMCG', 'cap': 80000},
-    'PIDILITIND.NS': {'name': 'Pidilite Industries', 'sector': 'FMCG', 'cap': 120000},
-    'HAVELLS.NS': {'name': 'Havells India', 'sector': 'Energy', 'cap': 80000},
-    'DLF.NS': {'name': 'DLF Limited', 'sector': 'Realty', 'cap': 180000},
-    'GODREJCP.NS': {'name': 'Godrej Consumer Products', 'sector': 'FMCG', 'cap': 100000},
-    'MARICO.NS': {'name': 'Marico Limited', 'sector': 'FMCG', 'cap': 70000},
-    'SIEMENS.NS': {'name': 'Siemens India', 'sector': 'Infra', 'cap': 150000},
-    'ABB.NS': {'name': 'ABB India', 'sector': 'Infra', 'cap': 100000},
-    'BHEL.NS': {'name': 'Bharat Heavy Electricals', 'sector': 'Infra', 'cap': 70000},
-    'ZOMATO.NS': {'name': 'Zomato Limited', 'sector': 'IT', 'cap': 150000},
-    'PAYTM.NS': {'name': 'One97 Communications (Paytm)', 'sector': 'IT', 'cap': 40000},
-    'NYKAA.NS': {'name': 'FSN E-Commerce (Nykaa)', 'sector': 'FMCG', 'cap': 50000},
-    'POLYCAB.NS': {'name': 'Polycab India', 'sector': 'Energy', 'cap': 70000},
-    'DEEPAKNTR.NS': {'name': 'Deepak Nitrite', 'sector': 'Energy', 'cap': 40000},
-    'ALKEM.NS': {'name': 'Alkem Laboratories', 'sector': 'Pharma', 'cap': 60000},
-}
+# Load complete stock database from all_stocks.py (477+ stocks)
+INDIAN_STOCKS = get_all_stocks_flat()
 
 
 def convert(obj):
@@ -139,8 +73,14 @@ def index():
 @app.route('/api/stocks')
 def get_stocks():
     """Get list of all available stocks."""
+    sector = request.args.get('sector', '').strip()
+    q = request.args.get('q', '').strip().lower()
     stocks = []
     for sym, info in INDIAN_STOCKS.items():
+        if sector and info['sector'] != sector:
+            continue
+        if q and q not in sym.lower() and q not in info['name'].lower() and q not in info['sector'].lower():
+            continue
         stocks.append({
             'symbol': sym,
             'name': info['name'],
@@ -149,6 +89,16 @@ def get_stocks():
             'type': 'stock'
         })
     return jsonify(stocks)
+
+
+@app.route('/api/sectors')
+def get_sectors_list():
+    """Get all sectors with stock counts."""
+    counts = get_sector_count()
+    sectors = []
+    for sector, count in sorted(counts.items()):
+        sectors.append({'name': sector, 'count': count})
+    return jsonify(sectors)
 
 
 @app.route('/api/indices')
@@ -242,8 +192,11 @@ def analyze_stock(symbol):
             'sector': INDIAN_INDICES[symbol]['sector'],
             'cap': 500000  # default for indices
         }
+    elif symbol in INDIAN_STOCKS:
+        stock_info = INDIAN_STOCKS[symbol]
     else:
-        stock_info = INDIAN_STOCKS.get(symbol, {'name': symbol, 'sector': 'General', 'cap': 100000})
+        # Dynamic: user typed any symbol — try to resolve name from data
+        stock_info = {'name': symbol.replace('.NS','').replace('.BO',''), 'sector': 'General', 'cap': 50000}
 
     current_price = float(df['Close'].iloc[-1])
 

@@ -5,166 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FutureCandle — Indian Stock Market Decision Maker</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"></script>
 </head>
 <body>
-    <div id="app">
-        <!-- Header -->
-        <header class="header">
-            <div class="header-content">
-                <div class="logo">
-                    <span class="logo-icon">🔮</span>
-                    <h1>FutureCandle</h1>
-                    <span class="subtitle">Indian Stock Market Decision Maker</span>
-                </div>
-                <div class="header-badge">
-                    <span class="badge">AI-Powered</span>
-                    <span class="badge badge-live">● LIVE Analysis</span>
-                    <span id="cacheInfo" class="badge" style="color:var(--accent-cyan);">🔄 Auto-refresh: 5h</span>
-                </div>
-            </div>
-        </header>
-
-        <!-- Index Ticker Bar -->
-        <section class="ticker-bar" id="tickerBar">
-            <div class="ticker-content" id="tickerContent">
-                <span class="ticker-loading">Loading indices...</span>
-            </div>
-        </section>
-
-        <!-- Tabs: Stocks | Indices -->
-        <section class="selector-section">
-            <div class="tab-bar">
-                <button class="tab active" onclick="switchTab('stocks')">📊 Stocks</button>
-                <button class="tab" onclick="switchTab('indices')">📈 Indices</button>
-                <button class="tab" onclick="switchTab('all')">🌐 All</button>
-            </div>
-
-            <div class="selector-card">
-                <div class="selector-left">
-                    <label id="searchLabel">Search Stocks</label>
-                    <div class="search-wrapper">
-                        <input type="text" id="stockSearch" placeholder="🔍 Search Nifty 50, stocks, indices..." autocomplete="off">
-                        <div id="stockDropdown" class="stock-dropdown"></div>
-                    </div>
-                </div>
-                <div class="selector-right">
-                    <div id="selectedStock" class="selected-stock">
-                        <span class="stock-symbol">RELIANCE.NS</span>
-                        <span class="stock-name">Reliance Industries</span>
-                        <span class="stock-sector">Energy</span>
-                    </div>
-                    <button id="analyzeBtn" class="btn-analyze" onclick="analyzeStock()">
-                        <span class="btn-icon">⚡</span> Analyze Now
-                    </button>
-                </div>
-            </div>
-
-            <!-- Index Category Quick Select -->
-            <div id="indexCategories" class="index-categories hidden">
-                <div class="cat-group" id="catBroadMarket"></div>
-                <div class="cat-group" id="catSectoral"></div>
-                <div class="cat-group" id="catThematic"></div>
-                <div class="cat-group" id="catStrategy"></div>
-                <div class="cat-group" id="catVolatility"></div>
-            </div>
-        </section>
-
-        <!-- Loading -->
-        <div id="loading" class="loading hidden">
-            <div class="loading-content">
-                <div class="spinner"></div>
-                <p>Analyzing candlestick patterns, technical indicators & sentiment...</p>
-                <p class="loading-sub">Running 40+ pattern detections across 25+ indicators</p>
+    <!-- TOP NAV BAR -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo-mark">🔮</div>
+            <div class="logo-text">
+                <h1>FutureCandle</h1>
+                <span>Indian Market Decision Engine</span>
             </div>
         </div>
+        <div class="nav-center">
+            <input type="text" id="globalSearch" placeholder="🔍  Search any stock, index, sector...  (VEDL, FEDERALBNK, HAL, Nifty Bank...)" autocomplete="off">
+            <div id="searchDropdown" class="search-dropdown"></div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-stat" id="cacheStatus">
+                <span class="dot green"></span> <span id="cacheText">Loading...</span>
+            </div>
+        </div>
+    </nav>
 
-        <!-- Results -->
-        <div id="results" class="results hidden">
+    <!-- TICKER STRIP -->
+    <div class="ticker-strip" id="tickerStrip">
+        <div class="ticker-track" id="tickerTrack"></div>
+    </div>
 
-            <!-- Top Cards Row -->
-            <div class="top-cards">
-                <div class="card verdict-card" id="verdictCard">
-                    <div class="card-header"><h2>📊 Investment Verdict</h2></div>
-                    <div id="verdictContent" class="card-body"></div>
+    <!-- MAIN LAYOUT -->
+    <div class="main-layout">
+        <!-- LEFT SIDEBAR: Sector Browser -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>📂 Sectors</h3>
+                <span class="stock-count" id="totalStockCount"></span>
+            </div>
+            <div class="sector-list" id="sectorList"></div>
+        </aside>
+
+        <!-- CENTER: Chart + Analysis -->
+        <main class="main-content">
+            <!-- Active Symbol Header -->
+            <div class="symbol-bar">
+                <div class="symbol-info">
+                    <h2 id="activeName">Select a stock to analyze</h2>
+                    <span class="symbol-tag" id="activeSymbol">—</span>
+                    <span class="sector-tag" id="activeSector">—</span>
+                    <span class="type-tag" id="activeType">—</span>
                 </div>
-                <div class="card signal-card" id="signalCard">
-                    <div class="card-header"><h2>🎯 Trading Signal</h2></div>
-                    <div id="signalContent" class="card-body"></div>
+                <div class="symbol-price">
+                    <span class="current-price" id="activePrice">—</span>
+                    <span class="price-change" id="activeChange">—</span>
                 </div>
-                <div class="card sentiment-card" id="sentimentCard">
-                    <div class="card-header"><h2>🧠 Market Sentiment</h2></div>
-                    <div id="sentimentContent" class="card-body"></div>
-                </div>
+                <button class="btn-analyze" onclick="analyzeActive()">
+                    <span>⚡</span> Analyze
+                </button>
             </div>
 
-            <!-- Chart Section -->
-            <div class="card chart-card">
-                <div class="card-header">
-                    <h2>📈 Price Chart with Candlestick Patterns</h2>
-                    <div class="chart-controls">
-                        <button class="chart-btn active" onclick="setChartType('line')">Line</button>
-                        <button class="chart-btn" onclick="setChartType('candlestick')">Candles</button>
+            <!-- Chart Container (TradingView Lightweight) -->
+            <div class="chart-container">
+                <div class="chart-toolbar">
+                    <button class="chart-tf active" onclick="setTimeframe(this,'line')">📈 Line</button>
+                    <button class="chart-tf" onclick="setTimeframe(this,'candle')">🕯️ Candle</button>
+                    <div class="chart-toolbar-right">
+                        <span id="chartInfo" class="chart-info"></span>
                     </div>
                 </div>
-                <div class="card-body"><canvas id="priceChart" height="100"></canvas></div>
+                <div id="tvChart" class="tv-chart"></div>
             </div>
 
-            <!-- Technical Analysis -->
-            <div class="grid-2">
-                <div class="card" id="techCard">
-                    <div class="card-header"><h2>📉 Technical Indicators</h2></div>
-                    <div id="techContent" class="card-body"></div>
+            <!-- Analysis Panels -->
+            <div id="analysisPanels" class="analysis-panels hidden">
+
+                <!-- Row 1: Signal + Sentiment + Verdict -->
+                <div class="panel-row triple">
+                    <div class="panel signal-panel">
+                        <div class="panel-head">🎯 Signal</div>
+                        <div id="pSignal" class="panel-body"></div>
+                    </div>
+                    <div class="panel sentiment-panel">
+                        <div class="panel-head">🧠 Sentiment</div>
+                        <div id="pSentiment" class="panel-body"></div>
+                    </div>
+                    <div class="panel verdict-panel">
+                        <div class="panel-head">📊 Verdict</div>
+                        <div id="pVerdict" class="panel-body"></div>
+                    </div>
                 </div>
-                <div class="card" id="patternsCard">
-                    <div class="card-header"><h2>🕯️ Candlestick Patterns</h2></div>
-                    <div id="patternsContent" class="card-body"></div>
+
+                <!-- Row 2: Technical Indicators -->
+                <div class="panel">
+                    <div class="panel-head">📉 Technical Indicators <span class="panel-badge" id="techScoreBadge"></span></div>
+                    <div id="pTech" class="panel-body"></div>
+                </div>
+
+                <!-- Row 3: Candlestick Patterns -->
+                <div class="panel">
+                    <div class="panel-head">🕯️ Candlestick Patterns <span class="panel-badge" id="patternBadge"></span></div>
+                    <div id="pPatterns" class="panel-body"></div>
+                </div>
+
+                <!-- Row 4: Entry/Exit + Investment -->
+                <div class="panel-row dual">
+                    <div class="panel">
+                        <div class="panel-head">🎯 Best Entry & Exit Points (Long Term)</div>
+                        <div id="pEntryExit" class="panel-body"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-head">💰 Investment Strategy</div>
+                        <div id="pInvest" class="panel-body"></div>
+                    </div>
+                </div>
+
+                <!-- Row 5: Price Targets -->
+                <div class="panel">
+                    <div class="panel-head">📍 Price Targets & Projections</div>
+                    <div id="pTargets" class="panel-body"></div>
+                </div>
+
+                <!-- Row 6: SIP & Wealth -->
+                <div class="panel-row dual">
+                    <div class="panel">
+                        <div class="panel-head">📅 SIP Recommendations</div>
+                        <div id="pSIP" class="panel-body"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-head">💎 Wealth Projections</div>
+                        <div id="pWealth" class="panel-body"></div>
+                    </div>
+                </div>
+
+                <!-- Row 7: Risk -->
+                <div class="panel">
+                    <div class="panel-head">⚠️ Risk Assessment</div>
+                    <div id="pRisk" class="panel-body"></div>
+                </div>
+
+                <div class="disclaimer-bar">
+                    ⚠️ NOT financial advice. Algorithmic analysis only. Consult a SEBI-registered advisor. Past performance ≠ future results.
                 </div>
             </div>
+        </main>
+    </div>
 
-            <!-- Investment Details -->
-            <div class="card" id="investmentCard">
-                <div class="card-header"><h2>💰 Investment Recommendation (Detailed)</h2></div>
-                <div id="investmentContent" class="card-body"></div>
-            </div>
-
-            <!-- Price Targets -->
-            <div class="card" id="targetsCard">
-                <div class="card-header"><h2>🎯 Price Targets & Projections</h2></div>
-                <div id="targetsContent" class="card-body"></div>
-            </div>
-
-            <!-- Risk Assessment -->
-            <div class="card" id="riskCard">
-                <div class="card-header"><h2>⚠️ Risk Assessment</h2></div>
-                <div id="riskContent" class="card-body"></div>
-            </div>
-
-            <!-- SIP Calculator -->
-            <div class="card" id="sipCard">
-                <div class="card-header"><h2>📅 SIP Investment Calculator</h2></div>
-                <div id="sipContent" class="card-body"></div>
-            </div>
-
-            <!-- Wealth Projections -->
-            <div class="card" id="projectionsCard">
-                <div class="card-header">
-                    <h2>💎 Wealth Creation Projections</h2>
-                    <span style="font-size:12px; color:var(--text-muted);">How much your money grows over time</span>
-                </div>
-                <div id="projectionsContent" class="card-body"></div>
-            </div>
-
-            <!-- Disclaimer -->
-            <div class="disclaimer">
-                <p>⚠️ <strong>DISCLAIMER:</strong> This is algorithmic analysis based on technical indicators and historical patterns.
-                This is <strong>NOT financial advice</strong>. Past performance does not guarantee future results.
-                Always consult a SEBI-registered financial advisor before making investment decisions.
-                Stock market investments carry inherent risks. Never invest more than you can afford to lose.</p>
-            </div>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loader">
+            <div class="spinner-ring"></div>
+            <p>Analyzing <span id="loadingSymbol"></span>...</p>
+            <p class="loader-sub">40+ patterns · 25+ indicators · sentiment · investment engine</p>
         </div>
     </div>
 
